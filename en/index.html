@@ -75,6 +75,16 @@
 	<link rel="alternate" hreflang="ru-RU" href="https://www.nobilia.de/ru/">
 	<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/">
 
+	<style>
+		@media (max-width: 768px) {
+			.topnav {
+				flex-direction: column;
+				align-items: center;
+				height: 80px;
+			}
+		}
+	</style>
+
 
 </head>
 
@@ -88,7 +98,7 @@
 			</div>
 			<div class="navbar-header">
 				<div class="container topnav">
-					<div class="" style="height:40px; width: 120px; margin-left: 30px;"> <a class=""
+					<div class="" style="height:40px; width: 100px; margin-left: 30px;"> <a class=""
 							href="../index.html"><img src="../logo_de.png" width="20" height="10" alt="german"></a>
 					</div>
 					<div class="navbar-meta hidden-xs hidden-sm">
@@ -337,12 +347,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="hotspot-dragger">
+				<!-- <div class="hotspot-dragger">
 					<div class="dragger"></div>
-				</div>
+				</div> -->
 				<div class="hotspot-stage dragscroll init-center" xdraggable="true">
 					<div class="hotspot-image" style="xleft: -625.8px;">
-						
+
 						<!-- <div class="hotspot-spots">
 							<div class="hotspot-btn" style="top: 65%;left:74%;" data-hsid="84538"></div>
 							<div class="hotspot-btn" style="top: 40%;left:05%;" data-hsid="84539"></div>
@@ -352,8 +362,6 @@
 						<style>
 							#myVideo {
 
-								right: 0;
-								bottom: 0;
 								min-width: 100%;
 								min-height: 100%;
 								height: 80vh;
@@ -363,10 +371,11 @@
 						</style>
 
 
-						<video autoplay muted loop id="myVideo">
+						<video autoplay muted loop playsinline id="myVideo">
 							<source src="../fileadmin/GKS-Intro Vid.mp4" type="video/mp4">
 							Your browser does not support HTML5 video.
 						</video>
+
 					</div>
 				</div>
 			</div>

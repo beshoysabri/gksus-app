@@ -372,7 +372,7 @@
 					<div class="dragger"></div>
 				</div> -->
 				<div class="hotspot-stage dragscroll init-center" xdraggable="true">
-					<div class="hotspot-image" >
+					<div class="hotspot-image">
 
 						<!-- <div class="hotspot-spots">
 							<div class="hotspot-btn" style="top: 65%;left:74%;" data-hsid="84538"></div>
@@ -727,6 +727,131 @@
 			</div>
 		</div>
 
+		<style>
+			.form-home-container {
+				width: 90%;
+				max-width: 800px;
+				margin: 40px auto;
+				padding-bottom: 100px;
+			}
+			.form-group {
+				margin-bottom: 20px;
+			}
+
+			.form-group label {
+				display: block;
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+
+			.input-field {
+				width: 100%;
+				border: none;
+				border-bottom: 1px solid black;
+				outline: none;
+				font-size: 16px;
+				padding: 5px 0;
+				margin-bottom: 15px;
+				flex-grow: 1
+			}
+
+			.input-row {
+				display: flex;
+				gap: 20px;
+				align-items: baseline;
+			}
+
+			.input-row .input-field {
+				flex: 1;
+			}
+
+			.select-field {
+				width: 33%;
+				border: none;
+				border-bottom: 1px solid black;
+				outline: none;
+				font-size: 16px;
+				padding: 5px 0;
+				background: transparent;
+			}
+
+			.submit-button {
+				width: 100%;
+				padding: 10px;
+				font-size: 16px;
+				font-weight: bold;
+				text-align: center;
+				border: 2px solid black;
+				border-radius: 30px;
+				background: transparent;
+				cursor: pointer;
+			}
+
+			.submit-button:hover {
+				background: black;
+				color: white;
+				transition: 0.3s;
+			}
+		</style>
+
+		<div class="form-home-container">
+			<h2 style="text-align: center;font-size: 40px;font-weight: 700;">Ask for Estimate</h2>
+
+			<form style="width: 100%;">
+				<div class="form-group">
+					<label>Full Name *</label>
+					<input type="text" class="input-field" required>
+				</div>
+
+				<div class="form-group input-row" style="width: 100%;">
+					<div style="width: 100%;">
+						<label>Email *</label>
+						<input type="email" class="input-field" required>
+					</div>
+					<div style="width: 100%;">
+						<label>Phone *</label>
+						<input type="tel" class="input-field" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>Address *</label>
+					<input type="text" class="input-field" required>
+				</div>
+
+				<div class="form-group">
+					<label>Product *</label>
+					<select class="select-field" required>
+						<option value="">Select a product</option>
+						<option value="Product1">Product 1</option>
+						<option value="Product2">Product 2</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label>Estimated Project Start Date *</label>
+					<div class="input-row" style="height: 80px;">
+						<select class="select-field" required>
+							<option value="">Month</option>
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+						</select>
+						<input type="number" class="input-field" placeholder="Day" required>
+						<input type="number" class="input-field" placeholder="Year" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>Project Short Description</label>
+					<input type="text" class="input-field">
+				</div>
+
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</div>
+
+
 
 		<div class="footer-wrapper clearfix hidden-print footer-new">
 			<footer>
@@ -775,18 +900,16 @@
 									<li style="display: inline-flex; align-items: center; margin-right: 20px;">
 										<i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
 										<a href="tel:+12018144128" title="Call Us"
-											style="text-decoration: none; color: inherit;">(201) 814-4128</a>
+											style="text-decoration: none; color: inherit;">(559) 300-9988</a>
 									</li>
 									<li style="display: inline-flex; align-items: center; margin-right: 20px;">
 										<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-										<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave.
-											Suite#1,
-											Visalia, CA 93277</span>
+										<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave. Suite#1, Visalia, CA 93277</span>
 									</li>
 									<li style="display: inline-flex; align-items: center;">
 										<i class="fas fa-envelope" style="margin-right: 10px;"></i>
-										<a href="mailto:germankitchenstudio24@gmail.com" title="Email"
-											style="text-decoration: none; color: inherit;">germankitchenstudio24@gmail.com</a>
+										<a href="mailto:info@gksus.com" title="Email"
+											style="text-decoration: none; color: inherit;">info@gksus.com</a>
 									</li>
 								</ul>
 							</div>
@@ -822,7 +945,7 @@
 						<div class="container">
 							<div class="row marg-b1">
 								<div class="col-md-6 col-xs-8 d-flex">
-									<div class="copyright"> &copy; Designed & Developed by Kemet Technologies </div>
+									<div class="copyright"> &copy; 2025 German Kitchen Studio. Designed by KEMET TECHNOLOGIES </div>
 									<div class="socialnav">
 										<ul></ul>
 									</div>

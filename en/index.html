@@ -85,7 +85,106 @@
 			overflow: hidden;
 		}
 
+		.category-container-home {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.card-container {
+			width: 100%;
+			max-width: 30%;
+			height: 40%;
+			margin: 20px auto;
+			position: relative;
+			overflow: hidden;
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.card-container:hover {
+			transform: scale(1.05);
+		}
+
+		.card-image {
+			width: 100%;
+			height: 100%;
+			height: auto;
+			display: block;
+			object-fit: cover;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: white;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			padding: 20px;
+		}
+
+		.card-container:hover .overlay {
+			opacity: 1;
+		}
+
+		.overlay h3 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		.overlay p {
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+
+		.overlay a {
+			display: inline-block;
+			padding: 10px 15px;
+			background: white;
+			color: black;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: bold;
+			border-radius: 5px;
+			transition: background 0.3s;
+		}
+
+		.overlay a:hover {
+			background: lightgray;
+		}
+
+		.card-title {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			background: rgba(0, 0, 0, 0.7);
+			color: white;
+			padding: 8px 12px;
+			font-size: 16px;
+			border-radius: 6px;
+		}
+
 		@media (max-width: 768px) {
+			.category-container-home {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.card-container {
+				width: 100%;
+				max-width: 90%;
+				height: 350px;
+			}
+
 			.topnav {
 				flex-direction: column;
 				align-items: center;
@@ -627,8 +726,8 @@
 				<div class="col-sm-4"> </div>
 			</div>
 		</div>
-		<div class="fullwidth marg-b0 " id="c57643">
-			<div class="container-full ge-columns marg-b0" id="c57642">
+		<div class="fullwidth marg-b0 category-container-home " id="c57643">
+			<!--	<div class="container-full ge-columns marg-b0" id="c57642">
 				<div class="row row-eh">
 					<div class="col-sm-4">
 						<div class="holder image-teaser str_teaser" id="c57641">
@@ -649,18 +748,113 @@
 								</div>
 							</div>
 							<picture>
-								<!--[if IE 9]><audio><![endif]-->
 								<source media="(max-width: 767px)"
 									srcset="/fileadmin/_processed_/1/9/csm_640x600_Novalux_516_P.tif_db82738a55.jpg 1x, /fileadmin/_processed_/1/9/csm_640x600_Novalux_516_P.tif_db82738a55.jpg 2x">
-								<!--[if IE 9]></audio><![endif]-->
 								<img loading="lazy" class=" i-opt-col4 infull" id="i61335"
 									src="../fileadmin/_processed_/1/9/csm_640x600_Novalux_516_P.tif_db82738a55.jpg"
 									width="638" height="599"
 									alt="Woman enjoys her morning tea while browsing on a tablet in a modern, bright kitchen with stylish wooden accents and green plants.">
 							</picture>
 						</div>
-					</div>
-					<div class="col-sm-4">
+					</div> -->
+			<div class="card-container">
+				<!-- Image -->
+
+
+				<picture>
+					<!--[if IE 9]><audio><![endif]-->
+					<source media="(max-width: 767px)"
+						srcset="/fileadmin/_processed_/1/9/csm_640x600_Novalux_516_P.tif_db82738a55.jpg 1x, /fileadmin/_processed_/1/9/csm_640x600_Novalux_516_P.tif_db82738a55.jpg 2x">
+					<!--[if IE 9]></audio><![endif]-->
+					<img loading="lazy" class="card-image" id="i61335"
+						src="../fileadmin/_processed_/1/9/csm_640x600_Novalux_516_P.tif_db82738a55.jpg" width="638"
+						height="599"
+						alt="Woman enjoys her morning tea while browsing on a tablet in a modern, bright kitchen with stylish wooden accents and green plants.">
+				</picture>
+
+				<!-- Overlay -->
+				<div class="overlay">
+					<h3>Kitchens made for me</h3>
+					<p>Creative ideas, inspiring planning and design options and innovative solutions can make
+						any kitchen so much more than just a kitchen.</p>
+					<a href="products/kitchens/index.html">To the kitchen gallery</a>
+				</div>
+
+				<!-- Title -->
+				<div class="card-title">
+					<a href="products/kitchens/index.html" style="color: white; text-decoration: none;">My
+						kitchen. My home.</a>
+				</div>
+			</div>
+
+
+			<div class="card-container">
+				<!-- Image -->
+
+
+				<picture>
+					<!--[if IE 9]><audio><![endif]-->
+					<source media="(max-width: 767px)"
+						srcset=" /fileadmin/_processed_/1/3/csm_640x600_Novalux_516_P_e5c16501d8.jpg 1x, /fileadmin/_processed_/1/3/csm_640x600_Novalux_516_P_e5c16501d8.jpg 2x">
+					<!--[if IE 9]></audio><![endif]-->
+					<img loading="lazy" class=" i-opt-col4 infull" id="i61334"
+						src="../fileadmin/_processed_/1/3/csm_640x600_Novalux_516_P_e5c16501d8.jpg" width="638"
+						height="599"
+						alt="Minimalist bathroom design featuring a spacious vanity with round mirror, accentuated by sleek wooden beams and a cozy family moment on the floor.">
+				</picture>
+
+				<!-- Overlay -->
+				<div class="overlay">
+					<h3>My bathroom. My home.</h3>
+					<p>These versatile options will make any bathroom
+						more beautiful and more unique. Our new bathroom designs for combine
+						aesthetics and convenience to create personal moments of relaxation.</p>
+					<a href="products/bathroom-designs/index.html">To our bathroom
+						designs</a>
+				</div>
+
+				<!-- Title -->
+				<div class="card-title">
+					<a href="products/bathroom-designs/index.html" style="color: white; text-decoration: none;">My
+						My bathroom. My home.</a>
+				</div>
+			</div>
+
+
+			<div class="card-container">
+				<!-- Image -->
+
+
+				<picture>
+					<!--[if IE 9]><audio><![endif]-->
+					<source media="(max-width: 767px)"
+						srcset=" /fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg 1x, /fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg 2x">
+					<!--[if IE 9]></audio><![endif]-->
+					<img loading="lazy" class=" i-opt-col4 infull" id="i61333"
+						src="../fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg" width="638"
+						height="599"
+						alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones.">
+				</picture>
+
+				<!-- Overlay -->
+				<div class="overlay">
+					<h3>Living ideas made for me</h3>
+					<p>Inspiration for the living home! Our 2024 Living
+						range surprises with exciting new highlights and individual solutions for
+						personal living.</p>
+					<a href="products/living/holistic-living-space-design/index.html">Holistic living
+						space design</a>
+				</div>
+
+				<!-- Title -->
+				<div class="card-title">
+					<a href="products/living/holistic-living-space-design/index.html"
+						style="color: white; text-decoration: none;">My
+						My Living. My home.</a>
+				</div>
+			</div>
+
+			<!-- 	<div class="col-sm-4">
 						<div class="holder image-teaser str_teaser" id="c57640">
 							<div class="caption-layer linked "> <a href="products/bathroom-designs/index.html"
 									title="My bathroom. My home." class="h2 linktext">
@@ -680,18 +874,16 @@
 								</div>
 							</div>
 							<picture>
-								<!--[if IE 9]><audio><![endif]-->
 								<source media="(max-width: 767px)"
 									srcset=" /fileadmin/_processed_/1/3/csm_640x600_Novalux_516_P_e5c16501d8.jpg 1x, /fileadmin/_processed_/1/3/csm_640x600_Novalux_516_P_e5c16501d8.jpg 2x">
-								<!--[if IE 9]></audio><![endif]-->
 								<img loading="lazy" class=" i-opt-col4 infull" id="i61334"
 									src="../fileadmin/_processed_/1/3/csm_640x600_Novalux_516_P_e5c16501d8.jpg"
 									width="638" height="599"
 									alt="Minimalist bathroom design featuring a spacious vanity with round mirror, accentuated by sleek wooden beams and a cozy family moment on the floor.">
 							</picture>
 						</div>
-					</div>
-					<div class="col-sm-4">
+					</div> -->
+			<!--	<div class="col-sm-4">
 						<div class="holder image-teaser str_teaser" id="c57639">
 							<div class="caption-layer linked "> <a
 									href="products/living/holistic-living-space-design/index.html"
@@ -712,10 +904,8 @@
 								</div>
 							</div>
 							<picture>
-								<!--[if IE 9]><audio><![endif]-->
 								<source media="(max-width: 767px)"
 									srcset=" /fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg 1x, /fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg 2x">
-								<!--[if IE 9]></audio><![endif]-->
 								<img loading="lazy" class=" i-opt-col4 infull" id="i61333"
 									src="../fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg"
 									width="638" height="599"
@@ -723,203 +913,201 @@
 							</picture>
 						</div>
 					</div>
+				</div>-->
+		</div>
+	</div>
+
+	<style>
+		.form-home-container {
+			width: 90%;
+			max-width: 800px;
+			margin: 40px auto;
+			padding-bottom: 100px;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group label {
+			display: block;
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+
+		.input-field {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid black;
+			outline: none;
+			font-size: 16px;
+			padding: 5px 0;
+			margin-bottom: 15px;
+			flex-grow: 1
+		}
+
+		.input-row {
+			display: flex;
+			gap: 20px;
+			align-items: baseline;
+		}
+
+		.input-row .input-field {
+			flex: 1;
+		}
+
+		.select-field {
+			width: 33%;
+			border: none;
+			border-bottom: 1px solid black;
+			outline: none;
+			font-size: 16px;
+			padding: 5px 0;
+			background: transparent;
+		}
+
+		.submit-button {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			border: 2px solid black;
+			border-radius: 30px;
+			background: transparent;
+			cursor: pointer;
+		}
+
+		.submit-button:hover {
+			background: black;
+			color: white;
+			transition: 0.3s;
+		}
+	</style>
+
+	<div class="form-home-container">
+		<h2 style="text-align: center;font-size: 40px;font-weight: 700;">Ask for Estimate</h2>
+
+		<form style="width: 100%;">
+			<div class="form-group">
+				<label>Full Name *</label>
+				<input type="text" class="input-field" required>
+			</div>
+
+			<div class="form-group input-row" style="width: 100%;">
+				<div style="width: 100%;">
+					<label>Email *</label>
+					<input type="email" class="input-field" required>
+				</div>
+				<div style="width: 100%;">
+					<label>Phone *</label>
+					<input type="tel" class="input-field" required>
 				</div>
 			</div>
-		</div>
 
-		<style>
-			.form-home-container {
-				width: 90%;
-				max-width: 800px;
-				margin: 40px auto;
-				padding-bottom: 100px;
-			}
-			.form-group {
-				margin-bottom: 20px;
-			}
+			<div class="form-group">
+				<label>Address *</label>
+				<input type="text" class="input-field" required>
+			</div>
 
-			.form-group label {
-				display: block;
-				font-size: 14px;
-				margin-bottom: 5px;
-			}
+			<div class="form-group">
+				<label>Product *</label>
+				<select class="select-field" required>
+					<option value="">Select a product</option>
+					<option value="Product1">Product 1</option>
+					<option value="Product2">Product 2</option>
+				</select>
+			</div>
 
-			.input-field {
-				width: 100%;
-				border: none;
-				border-bottom: 1px solid black;
-				outline: none;
-				font-size: 16px;
-				padding: 5px 0;
-				margin-bottom: 15px;
-				flex-grow: 1
-			}
-
-			.input-row {
-				display: flex;
-				gap: 20px;
-				align-items: baseline;
-			}
-
-			.input-row .input-field {
-				flex: 1;
-			}
-
-			.select-field {
-				width: 33%;
-				border: none;
-				border-bottom: 1px solid black;
-				outline: none;
-				font-size: 16px;
-				padding: 5px 0;
-				background: transparent;
-			}
-
-			.submit-button {
-				width: 100%;
-				padding: 10px;
-				font-size: 16px;
-				font-weight: bold;
-				text-align: center;
-				border: 2px solid black;
-				border-radius: 30px;
-				background: transparent;
-				cursor: pointer;
-			}
-
-			.submit-button:hover {
-				background: black;
-				color: white;
-				transition: 0.3s;
-			}
-		</style>
-
-		<div class="form-home-container">
-			<h2 style="text-align: center;font-size: 40px;font-weight: 700;">Ask for Estimate</h2>
-
-			<form style="width: 100%;">
-				<div class="form-group">
-					<label>Full Name *</label>
-					<input type="text" class="input-field" required>
-				</div>
-
-				<div class="form-group input-row" style="width: 100%;">
-					<div style="width: 100%;">
-						<label>Email *</label>
-						<input type="email" class="input-field" required>
-					</div>
-					<div style="width: 100%;">
-						<label>Phone *</label>
-						<input type="tel" class="input-field" required>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label>Address *</label>
-					<input type="text" class="input-field" required>
-				</div>
-
-				<div class="form-group">
-					<label>Product *</label>
+			<div class="form-group">
+				<label>Estimated Project Start Date *</label>
+				<div class="input-row" style="height: 80px;">
 					<select class="select-field" required>
-						<option value="">Select a product</option>
-						<option value="Product1">Product 1</option>
-						<option value="Product2">Product 2</option>
+						<option value="">Month</option>
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
 					</select>
+					<input type="number" class="input-field" placeholder="Day" required>
+					<input type="number" class="input-field" placeholder="Year" required>
 				</div>
+			</div>
 
-				<div class="form-group">
-					<label>Estimated Project Start Date *</label>
-					<div class="input-row" style="height: 80px;">
-						<select class="select-field" required>
-							<option value="">Month</option>
-							<option>January</option>
-							<option>February</option>
-							<option>March</option>
-						</select>
-						<input type="number" class="input-field" placeholder="Day" required>
-						<input type="number" class="input-field" placeholder="Year" required>
-					</div>
-				</div>
+			<div class="form-group">
+				<label>Project Short Description</label>
+				<input type="text" class="input-field">
+			</div>
 
-				<div class="form-group">
-					<label>Project Short Description</label>
-					<input type="text" class="input-field">
-				</div>
-
-				<button type="submit" class="submit-button">Submit</button>
-			</form>
-		</div>
+			<button type="submit" class="submit-button">Submit</button>
+		</form>
+	</div>
 
 
 
-		<div class="footer-wrapper clearfix hidden-print footer-new">
-			<footer>
-				<div class="container">
-					<div class="inside">
-						<div class="row footer-links">
+	<div class="footer-wrapper clearfix hidden-print footer-new">
+		<footer>
+			<div class="container">
+				<div class="inside">
+					<div class="row footer-links">
 
 
 
-							<div class="col-md-20">
-								<h4 class="xsubline"><a title="Products" href="../products/index.html">Products</a></h4>
-								<ul>
-									<li> <a href="./products/kitchens/index.html" class="" title="All kitchens"> All
-											kitchens </a> </li>
-									<li> <a href="./products/bathroom-designs/index.html" class=""
-											title="Bathroom designs"> Bathroom designs </a> </li>
-									<li> <a href="./products/living/index.html" class="" title="Living"> Living </a>
-									</li>
-									<li> <a href="./products/design-elements/index.html" class=""
-											title="Design elements">
-											Design elements </a> </li>
-									<li> <a href="./products/interior-fittings/index.html" class=""
-											title="Interior fittings"> Interior fittings </a> </li>
-									<li> <a href="./products/electric-appliances/index.html" class=""
-											title="Electric appliances"> Electric appliances </a> </li>
-								</ul>
-							</div>
+						<div class="col-md-20">
+							<h4 class="xsubline"><a title="Products" href="../products/index.html">Products</a></h4>
+							<ul>
+								<li> <a href="./products/kitchens/index.html" class="" title="All kitchens"> All
+										kitchens </a> </li>
+								<li> <a href="./products/bathroom-designs/index.html" class="" title="Bathroom designs">
+										Bathroom designs </a> </li>
+								<li> <a href="./products/living/index.html" class="" title="Living"> Living </a>
+								</li>
+								<li> <a href="./products/design-elements/index.html" class="" title="Design elements">
+										Design elements </a> </li>
+								<li> <a href="./products/interior-fittings/index.html" class=""
+										title="Interior fittings"> Interior fittings </a> </li>
+								<li> <a href="./products/electric-appliances/index.html" class=""
+										title="Electric appliances"> Electric appliances </a> </li>
+							</ul>
+						</div>
 
-							<div class="col-md-20">
-								<h4 class="xsubline">Quick Links</h4>
-								<ul>
-									<li>
-										<a href="./services/contact/index.html" class="" title="Contact"> Contact </a>
-									</li>
-									<li>
-										<a href="./services/planning-tools/index.html" class="" title="Planning tools">
-											About</a>
-									</li>
+						<div class="col-md-20">
+							<h4 class="xsubline">Quick Links</h4>
+							<ul>
+								<li>
+									<a href="./services/contact/index.html" class="" title="Contact"> Contact </a>
+								</li>
+								<li>
+									<a href="./services/planning-tools/index.html" class="" title="Planning tools">
+										About</a>
+								</li>
 
-								</ul>
-							</div>
+							</ul>
+						</div>
 
-							<div class="col-md-20">
-								<h4 class="xsubline">Info</h4>
-								<ul style="list-style: none; padding: 0; margin: 0;">
-									<li style="display: inline-flex; align-items: center; margin-right: 20px;">
-										<i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
-										<a href="tel:+12018144128" title="Call Us"
-											style="text-decoration: none; color: inherit;">(559) 300-9988</a>
-									</li>
-									<li style="display: inline-flex; align-items: center; margin-right: 20px;">
-										<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-										<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave. Suite#1, Visalia, CA 93277</span>
-									</li>
-									<li style="display: inline-flex; align-items: center;">
-										<i class="fas fa-envelope" style="margin-right: 10px;"></i>
-										<a href="mailto:info@gksus.com" title="Email"
-											style="text-decoration: none; color: inherit;">info@gksus.com</a>
-									</li>
-								</ul>
-							</div>
-
-
-
+						<div class="col-md-20">
+							<h4 class="xsubline">Info</h4>
+							<ul style="list-style: none; padding: 0; margin: 0;">
+								<li style="display: inline-flex; align-items: center; margin-right: 20px;">
+									<i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+									<a href="tel:+12018144128" title="Call Us"
+										style="text-decoration: none; color: inherit;">(559) 300-9988</a>
+								</li>
+								<li style="display: inline-flex; align-items: center; margin-right: 20px;">
+									<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+									<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave.
+										Suite#1, Visalia, CA 93277</span>
+								</li>
+								<li style="display: inline-flex; align-items: center;">
+									<i class="fas fa-envelope" style="margin-right: 10px;"></i>
+									<a href="mailto:info@gksus.com" title="Email"
+										style="text-decoration: none; color: inherit;">info@gksus.com</a>
+								</li>
+							</ul>
 						</div>
 
 
 
+					</div>
 
 
 
@@ -928,43 +1116,47 @@
 
 
 
-						<div class="footer-metanav footer-links visible-sm-block visible-xs-block">
 
+
+
+					<div class="footer-metanav footer-links visible-sm-block visible-xs-block">
+
+					</div>
+				</div>
+			</div>
+			<div class="footer-end">
+				<div class="container hidden-sm hidden-xs">
+					<div class="row">
+						<div class="col-sm-12">
+							<hr>
 						</div>
 					</div>
 				</div>
-				<div class="footer-end">
-					<div class="container hidden-sm hidden-xs">
-						<div class="row">
-							<div class="col-sm-12">
-								<hr>
-							</div>
-						</div>
-					</div>
-					<div class="legalline">
-						<div class="container">
-							<div class="row marg-b1">
-								<div class="col-md-6 col-xs-8 d-flex">
-									<div class="copyright"> &copy; 2025 German Kitchen Studio. Designed by KEMET TECHNOLOGIES </div>
-									<div class="socialnav">
-										<ul></ul>
-									</div>
-								</div>
-								<div class="col-md-6 col-xs-2 legallinks d-flex flex-justify-end">
-									<div class="footer-metanav hidden-sm hidden-xs">
-
-									</div>
-
+				<div class="legalline">
+					<div class="container">
+						<div class="row marg-b1">
+							<div class="col-md-6 col-xs-8 d-flex">
+								<div class="copyright"> &copy; 2025 German Kitchen Studio. Designed by KEMET
+									TECHNOLOGIES </div>
+								<div class="socialnav">
+									<ul></ul>
 								</div>
 							</div>
+							<div class="col-md-6 col-xs-2 legallinks d-flex flex-justify-end">
+								<div class="footer-metanav hidden-sm hidden-xs">
+
+								</div>
+
+							</div>
 						</div>
 					</div>
-			</footer>
-		</div>
-		<script
-			src="../typo3temp/assets/compressed/merged-1ee0e54e16201143389e6522e44cc794-83a709f5bf7ee973d6f3e968eb77bed27dba.js?1709748970"></script>
-		<script src="../typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a94497dba.js?1709748970"
-			defer="defer"></script>
+				</div>
+		</footer>
+	</div>
+	<script
+		src="../typo3temp/assets/compressed/merged-1ee0e54e16201143389e6522e44cc794-83a709f5bf7ee973d6f3e968eb77bed27dba.js?1709748970"></script>
+	<script src="../typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a94497dba.js?1709748970"
+		defer="defer"></script>
 </body>
 
 </html>

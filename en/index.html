@@ -85,6 +85,58 @@
 			overflow: hidden;
 		}
 
+		.button-Vid {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 10px 20px;
+			border: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 100%;
+			gap: 20px;
+		}
+
+		.modern-button {
+			background: rgba(0, 0, 0, 0.6);
+			border: none;
+			padding: 15px 24px;
+			height: 80px;
+			width: 400px;
+			margin: 0px 0px;
+			font-size: 25px;
+			font-weight: bold;
+			color: white;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			position: relative;
+			overflow: hidden;
+		}
+
+		.modern-button::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: rgba(255, 255, 255, 0.2);
+			transition: all 0.3s ease-in-out;
+		}
+
+		.modern-button:hover::before {
+			left: 100%;
+		}
+
+		.modern-button:hover {
+			transform: scale(1.05);
+			box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+		}
+
 		.category-container-home {
 			display: flex;
 			flex-direction: row;
@@ -178,6 +230,29 @@
 				display: flex;
 				flex-direction: column;
 			}
+
+
+			.button-Vid {
+				flex-direction: column;
+			}
+
+			.modern-button {
+			background: rgba(0, 0, 0, 0.6);
+			border: none;
+			padding: 15px 24px;
+			height: 80px;
+			width: 90%;
+			margin: 0px auto;
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			position: relative;
+			overflow: hidden;
+		}
 
 			.card-container {
 				width: 100%;
@@ -481,11 +556,20 @@
 
 
 
-
-						<video autoplay muted loop playsinline id="myVideo">
-							<source src="../fileadmin/GKS-Intro Vid.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
+						<div style="position: relative; width: fit-content; margin: auto;">
+							<video autoplay muted loop playsinline id="myVideo">
+								<source src="../fileadmin/GKS-Intro Vid.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="button-Vid">
+								<button class="modern-button">
+									Make a Free Appointment
+								</button>
+								<button class="modern-button">
+									Design your space for Free
+								</button>
+							</div>
+						</div>
 
 					</div>
 				</div>

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
 
-    <title>Make Appointment | German Kitchen Studio</title>
+    <title>Design Your Space | German Kitchen Studio</title>
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta property="og:type" content="website">
@@ -153,43 +153,74 @@
         }
 
 
+        .steps-section {
+            text-align: center;
+            padding: 50px 20px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .steps-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .step-box {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .step-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-box i {
+            font-size: 40px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .step-box h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
         @media (max-width: 768px) {
-            .topnav {
+            .steps-container {
                 flex-direction: column;
                 align-items: center;
-                height: 80px;
             }
 
-            #menu-click {
-                top: -40px;
-                position: absolute;
-            }
-
-            .show-conte {
-                display: none;
-            }
-
-            .section-form {
-                display: none;
-            }
-
-            .container-form {
-                background-color: white;
-                padding: 30px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                width: 350px;
-                border-radius: 10px;
+            .steps-section {
                 height: auto;
-                overflow-y: scroll;
             }
 
-            .show-mobile-only {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                width: 100%;
-                z-index: 10;
-                padding-top: 100px;
+            .steps-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: #333;
             }
         }
     </style>
@@ -416,131 +447,40 @@
             </div>
         </div>
 
-        <!--
-        <h2 class="h2 headline" style="text-align: center; margin-top: 50px; font-size: 40px; font-weight: 700;">About
-			us</h2>
-            -->
-        <section class="section-form">
+        <h2 class="h2 headline" style="text-align: center; margin-top: 50px; font-size: 40px; font-weight: 700;">
+            Start Design your Space for Free </h2>
 
-            <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
-                style="justify-content: center; display: flex;">
+        <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
+            style="justify-content: center; display: flex;">
 
-                <div class="container-form">
-                    <h2>Make An Appointment</h2>
-                    <p>Please take a moment to fill out the form.</p>
+            <section class="steps-section">
+                <div class="steps-container">
+                    <div class="step-box">
+                        <i class="fas fa-phone"></i>
+                                                <h3>-1-</h3>
 
-                    <form>
-                        <label>First Name *</label>
-                        <input type="text" required>
+                        <p>Chat with us, give us a call, or send email with your kitchen dimensions, our designers will help you know how and what to measure.</p>
+                    </div>
+                    <div class="step-box">
+                        <i class="fas fa-pencil-ruler"></i>
+                                                <h3>-2-</h3>
 
-                        <label>Last Name *</label>
-                        <input type="text" required>
-
-                        <label>Email *</label>
-                        <input type="email" required>
-
-                        <label>Phone *</label>
-                        <input type="tel" required>
-
-                        <label>Address *</label>
-                        <input type="text" placeholder="Type your Address Here" required>
-
-                        <label>Best Days for the Appointment (Please Choose at least 2) *</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox"> Monday</label>
-                            <label><input type="checkbox"> Tuesday</label>
-                            <label><input type="checkbox"> Wednesday</label>
-                            <label><input type="checkbox"> Thursday</label>
-                            <label><input type="checkbox"> Friday</label>
-                        </div>
-
-                        <label>Best Time *</label>
-                        <select required>
-                            <option>Choose a Time</option>
-                            <option>Morning</option>
-                            <option>Afternoon</option>
-                            <option>Evening</option>
-                        </select>
-
-                        <label><input type="checkbox"> I accept terms & conditions</label>
-
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </form>
+                        <p>Our designers will start to design your space with your selected models and styles</p>
+                    </div>
+                    <div class="step-box">
+                        <i class="fas fa-box"></i>
+                        <h3>-3-</h3>
+                        <p>We can set a free appointment to show you the design of your space and the cost of your cabinets</p>
+                    </div>
                 </div>
+            </section>
 
-            </div>
-
-
-
+        </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
-
-        <section class="show-mobile-only">
-            <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
-                style="justify-content: center; display: flex;">
-
-                <div class="container-form">
-                    <h2>Make An Appointment</h2>
-                    <p>Please take a moment to fill out the form.</p>
-
-                    <form>
-                        <label>First Name *</label>
-                        <input type="text" required>
-
-                        <label>Last Name *</label>
-                        <input type="text" required>
-
-                        <label>Email *</label>
-                        <input type="email" required>
-
-                        <label>Phone *</label>
-                        <input type="tel" required>
-
-                        <label>Address *</label>
-                        <input type="text" placeholder="Type your Address Here" required>
-
-                        <label>Best Days for the Appointment (Please Choose at least 2) *</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox"> Monday</label>
-                            <label><input type="checkbox"> Tuesday</label>
-                            <label><input type="checkbox"> Wednesday</label>
-                            <label><input type="checkbox"> Thursday</label>
-                            <label><input type="checkbox"> Friday</label>
-                        </div>
-
-                        <label>Best Time *</label>
-                        <select required>
-                            <option>Choose a Time</option>
-                            <option>Morning</option>
-                            <option>Afternoon</option>
-                            <option>Evening</option>
-                        </select>
-
-                        <label><input type="checkbox"> I accept terms & conditions</label>
-
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </form>
-                </div>
-
-            </div>
-        </section>
 
     </div>
-    <div style="padding-top: 400px;">
     </div>
 
 

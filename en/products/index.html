@@ -215,30 +215,30 @@
 		</nav>
 	</div>
 		<div class="totop"> <a href="#top" class="toplink hidden-print" title="To top"><span aria-hidden="true" class="icon-pfeil_links icon-up"></span></a> </div>
-		<script>
-      var lastScrollTop = 0;
-      var headerIsHidden = false;
-      var $nw = $('.navbar-wrapper');
-      function updateHeaderVisibility() {
-          var currentScroll = window.pageYOffset;
-          // console.log(currentScroll);
-          if (currentScroll-10 > lastScrollTop && !headerIsHidden) {
-            headerIsHidden = true;
-              $nw.addClass('hide-it affix');
-          } else if (currentScroll < lastScrollTop && headerIsHidden) {
-            headerIsHidden = false;
-              $nw.removeClass('hide-it affix');
-          }
-          if (currentScroll<10 && window.innerWidth > 1023) {
-            $nw.addClass('inwhite');
-          } else {
-            $nw.removeClass('inwhite')
-          }
-          lastScrollTop = currentScroll;
-          requestAnimationFrame(updateHeaderVisibility);
-      }
-      updateHeaderVisibility();
-      </script>
+<!-- 	<script>
+		var lastScrollTop = 0;
+		var headerIsHidden = false;
+		var $nw = $('.navbar-wrapper');
+		function updateHeaderVisibility() {
+			var currentScroll = window.pageYOffset;
+			// console.log(currentScroll);
+			if (currentScroll - 10 > lastScrollTop && !headerIsHidden) {
+				headerIsHidden = true;
+				$nw.addClass('hide-it affix');
+			} else if (currentScroll < lastScrollTop && headerIsHidden) {
+				headerIsHidden = false;
+				$nw.removeClass('hide-it affix');
+			}
+			if (currentScroll < 10 && window.innerWidth > 1023) {
+				$nw.addClass('inwhite');
+			} else {
+				$nw.removeClass('inwhite')
+			}
+			lastScrollTop = currentScroll;
+			requestAnimationFrame(updateHeaderVisibility);
+		}
+		updateHeaderVisibility();
+	</script> -->
 	  
 		<div class="site-overlay"></div>
 		<div class="site-content">

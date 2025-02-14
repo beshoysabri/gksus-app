@@ -151,6 +151,10 @@
 .icon-merkzettel:before { content: '\e831'; }
 .icon-merkzettel { color: #787878; }
 
+.navbar-wrapper{
+background-color: #ffffff !important;
+}
+
 @media (max-width: 768px) {
 			.topnav {
 				flex-direction: column;

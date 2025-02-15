@@ -76,6 +76,114 @@
 </head>
 
 <style>
+	.slider-container {
+		position: relative;
+		width: 100%;
+		height: 70vh;
+		overflow: hidden;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.slider {
+		display: flex;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.slide {
+		min-width: 100%;
+		overflow: hidden;
+		text-align: center;
+		position: relative;
+	}
+
+	.slide img {
+		width: 100%;
+		height: 70vh;
+		object-fit: cover;
+	}
+
+	.nw-imge {
+		width: 100%;
+		height: 70vh;
+		object-fit: cover;
+	}
+
+	.slider-nav {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		transform: translateY(-50%);
+	}
+
+	.slider-nav button {
+		background-color: rgba(0, 0, 0, 0.5);
+		border: none;
+		color: white;
+		font-size: 18px;
+		padding: 10px;
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 50%;
+	}
+
+	.slider-nav button:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.hotspot {
+		display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #ffbf67;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 50;
+	animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 191, 103, 0.7);
+	}
+	50% {
+		transform: scale(1.2);
+		box-shadow: 0 0 10px 5px rgba(255, 191, 103, 0.4);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 191, 103, 0);
+	}
+}
+
+
+	.slider-nav button {
+		padding: 10px;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
+	.modal {
+		display: none;
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		width: 600px;
+		background: white;
+		border: 2px solid black;
+		height: 500px;
+		z-index: 100;
+	}
+
 	.card-container {
 		width: 100%;
 		max-width: 30%;
@@ -185,7 +293,25 @@
 			max-width: 90%;
 			height: 390px;
 		}
+.hotspot {
+		display: none;
+	
+}
 
+.slider-nav button {
+		background-color: rgba(0, 0, 0, 0.5);
+		border: none;
+		color: white;
+		font-size: 18px;
+		padding: 0px;
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		margin-right: 10px;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 50%;
+	}
 
 	}
 </style>
@@ -383,16 +509,142 @@
 		updateHeaderVisibility();
 	</script> -->
 
+
+
 	<div class="site-overlay"></div>
 	<div class="site-content">
+
 		<!--TYPO3SEARCH_begin-->
-		<div class="stagebig fullstage " id="c537">
+
+
+
+		<div class="slider-container">
+			<div class="slider" id="slider">
+				<div class="slide">
+
+					<picture
+						data-src-landscape="{ &quot;format&quot;: &quot;637x358&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;} ]}"
+						data-src-landscape-big="{ &quot;format&quot;: &quot;1280x720&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;}, {&quot;min-width:1024px&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;} ]}"
+						data-src-portrait="{ &quot;format&quot;: &quot;637x720&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg&quot;} ]}">
+						<img src="../../fileadmin/_processed_/6/3/csm_495_senso_gallery_b9be550764.jpg" loading="lazy"
+							width="637" height="358" alt="SENSO 495 - Premium honed olive"
+							title="SENSO 495 - Premium honed olive">
+					</picture>
+					<div class="hotspot" style="top: 75%; left: 20%;"
+						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/senso_495_afp_400_283px.jpg")'>
+					</div>
+
+				</div>
+				<div class="slide">
+					<picture>
+						<!--[if IE 9]><audio><![endif]-->
+						<source media="(max-width: 767px)"
+							srcset=" /fileadmin/assets/produkte/01_moderne_kuechen.jpg 1x, /fileadmin/assets/produkte/01_moderne_kuechen.jpg 2x">
+						<!--[if IE 9]></audio><![endif]-->
+						<img loading="lazy" id="i25630" src="../../fileadmin/assets/produkte/01_moderne_kuechen.jpg"
+							width="1680" height="800"
+							alt="Spacious modern kitchen with sleek appliances, wooden countertops, and stylish shelving, accented by natural light and warm, inviting tones.">
+					</picture>
+					<div class="hotspot" style="top: 75%; left: 20%;"
+						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/softline_509_196_283px_.jpg")'>
+					</div>
+				</div>
+				<div class="slide">
+
+
+					<picture
+						data-src-landscape="{ &quot;format&quot;: &quot;637x358&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;} ]}"
+						data-src-landscape-big="{ &quot;format&quot;: &quot;1280x720&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;}, {&quot;min-width:1024px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;} ]}"
+						data-src-portrait="{ &quot;format&quot;: &quot;637x720&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;} ]}">
+						<img src="../../../fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg"
+							loading="lazy" width="637" height="358" alt="SENSO 485 - Premium honed sky"
+							title="SENSO 485 - Premium honed sky">
+					</picture>
+					<div class="hotspot" style="top: 20%; left: 40%;"
+						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/senso_485_afp_400_283px.jpg")'>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-nav">
+				<button onclick="prevSlide()">&#10094;</button>
+				<button onclick="nextSlide()">&#10095;</button>
+			</div>
+		</div>
+		<div class="modal" id="imageModal">
+			<img id="modalImg" src="" alt="Hotspot Image" style="width:100%; height: 90%;">
+			<button onclick="closeModal()">Close</button>
+		</div>
+
+		<script>
+			let currentSlide = 0;
+			const slider = document.getElementById('slider');
+
+			function showSlide(index) {
+				slider.style.transform = `translateX(-${index * 100}%)`;
+			}
+
+			function prevSlide() {
+				currentSlide = (currentSlide > 0) ? currentSlide - 1 : 2;
+				showSlide(currentSlide);
+			}
+
+			function nextSlide() {
+				currentSlide = (currentSlide < 2) ? currentSlide + 1 : 0;
+				showSlide(currentSlide);
+			}
+
+			function showImage(src) {
+				console.log(src);
+
+				const modal = document.getElementById('imageModal');
+				const modalImg = document.getElementById('modalImg');
+				modalImg.src = src;
+				modal.style.display = 'block';
+			}
+
+			function closeModal() {
+				document.getElementById('imageModal').style.display = 'none';
+			}
+
+			setInterval(nextSlide, 6000);
+
+		</script>
+
+
+
+
+		<script>
+			$(function () {
+				var $hotspots = $(".hotspots .hotspot-btn");
+				$('.hotspots .close').click(function (e) {
+					e.preventDefault();
+					$hotspots.removeClass('active');
+					$('.hotspotcontents .multiteaser').hide();
+					$('html,body').animate({
+						scrollTop: $('.hotspotholder').offset().top
+					}, 200, function () { });
+				});
+				$hotspots.click(function (e) {
+					e.preventDefault();
+					$hotspots.removeClass('active');
+					$(this).addClass('active');
+					$('.hotspotcontents .multiteaser').hide();
+					var hsid = $(this).data('hsid');
+					$('#c' + hsid).fadeIn();
+					$('.str-slick-multiteaser .slick-slider').slick("refresh");
+					$('html,body').animate({
+						scrollTop: $('.hotspotholder').offset().top
+					}, 200, function () { });
+				});
+			})
+		</script>
+		<!--		<div class="stagebig fullstage " id="c537">
 			<div class="bg-image img-fit init-center init-center"> <img class="visible-xs-block"
 					src="../../fileadmin/_processed_/0/f/csm_00_kollektion_stage_cceaba2868.jpg" width="800"
 					height="800" alt="nobilia - more than kitchen"
 					title="EASYTOUCH 964: Lacklaminat, Mineralgrün ultramatt">
 				<picture>
-					<!--[if IE 9]><audio><![endif]-->
 					<source media="(max-width: 767px)"
 						srcset=" /fileadmin/_processed_/0/f/csm_00_kollektion_stage_4f10dfbf43.jpg 1x, /fileadmin/_processed_/0/f/csm_00_kollektion_stage_ddce848600.jpg 2x">
 					<source media="(max-width: 1023px)"
@@ -401,7 +653,6 @@
 						srcset="/fileadmin/_processed_/0/f/csm_00_kollektion_stage_adc1ae1b5e.jpg">
 					<source media="(max-width: 1440px)"
 						srcset="/fileadmin/_processed_/0/f/csm_00_kollektion_stage_2048c72514.jpg">
-					<!--[if IE 9]></audio><![endif]-->
 					<img loading="lazy" class="hidden-xs" id="i10642"
 						src="../../fileadmin/assets/produkte/_stages/00_kollektion_stage.jpg" width="1680" height="800"
 						alt="nobilia - more than kitchen" title="EASYTOUCH 964: Lacklaminat, Mineralgrün ultramatt">
@@ -419,7 +670,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="fullwidth " id="c67033">
 			<div class="container-full ge-columns " id="c67032">
 				<div class="big-row">
@@ -590,7 +841,7 @@
 								<picture>
 									<!--[if IE 9]><audio><![endif]-->
 									<source media="(max-width: 767px)"
-										srcset=" /fileadmin/_processed_/0/d/csm_01_moderne_kuechen_4108148683.jpg 1x, /fileadmin/_processed_/0/d/csm_01_moderne_kuechen_e035761dcd.jpg 2x">
+										srcset=" /fileadmin/assets/produkte/01_moderne_kuechen.jpg 1x, /fileadmin/assets/produkte/01_moderne_kuechen.jpg 2x">
 									<!--[if IE 9]></audio><![endif]-->
 									<img loading="lazy" id="i25630"
 										src="../../fileadmin/assets/produkte/01_moderne_kuechen.jpg" width="901"

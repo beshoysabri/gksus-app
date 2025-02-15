@@ -14,7 +14,7 @@ function updateServiceLinks() {
       "en/services/catalogues-and-brochures/index.html",
     "instruction manuals": "en/services/instruction-manuals/index.html",
     "planning tools": "en/services/planning-tools/index.html",
-    "your wish list": "en/services/wish-list/index.html",
+    "wish list": "en/services/wish-list/index.html",
     "media centre": "en/services/media-centre/index.html",
   };
 

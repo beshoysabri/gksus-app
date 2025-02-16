@@ -138,30 +138,32 @@
 
 	.hotspot {
 		display: block;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	background-color: #ffbf67;
-	border-radius: 50%;
-	cursor: pointer;
-	z-index: 50;
-	animation: pulse 1.5s infinite ease-in-out;
-}
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background-color: #ffbf67;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 50;
+		animation: pulse 1.5s infinite ease-in-out;
+	}
 
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-		box-shadow: 0 0 0 0 rgba(255, 191, 103, 0.7);
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+			box-shadow: 0 0 0 0 rgba(255, 191, 103, 0.7);
+		}
+
+		50% {
+			transform: scale(1.2);
+			box-shadow: 0 0 10px 5px rgba(255, 191, 103, 0.4);
+		}
+
+		100% {
+			transform: scale(1);
+			box-shadow: 0 0 0 0 rgba(255, 191, 103, 0);
+		}
 	}
-	50% {
-		transform: scale(1.2);
-		box-shadow: 0 0 10px 5px rgba(255, 191, 103, 0.4);
-	}
-	100% {
-		transform: scale(1);
-		box-shadow: 0 0 0 0 rgba(255, 191, 103, 0);
-	}
-}
 
 
 	.slider-nav button {
@@ -293,25 +295,26 @@
 			max-width: 90%;
 			height: 390px;
 		}
-.hotspot {
-		display: none;
-	
-}
 
-.slider-nav button {
-		background-color: rgba(0, 0, 0, 0.5);
-		border: none;
-		color: white;
-		font-size: 18px;
-		padding: 0px;
-		width: 35px;
-		height: 35px;
-		margin-left: 10px;
-		margin-right: 10px;
-		cursor: pointer;
-		transition: 0.3s;
-		border-radius: 50%;
-	}
+		.hotspot {
+			display: none;
+
+		}
+
+		.slider-nav button {
+			background-color: rgba(0, 0, 0, 0.5);
+			border: none;
+			color: white;
+			font-size: 18px;
+			padding: 0px;
+			width: 35px;
+			height: 35px;
+			margin-left: 10px;
+			margin-right: 10px;
+			cursor: pointer;
+			transition: 0.3s;
+			border-radius: 50%;
+		}
 
 	}
 </style>
@@ -448,13 +451,13 @@
 											<span>Services</span>
 										</a>
 										<ul>
-											<li><a title="FAQ"><span>FAQ</span></a></li>
+											<!-- <li><a title="FAQ"><span>FAQ</span></a></li> -->
 											<li><a title="Catalogues and Brochures"><span>Catalogues and
 														Brochures</span></a></li>
 											<li><a title="Instruction Manuals"><span>Instruction Manuals</span></a></li>
 											<li><a title="Planning Tools"><span>Planning Tools</span></a></li>
-											<li><a title="Wish List"><span>Wish List</span></a></li>
-											<li><a title="Media Centre"><span>Media Centre</span></a></li>
+											<!-- <li><a title="Wish List"><span>Wish List</span></a></li> -->
+											<!-- <li><a title="Media Centre"><span>Media Centre</span> </a></li>-->
 										</ul>
 									</li>
 									<script src="../../js/pathHelper.js"></script>

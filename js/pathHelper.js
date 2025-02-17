@@ -16,6 +16,7 @@ function updateServiceLinks() {
     "planning tools": "en/services/planning-tools/index.html",
     "wish list": "en/services/wish-list/index.html",
     "media centre": "en/services/media-centre/index.html",
+    about: "en/inspiration/index.html",
   };
 
   // Find all <a> tags and update them if title matches

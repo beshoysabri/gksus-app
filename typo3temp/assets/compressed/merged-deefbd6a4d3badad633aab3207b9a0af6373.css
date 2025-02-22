@@ -190,9 +190,9 @@ background-color: #ffffff !important;
   -o-transform: scale(1.2);
 }
 .product-overlay{
-  height: 100px !important;
+  /* height: 100px !important;
   width: 60% !important;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 10px; */
 }
 
 

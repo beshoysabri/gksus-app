@@ -62,7 +62,64 @@
 		<link rel="alternate" hreflang="nl-NL" href="https://www.nobilia.de/nl/diensten/handleidingen/">
 		<link rel="alternate" hreflang="pl-PL" href="https://www.nobilia.de/pl/serwis/instrukcje/">
 		<link rel="alternate" hreflang="ru-RU" href="https://www.nobilia.de/ru/uslugi/rukovodstva/">
-		<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/sluzby/navody/"> </head>
+		<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/sluzby/navody/"> 
+		
+		<style>
+			.row-eh {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.card-style {
+			background: linear-gradient(135deg, #ffffff, #f7f7f7);
+			border-radius: 12px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			padding: 25px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			position: relative;
+			overflow: hidden;
+			max-width: 400px;
+		}
+
+		.card-style:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+		}
+
+		.theicon {
+			font-size: 50px;
+			margin-bottom: 15px;
+			color: #febc5b;
+		}
+
+
+
+		.card-style p {
+			font-size: 16px;
+			color: #555;
+			margin-bottom: 15px;
+		}
+
+		.btn-custom {
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 50px;
+			text-transform: uppercase;
+			font-weight: bold;
+			transition: background 0.3s ease, transform 0.2s ease;
+		}
+
+		.btn-custom:hover {
+			background: #febc5b;
+			color: #fff;
+			transform: scale(1.05);
+		}
+			</style>
+		
+		</head>
 	<body class="p-28 nobilia workspace- newcss">
 		<div id="top"></div>
 		<div class="navbar-wrapper" style="height:auto">
@@ -208,11 +265,11 @@
 
 
 
-									<li><a href="../../inspiration/index.html" title="Career"><span>About</span></a></li>
+									<li><a href="../../inspiration/index.html" ><span>About</span></a></li>
 
 
-									<li><a href="https://shop.nobilia.de/" target="_blank"
-											title="Shop"><span>Contact</span></a></li>
+									<li><a href="../../services/contact/index.html" 
+											><span>Contact</span></a></li>
 								</ul>
 							</nav>
 
@@ -257,12 +314,11 @@
 		<div class="site-overlay"></div>
 		<div class="site-content">
 			<!--TYPO3SEARCH_begin-->
-			<div id="c366" class=" text-teaser text-teaser--big"> <i id="c1646"></i>
+			<div id="c366" class=" text-teaser--big"> <i id="c1646"></i>
 				<div class="container">
 					<div class="row">
-						<div class="col contentshrink">
+						<div class="col ">
 							<div class="box">
-								<div class="theline"></div>
 								<h1 class="h1 headline">Good to know: our instruction manuals.</h1>
 								<p>Here you will find tailor-made information about your fitted kitchen: from the operating instructions for your household appliances to care tips to the installation instructions.</p>
 								 </div>
@@ -376,36 +432,33 @@
 						 </div>
 					 </div>
 				 </div>
-			<div class="container ge-columns " id="c373">
-				<div class="row row-eh">
-					<div class="col-sm-6">
-						<div id="c486" class=" text-teaser text-teaser--small"> <i id="c1904"></i>
-							<div class="col ">
-								<div class="box">
-									<div class="theicon"><span class="icon-t_services"></span></div>
-									<div class="theline"></div>
-									<h3 class="h2 headline">Catalogues and brochures.</h3>
-									<p>Let us inspire you: Here you can download our catalogues and brochures.</p>
-									<p class="link-bottom"> <a href="../catalogues-and-brochures/index.html" title="Right this way" class="textlink">Right this way</a> </p>
-									 </div>
-								 </div>
-							 </div>
-						 </div>
-					<div class="col-sm-6">
-						<div id="c274" class=" text-teaser text-teaser--small"> <i id="c1916"></i>
-							<div class="col ">
-								<div class="box">
-									<div class="theicon"><span class="icon-t_services"></span></div>
-									<div class="theline"></div>
-									<h3 class="h2 headline"> kitchen planning.</h3>
-									<p>Discover the world of German kitchen Studio.</p>
-									<p class="link-bottom"> <a href="../planning-tools/index.html" title="Start a plan now" class="textlink">Start a plan now</a> </p>
-									 </div>
-								 </div>
-							 </div>
-						 </div>
-					 </div>
-				 </div>
+			
+			
+			
+				 <div class="container ge-columns " id="c296">
+			<div class="row row-eh">
+				<div class="card-style">
+					<div class="theicon"><span class="icon-t_produkte"></span></div>
+					<h3 class="h2 headline">Catalogues and brochures.</h3>
+					<p>Let us inspire you: Here you can download our catalogues and brochures.</p>
+
+					<a href="../catalogues-and-brochures/index.html" class="btn btn-primary btn-custom">Right this way</a>
+				</div>
+
+				<div class="card-style">
+					<div class="theicon"><span class="icon-t_services"></span></div>
+					<h3 class="h2 headline">kitchen planning.</h3>
+					<p>Discover the world of German kitchen Studio.</p>
+					<a href="../planning-tools/index.html" class="btn btn-primary btn-custom">View
+						catalogues and brochures</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
 
 			 </div>
 			<div class="footer-wrapper clearfix hidden-print footer-new">

@@ -25,7 +25,7 @@
 	<meta name="apple-mobile-web-app-capable" content="no">
 	<meta name="google" content="notranslate">
 	<meta name="compatible" content="IE=edge">
-<meta name="facebook-domain-verification" content="dibyeki5n4j3h6oyf6dbks05h73q2t">
+	<meta name="facebook-domain-verification" content="dibyeki5n4j3h6oyf6dbks05h73q2t">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
@@ -164,6 +164,22 @@
 		.card-container:hover {
 			transform: scale(1.05);
 		}
+
+		/* Make the entire card clickable */
+		.card-link {
+			// display: block;
+			// text-decoration: none;
+			// color: inherit;
+		}
+
+
+
+
+		/* Add hover effect */
+		.card-link:hover .card-container {
+			transform: translateY(-5px);
+		}
+
 
 		.card-image {
 			width: 100%;
@@ -419,8 +435,8 @@
 													<li><a href="./products/interior-fittings/lighting/index.html"
 															title="Lighting systems"><span>Lighting</span></a></li>
 													<li><a href="./products/interior-fittings/recess-design/index.html"
-														title="All about recess design"><span>Recess
-															design</span></a></li>
+															title="All about recess design"><span>Recess
+																design</span></a></li>
 												</ul>
 											</li>
 											<li><a href="./products/electric-appliances/index.html"
@@ -435,7 +451,7 @@
 										</ul>
 									</li>
 
-								<li>
+									<li>
 										<a title="services">
 											<span>Services</span>
 										</a>
@@ -453,11 +469,11 @@
 
 
 
-									<li><a href="./inspiration/index.html" title="Career"><span>About</span></a></li>
+									<li><a href="./inspiration/index.html" ><span>About</span></a></li>
 
 
-									<li><a href="./services/contact/index.html" target="_blank"
-											title="Shop"><span>Contact</span></a></li>
+									<li><a href="./services/contact/index.html" 
+											><span>Contact</span></a></li>
 								</ul>
 							</nav>
 
@@ -476,7 +492,7 @@
 	</div>
 	<div class="totop"> <a href="#top" class="toplink hidden-print" title="To top"><span aria-hidden="true"
 				class="icon-pfeil_links icon-up"></span></a> </div>
-	<!-- 	<script>
+		<script>
 		var lastScrollTop = 0;
 		var headerIsHidden = false;
 		var $nw = $('.navbar-wrapper');
@@ -499,7 +515,7 @@
 			requestAnimationFrame(updateHeaderVisibility);
 		}
 		updateHeaderVisibility();
-	</script> -->
+	</script> 
 	<div class="site-overlay"></div>
 	<div class="site-content">
 		<!--TYPO3SEARCH_begin-->
@@ -583,7 +599,7 @@
 					</div>
 				</div>
 
-				
+
 				<!-- <div class="hotspot-dragger">
 					<div class="dragger"></div>
 				</div> -->
@@ -900,7 +916,7 @@
 					gap: 20px;
 					padding: 30px;
 					justify-content: center;
-					background-color: #C2C5CD;
+					background-color: #ded4cb;
 					height: 60vh;
 
 				}
@@ -931,7 +947,7 @@
 
 
 
-		
+
 
 
 		<!--	<div class="container ge-columns marg-b0" id="c57604">
@@ -992,102 +1008,99 @@
 							</picture>
 						</div>
 					</div> -->
+
+
+
+
 			<div class="card-container">
 				<!-- Image -->
+				<a href="products/kitchens/index.html" class="card-link">
 
 
-				<picture>
-					<!--[if IE 9]><audio><![endif]-->
-					<source media="(max-width: 767px)"
-						srcset="/fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg 1x, /fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg 2x">
-					<!--[if IE 9]></audio><![endif]-->
-					<img loading="lazy" class="card-image" id="i61335"
-						src="../fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg" width="638"
-						height="599"
-						alt="Woman enjoys her morning tea while browsing on a tablet in a modern, bright kitchen with stylish wooden accents and green plants.">
-				</picture>
+					<picture>
+						<!--[if IE 9]><audio><![endif]-->
+						<source media="(max-width: 767px)"
+							srcset="/fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg 1x, /fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg 2x">
+						<!--[if IE 9]></audio><![endif]-->
+						<img loading="lazy" class="card-image" id="i61335"
+							src="../fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg" width="638"
+							height="599"
+							alt="Woman enjoys her morning tea while browsing on a tablet in a modern, bright kitchen with stylish wooden accents and green plants.">
+					</picture>
 
-				<!-- Overlay -->
-				<div class="overlay">
-					<h3>Kitchens made for me</h3>
-					<p>Creative ideas, inspiring planning and design options and innovative solutions can make
-						any kitchen so much more than just a kitchen.</p>
-					<a href="products/kitchens/index.html">To the kitchen gallery</a>
-				</div>
+					<!-- Overlay -->
+					<div class="overlay">
+						<h3>Experience Your Dream Kitchen</h3>
+						<p>From contemporary to classic, discover kitchen designs that blend style and functionality to suit your lifestyle.</p>
+						<span class="btn-link">Explore our kitchens</span>
+					</div>
 
-				<!-- Title -->
-				<div class="card-title">
-					<a href="products/kitchens/index.html" style="color: white; text-decoration: none;">My
-						kitchen. My home.</a>
-				</div>
+					<!-- Title -->
+					<div class="card-title">
+						Designed for cooking, built for life.
+					</div>
+				</a>
 			</div>
 
 
 			<div class="card-container">
 				<!-- Image -->
+				<a href="products/bathroom-designs/index.html" class="card-link">
 
 
-				<picture>
-					<!--[if IE 9]><audio><![endif]-->
-					<source media="(max-width: 767px)"
-						srcset=" /fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg 1x, /fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg 2x">
-					<!--[if IE 9]></audio><![endif]-->
-					<img loading="lazy" class="card-image" id="i61334"
-						src="../fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg" width="638"
-						height="599"
-						alt="Minimalist bathroom design featuring a spacious vanity with round mirror, accentuated by sleek wooden beams and a cozy family moment on the floor.">
-				</picture>
+					<picture>
+						<!--[if IE 9]><audio><![endif]-->
+						<source media="(max-width: 767px)"
+							srcset=" /fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg 1x, /fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg 2x">
+						<!--[if IE 9]></audio><![endif]-->
+						<img loading="lazy" class="card-image" id="i61334"
+							src="../fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg" width="638"
+							height="599"
+							alt="Minimalist bathroom design featuring a spacious vanity with round mirror, accentuated by sleek wooden beams and a cozy family moment on the floor.">
+					</picture>
 
-				<!-- Overlay -->
-				<div class="overlay">
-					<h3>My bathroom. My home.</h3>
-					<p>These versatile options will make any bathroom
-						more beautiful and more unique. Our new bathroom designs for combine
-						aesthetics and convenience to create personal moments of relaxation.</p>
-					<a href="products/bathroom-designs/index.html">To our bathroom
-						designs</a>
-				</div>
+					<!-- Overlay -->
+					<div class="overlay">
+						<h3>Relax in Style</h3>
+						<p>ur bathroom designs combine luxury and comfort, creating a serene retreat within your home.</p>
+						<span class="btn-link">Discover bathroom designs</span>
+					</div>
 
-				<!-- Title -->
-				<div class="card-title">
-					<a href="products/bathroom-designs/index.html" style="color: white; text-decoration: none;">
-						My bathroom. My home.</a>
-				</div>
+					<!-- Title -->
+					<div class="card-title">
+						Your sanctuary, your style.
+					</div>
+				</a>
 			</div>
 
 
 			<div class="card-container">
-				<!-- Image -->
+				<a href="products/living/holistic-living-space-design/index.html" class="card-link">
+					<!-- Image -->
+					<picture>
+						<source media="(max-width: 767px)"
+							srcset="/fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 1x, 
+                        /fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 2x">
+						<img loading="lazy" class="card-image" id="i61333"
+							src="../fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png"
+							width="638" height="599"
+							alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones.">
+					</picture>
 
+					<!-- Overlay -->
+					<div class="overlay">
+						<h3>Transform Your Living Space</h3>
+						<p>Elegant designs and smart solutions to make your home a perfect blend of comfort and sophistication..</p>
+						<span class="btn-link">Explore living solutions</span>
+					</div>
 
-				<picture>
-					<!--[if IE 9]><audio><![endif]-->
-					<source media="(max-width: 767px)"
-						srcset=" /fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 1x, /fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 2x">
-					<!--[if IE 9]></audio><![endif]-->
-					<img loading="lazy" class="card-image" id="i61333"
-						src="../fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png"
-						width="638" height="599"
-						alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones.">
-				</picture>
-
-				<!-- Overlay -->
-				<div class="overlay">
-					<h3>Living ideas made for me</h3>
-					<p>Inspiration for the living home! Our 2024 Living
-						range surprises with exciting new highlights and individual solutions for
-						personal living.</p>
-					<a href="products/living/holistic-living-space-design/index.html">Holistic living
-						space design</a>
-				</div>
-
-				<!-- Title -->
-				<div class="card-title">
-					<a href="products/living/holistic-living-space-design/index.html"
-						style="color: white; text-decoration: none;">
-						My Living. My home.</a>
-				</div>
+					<!-- Title -->
+					<div class="card-title">
+						Live beautifully, every day.
+					</div>
+				</a>
 			</div>
+
 
 			<!-- 	<div class="col-sm-4">
 						<div class="holder image-teaser str_teaser" id="c57640">
@@ -1175,25 +1188,25 @@
 
 			<div class="steps-container" style="margin-top: 20px;">
 				<div class="step-box" style="justify-content: center; align-items: center; padding-top:20px">
-					
+
 					<h3 style="padding-top:20px">European Modern Cabinet</h3>
-					
+
 				</div>
 				<div class="step-box" style="justify-content: center; align-items: center; ">
-					
+
 					<h3 style="padding-top:20px">Made To Order</h3>
-				
+
 				</div>
 				<div class="step-box" style="justify-content: center; align-items: center; ">
-					
+
 					<h3 style="padding-top:20px">Made In Germany</h3>
-				
+
 				</div>
 			</div>
 
 
 
-		
+
 
 		</section>
 
@@ -1269,7 +1282,7 @@
 		.steps-section {
 			text-align: center;
 			padding: 50px 20px;
-			background: #C2C5CD;
+			background: #ded4cb;
 			height: 400px;
 			display: flex;
 			flex-direction: column;
@@ -1398,10 +1411,10 @@
 
 
 
-		<div class="footer-wrapper clearfix hidden-print footer-new">
+	<div class="footer-wrapper clearfix hidden-print footer-new">
 		<!-- Elfsight All-in-One Chat | Untitled All-in-One Chat -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-f74cf7bd-487f-4490-b0a5-8489111c6d25" data-elfsight-app-lazy></div>
+		<script src="https://static.elfsight.com/platform/platform.js" async></script>
+		<div class="elfsight-app-f74cf7bd-487f-4490-b0a5-8489111c6d25" data-elfsight-app-lazy></div>
 
 		<footer>
 			<div class="container">

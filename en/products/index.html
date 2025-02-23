@@ -25,6 +25,7 @@
 	<meta name="google" content="notranslate">
 	<meta name="compatible" content="IE=edge">
 <meta name="facebook-domain-verification" content="dibyeki5n4j3h6oyf6dbks05h73q2t">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 	<link rel="stylesheet"
 		href="../../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css?1736247112" media="all">
@@ -78,64 +79,66 @@
 
 <style>
 	.slider-container {
-		position: relative;
-		width: 100%;
-		height: 70vh;
-		overflow: hidden;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	}
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Increased from 70vh to 90vh */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-	.slider {
-		display: flex;
-		transition: transform 0.5s ease-in-out;
-	}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
 
-	.slide {
-		min-width: 100%;
-		overflow: hidden;
-		text-align: center;
-		position: relative;
-	}
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
 
-	.slide img {
-		width: 100%;
-		height: 70vh;
-		object-fit: cover;
-	}
+.slide img {
+    width: 100%;
+    height: 90vh; /* Increased from 70vh to 90vh */
+    object-fit: cover;
+}
 
-	.nw-imge {
-		width: 100%;
-		height: 70vh;
-		object-fit: cover;
-	}
+.nw-imge {
+    width: 100%;
+    height: 90vh; /* Increased from 70vh to 90vh */
+    object-fit: cover;
+}
 
-	.slider-nav {
-		position: absolute;
-		top: 50%;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		transform: translateY(-50%);
-	}
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
 
-	.slider-nav button {
-		background-color: rgba(0, 0, 0, 0.5);
-		border: none;
-		color: white;
-		font-size: 18px;
-		padding: 10px;
-		width: 50px;
-		height: 50px;
-		margin-left: 10px;
-		margin-right: 10px;
-		cursor: pointer;
-		transition: 0.3s;
-		border-radius: 50%;
-	}
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+}
 
-	.slider-nav button:hover {
-		background-color: rgba(0, 0, 0, 0.8);
-	}
+.slider-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 	.hotspot {
 		display: block;
@@ -317,7 +320,171 @@
 			border-radius: 50%;
 		}
 
-	}
+
+
+
+		.text-teaser--big {
+    text-align: center; /* Centers the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures full height */
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.subheadline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+
+}
+
+
+
+
+}
+
+
+.row-now {
+    gap: 1px; /* Adds spacing between columns */
+}
+
+
+/* Full-width container fix */
+.container-fluid {
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Row styling for spacing between items */
+.row {
+    gap: 30px; /* Adds spacing between columns */
+}
+
+/* Kitchen card styles */
+.kitchen-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect: Lift card and enhance shadow */
+.kitchen-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Kitchen card image */
+.kitchen-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Overlay effect */
+.kitchen-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Default overlay */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Make overlay darker on hover */
+.kitchen-card:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Kitchen card body (text section) */
+.kitchen-card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Show text on hover */
+.kitchen-card:hover .kitchen-card-body {
+    opacity: 1;
+}
+
+/* Kitchen title */
+.kitchen-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+	color: #fff;
+}
+
+/* Kitchen description */
+.kitchen-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+	color: #fff;
+
+}
+
+/* Button styles */
+.kitchen-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.kitchen-btn:hover {
+    background-color: #333;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 1 1 100%;
+    }
+
+    .kitchen-card-body {
+        padding: 15px;
+    }
+
+    .kitchen-title {
+        font-size: 1.2rem;
+    }
+
+    .kitchen-text {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 </style>
 
 <body class="p-9 nobilia workspace- newcss">
@@ -465,11 +632,11 @@
 
 
 
-									<li><a href="../inspiration/index.html" title="Career"><span>About</span></a></li>
+									<li><a href="../inspiration/index.html" ><span>About</span></a></li>
 
 
-									<li><a href="https://shop.nobilia.de/" target="_blank"
-											title="Shop"><span>Contact</span></a></li>
+									<li><a href="../services/contact/index.html" 
+											><span>Contact</span></a></li>
 								</ul>
 							</nav>
 
@@ -488,7 +655,7 @@
 	</div>
 	<div class="totop"> <a href="#top" class="toplink hidden-print" title="To top"><span aria-hidden="true"
 				class="icon-pfeil_links icon-up"></span></a> </div>
-	<!-- 	<script>
+	 	<script>
 		var lastScrollTop = 0;
 		var headerIsHidden = false;
 		var $nw = $('.navbar-wrapper');
@@ -511,7 +678,7 @@
 			requestAnimationFrame(updateHeaderVisibility);
 		}
 		updateHeaderVisibility();
-	</script> -->
+	</script> 
 
 
 
@@ -675,8 +842,12 @@
 				</div>
 			</div>
 		</div> -->
+		
+		
+		
+		
 		<div class=" " id="c67033">
-			<div class="container-full ge-columns " id="c67032">
+			<div class="container-full ge-columns " id="c67032" style="margin-top: 40px;">
 				<div class="big-row">
 
 					<!--		<div class="col-sm-4">
@@ -741,340 +912,264 @@
 						 </div>-->
 
 
-					<!-- Kitchen Card -->
-					<div class="card-container">
-						<picture>
-							<img loading="lazy" class="card-image"
-								src="../../fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg"
-								width="638" height="599"
-								alt="A happy family in their kitchen with our SENSO 491 front.">
-						</picture>
-
-						<div class="overlay">
-							<h3>Our kitchen variety</h3>
+						 <div class="card-container">
+				<!-- Image -->
+				<a href="kitchens/index.html" class="card-link">
 
 
-							<p>
-								The kitchen is the heart of the home, where enjoyment, dialogue and memories are
-								created. Our flexible kitchen solutions adapt to your individual needs, with a wide
-								range of design options for a life full of variety.
+					<picture>
+						<!--[if IE 9]><audio><![endif]-->
+						<source media="(max-width: 767px)"
+							srcset="/fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg 1x, /fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg 2x">
+						<!--[if IE 9]></audio><![endif]-->
+						<img loading="lazy" class="card-image" id="i61335"
+							src="../../fileadmin/_processed_/0/3/csm_788_nordic_gallery_e56b4eb071.jpg" width="638"
+							height="599"
+							alt="Woman enjoys her morning tea while browsing on a tablet in a modern, bright kitchen with stylish wooden accents and green plants.">
+					</picture>
 
-							</p>
-							<a href="kitchens/index.html">Find your dream kitchen</a>
-						</div>
-
-						<div class="card-title">
-							<a href="kitchens/index.html" style="color: white; text-decoration: none;">
-								Our kitchen variety
-							</a>
-						</div>
+					<!-- Overlay -->
+					<div class="overlay">
+						<h3>Experience Your Dream Kitchen</h3>
+						<p>From contemporary to classic, discover kitchen designs that blend style and functionality to suit your lifestyle.</p>
+						<span class="btn-link">Explore our kitchens</span>
 					</div>
 
+					<!-- Title -->
+					<div class="card-title">
+						Designed for cooking, built for life.
+					</div>
+				</a>
+			</div>
 
 
+			<div class="card-container">
+				<!-- Image -->
+				<a href="bathroom-designs/index.html" class="card-link">
 
-					<!-- Bathroom Card -->
-					<div class="card-container">
-						<picture>
-							<img loading="lazy" class="card-image"
-								src="../../fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg"
-								width="638" height="599"
-								alt="Our bathroom design in fjord blue with the EASYTOUCH 966 front.">
-						</picture>
 
-						<div class="overlay">
-							<h3>Bathrooms made for me</h3>
-							<p>
-								A soothing bath is the ideal start to an energizing day and a relaxing end.
-								Create your private world with our inspiring bathroom designs.
-							</p>
-							<a href="bathroom-designs/index.html">Find bathroom inspiration</a>
-						</div>
+					<picture>
+						<!--[if IE 9]><audio><![endif]-->
+						<source media="(max-width: 767px)"
+							srcset=" /fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg 1x, /fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg 2x">
+						<!--[if IE 9]></audio><![endif]-->
+						<img loading="lazy" class="card-image" id="i61334"
+							src="../../fileadmin/_processed_/6/d/csm_788_nordic_gallery_8c44413906.jpg" width="638"
+							height="599"
+							alt="Minimalist bathroom design featuring a spacious vanity with round mirror, accentuated by sleek wooden beams and a cozy family moment on the floor.">
+					</picture>
 
-						<div class="card-title">
-							<a href="bathroom-designs/index.html" style="color: white; text-decoration: none;">
-								Bathrooms made for me
-							</a>
-						</div>
+					<!-- Overlay -->
+					<div class="overlay">
+						<h3>Relax in Style</h3>
+						<p>ur bathroom designs combine luxury and comfort, creating a serene retreat within your home.</p>
+						<span class="btn-link">Discover bathroom designs</span>
 					</div>
 
-					<!-- Living Room Card -->
-					<div class="card-container">
-						<picture>
-							<img loading="lazy" class="card-image"
-								src="../../fileadmin/_processed_/7/7/csm_640x600_Novalux_512_D.tif_ea3fcac7cd.jpg"
-								width="638" height="599" alt="See our white Fashion fronts in the living room.">
-						</picture>
+					<!-- Title -->
+					<div class="card-title">
+						Your sanctuary, your style.
+					</div>
+				</a>
+			</div>
 
-						<div class="overlay">
-							<h3>Space for life</h3>
-							<p>
-								Design your space with furniture and systems that perfectly match your vibrant home.
-								Discover flexible living concepts and inspiring details.
-							</p>
-							<a href="living/holistic-living-space-design/index.html">Fancy a change?</a>
-						</div>
 
-						<div class="card-title">
-							<a href="living/holistic-living-space-design/index.html"
-								style="color: white; text-decoration: none;">
-								Space for life
-							</a>
-						</div>
+			<div class="card-container">
+				<a href="living/holistic-living-space-design/index.html" class="card-link">
+					<!-- Image -->
+					<picture>
+						<source media="(max-width: 767px)"
+							srcset="/fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 1x, 
+                        /fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 2x">
+						<img loading="lazy" class="card-image" id="i61333"
+							src="../../fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png"
+							width="638" height="599"
+							alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones.">
+					</picture>
+
+					<!-- Overlay -->
+					<div class="overlay">
+						<h3>Transform Your Living Space</h3>
+						<p>Elegant designs and smart solutions to make your home a perfect blend of comfort and sophistication..</p>
+						<span class="btn-link">Explore living solutions</span>
 					</div>
 
-
-
+					<!-- Title -->
+					<div class="card-title">
+						Live beautifully, every day.
+					</div>
+				</a>
+			</div>
 				</div>
-				<div id="c67074" class=" text-teaser text-teaser--big"> <i id="c67075"></i>
-					<div class="container">
-						<div class="row">
-							<div class="col contentshrink">
-								<div class="box">
-									<div class="theline"></div>
-									<h2 class="h1 headline">All kitchen styles</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container ">
-					<div id="c13765" class="row content-block layout-type-2">
-						<div class="col-md-8 col-sm-6">
-							<div class="holder ">
-								<picture>
-									<!--[if IE 9]><audio><![endif]-->
-									<source media="(max-width: 767px)"
-										srcset=" /fileadmin/assets/produkte/01_moderne_kuechen.jpg 1x, /fileadmin/assets/produkte/01_moderne_kuechen.jpg 2x">
-									<!--[if IE 9]></audio><![endif]-->
-									<img loading="lazy" id="i25630"
-										src="../../fileadmin/assets/produkte/01_moderne_kuechen.jpg" width="901"
-										height="350"
-										alt="Spacious modern kitchen with sleek appliances, wooden countertops, and stylish shelving, accented by natural light and warm, inviting tones.">
-								</picture>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 bg">
-							<div class="box">
-								<div class="theline"></div>
-								<h3 class="h2 headline">Modern kitchens.</h3>
-								<p>Dramatic contrasts or subtle highlights? Our extensive range of colours and fronts
-									invite
-									custom combinations. With our colour-coordinated material concepts, you are sure to
-									find
-									just the right kitchen.</p>
-								<p><a href="kitchens/modern-kitchens/index.html" class="ghost-button">TO MODERN
-										KITCHENS</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container ">
-					<div id="c13779" class="row content-block layout-type-2">
-						<div class="col-md-8 col-sm-6">
-							<div class="holder ">
-								<picture>
-									<!--[if IE 9]><audio><![endif]-->
-									<source media="(max-width: 767px)"
-										srcset=" /fileadmin/_processed_/8/a/csm_02_designkuechen_f47ef3ead1.jpg 1x, /fileadmin/_processed_/8/a/csm_02_designkuechen_a3496efcf5.jpg 2x">
-									<!--[if IE 9]></audio><![endif]-->
-									<img loading="lazy" id="i25638"
-										src="../../fileadmin/assets/produkte/02_designkuechen.jpg" width="901"
-										height="350"
-										alt="A modern kitchen with elegant blue cabinetry and gold fixtures, where two individuals enjoy a warm conversation over drinks in a stylish, homely space.">
-								</picture>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 bg">
-							<div class="box">
-								<div class="theline"></div>
-								<h3 class="h2 headline">Designer kitchens.</h3>
-								<p>Clean lines, exquisite materials and clearly structured architecture – this is what
-									distinguishes our designer kitchens. The smooth, uncomplicated finishes make quite
-									the
-									impression, even in open-concept kitchens – for a straightforward lifestyle with a
-									modern flair.</p>
-								<p><a href="kitchens/designer-kitchens/index.html" class="ghost-button">TO THE DESIGNER
-										KITCHENS</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container ">
-					<div id="c13780" class="row content-block layout-type-2">
-						<div class="col-md-8 col-sm-6">
-							<div class="holder ">
-								<picture>
-									<!--[if IE 9]><audio><![endif]-->
-									<source media="(max-width: 767px)"
-										srcset=" /fileadmin/_processed_/0/3/csm_03_natural_living_zeitlose_kuechen_a9ef3d15e9.jpg 1x, /fileadmin/_processed_/0/3/csm_03_natural_living_zeitlose_kuechen_c60965dbf1.jpg 2x">
-									<!--[if IE 9]></audio><![endif]-->
-									<img loading="lazy" id="i20237"
-										src="../../fileadmin/assets/produkte/03_natural_living_zeitlose_kuechen.jpg"
-										width="901" height="350"
-										alt="Contemporary kitchen with wooden cabinets, black countertops, and a central island, highlighting a stylish, functional design.">
-								</picture>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 bg">
-							<div class="box">
-								<div class="theline"></div>
-								<h3 class="h2 headline">Natural living.</h3>
-								<p>The modern wood décors with elegant textures and warm nuances of the natural living
-									kitchens create an inviting atmosphere.</p>
-								<p><a href="kitchens/natural-scandi/index.html" class="ghost-button">TO NATURAL LIVING
-										KITCHENS</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container ">
-					<div id="c13783" class="row content-block layout-type-2">
-						<div class="col-md-8 col-sm-6">
-							<div class="holder ">
-								<picture>
-									<!--[if IE 9]><audio><![endif]-->
-									<source media="(max-width: 767px)"
-										srcset=" /fileadmin/_processed_/a/8/csm_05_landhaus_kuechen_120af3ee5a.jpg 1x, /fileadmin/_processed_/a/8/csm_05_landhaus_kuechen_61c09f32ab.jpg 2x">
-									<!--[if IE 9]></audio><![endif]-->
-									<img loading="lazy" id="i25622"
-										src="../../fileadmin/assets/produkte/05_landhaus_kuechen.jpg" width="901"
-										height="350"
-										alt="Spacious modern kitchen with gray cabinetry, wooden countertops, stainless steel appliances, and a stylish stone accent wall, complemented by natural light and greenery.">
-								</picture>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 bg">
-							<div class="box">
-								<div class="theline"></div>
-								<h3 class="h2 headline">Cottage style kitchens.</h3>
-								<p>The trend toward a new naturalness is popular with young and old alike. Clear shapes,
-									soft lines and natural décors and colours are characteristic of the modern cottage
-									style. An abundance of alluring details lend this kitchen an authentic appearance
-									with a
-									feel-good factor. Thanks to innovative kitchen technology, this results in a
-									successful
-									union of traditional and modern style.</p>
-								<p><a href="kitchens/modern-cottage-style/index.html" class="ghost-button">TO COTTAGE
-										STYLE
-										KITCHENS</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container ">
-					<div id="c13782" class="row content-block layout-type-2">
-						<div class="col-md-8 col-sm-6">
-							<div class="holder ">
-								<picture>
-									<!--[if IE 9]><audio><![endif]-->
-									<source media="(max-width: 767px)"
-										srcset=" /fileadmin/_processed_/5/e/csm_30826_24_Senso_495_P_grifflose_kuechen_0045126d14.jpg 1x, /fileadmin/_processed_/5/e/csm_30826_24_Senso_495_P_grifflose_kuechen_9c8cd0d452.jpg 2x">
-									<!--[if IE 9]></audio><![endif]-->
-									<img loading="lazy" id="i19612"
-										src="../../fileadmin/assets/produkte/30826_24_Senso_495_P_grifflose_kuechen.jpg"
-										width="901" height="350"
-										alt="Modern kitchen design with clean white cabinets, a central island, and a person cooking in a light, airy space with a city view through large windows.">
-								</picture>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 bg">
-							<div class="box">
-								<div class="theline"></div>
-								<h3 class="h2 headline">LINE N - the handleless kitchen</h3>
-								<p>Admirers of puristic design are well-served with our LINE N handleless kitchens.
-									Here,
-									the integrated recessed handles take the lead as the horizontal stylistic element
-									that
-									sets the tone for the new kitchen.</p>
-								<p><a href="kitchens/handleless-line-n/index.html" class="ghost-button">TO HANDLELESS
-										KITCHENS</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container ge-columns " id="c67266">
-					<div class="row row-eh">
-						<div class="col-sm-4">
-							<div class="multiteaser str_multiteaser" id="c67265">
-								<div class="holder box">
-									<h3 class="h3 headline">Design elements</h3>
-									<div class="media">
-										<picture>
-											<!--[if IE 9]><audio><![endif]-->
-											<source media="(max-width: 767px)"
-												srcset=" /fileadmin/_processed_/b/c/csm_teaser_gestaltungselemente_438_301_f1bbf93b9f.jpg 1x, /fileadmin/assets/produkte/_teaser/teaser_gestaltungselemente_438_301.jpg 2x">
-											<!--[if IE 9]></audio><![endif]-->
-											<img loading="lazy" class=" i-opt-col4 " id="i69664"
-												src="../../fileadmin/assets/produkte/_teaser/teaser_gestaltungselemente_438_301.jpg"
-												width="438" height="301"
-												alt="[Translate to en:] Unsere neue Novalux 519 Front in Seidengrau Hochglanz.">
-										</picture>
-									</div>
-									<p>What characterises your kitchen, bathroom and living room? Our extensive
-										selection of
-										fronts, handles, carcase colours, worktops and niche panelling allows you to
-										customise your furniture.</p>
-									<p><a href="design-elements/index.html" class="textlink">Select your style</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="multiteaser str_multiteaser" id="c67264">
-								<div class="holder box">
-									<h3 class="h3 headline">Interior fittings</h3>
-									<div class="media">
-										<picture>
-											<!--[if IE 9]><audio><![endif]-->
-											<source media="(max-width: 767px)"
-												srcset=" /fileadmin/_processed_/3/5/csm_teaser_innenaustattungen_438_301_c5ef9cd93c.jpg 1x, /fileadmin/assets/produkte/_teaser/teaser_innenaustattungen_438_301.jpg 2x">
-											<!--[if IE 9]></audio><![endif]-->
-											<img loading="lazy" class=" i-opt-col4 " id="i69663"
-												src="../../fileadmin/assets/produkte/_teaser/teaser_innenaustattungen_438_301.jpg"
-												width="438" height="301"
-												alt="[Translate to en:] ie werden begeistert sein, wie viel mehr Platz Sie in einer nobilia Küche haben.">
-										</picture>
-									</div>
-									<p>Discover clever storage space solutions that fulfil every space requirement, as
-										well
-										as lighting systems for radiant accents and much more in our interior fittings
-										section.</p>
-									<p><a href="interior-fittings/index.html" class="textlink">Explore interior
-											fittings</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="multiteaser str_multiteaser" id="c67263">
-								<div class="holder box">
-									<h3 class="h3 headline">Electric appliances</h3>
-									<div class="media">
-										<picture>
-											<!--[if IE 9]><audio><![endif]-->
-											<source media="(max-width: 767px)"
-												srcset=" /fileadmin/_processed_/c/7/csm_teaser_egerate7_438_301_0eedb9342f.jpg 1x, /fileadmin/assets/produkte/_teaser/teaser_egerate7_438_301.jpg 2x">
-											<!--[if IE 9]></audio><![endif]-->
-											<img loading="lazy" class=" i-opt-col4 " id="i69662"
-												src="../../fileadmin/assets/produkte/_teaser/teaser_egerate7_438_301.jpg"
-												width="438" height="301"
-												alt="[Translate to en:] Ein Bild mit einer Übersicht über unsere wichtigen Elektrogeräte für Ihre Küche.">
-										</picture>
-									</div>
-									<p>Whether you are looking for high-quality appliances from renowned manufacturers
-										or
-										budget-friendly options - nobilia complements your dream kitchen with suitable
-										built-in appliances for every need and in various price ranges.</p>
-									<p><a href="electric-appliances/index.html" class="textlink">Discover electric
-											appliances</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
+
+
+
+
+
+				
+				<div id="c67074" class="text-teaser--big text-center" style="margin-bottom: 40px;"> 
+    <i id="c67075"></i>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col contentshrink">
+
+				<h2 class="headline">Discover Your Dream Kitchen</h2>
+                <h5 class="subheadline">Stylish, functional, and designed just for you.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid ">
+        <div class="row g-4 justify-content-center">
+            <!-- Modern Kitchen Card -->
+           
+			
+			
+			
+			
+			<div class="col-md-6 col-lg-4">
+				<a href="kitchens/modern-kitchens/index.html">
+
+                <div class="kitchen-card">
+                    <img src="../../fileadmin/assets/produkte/01_moderne_kuechen.jpg" class="kitchen-card-img" alt="Modern Kitchen">
+                    <div class="kitchen-card-body">
+                        <h5 class="kitchen-title">Modern Kitchens</h5>
+                        <p class="kitchen-text">Dramatic contrasts or subtle highlights? Our extensive range of colours and fronts invite custom combinations.</p>
+                        <a href="kitchens/modern-kitchens/index.html" class="btn kitchen-btn">View More</a>
+                    </div>
+                </div>
+			</a>
+            </div>
+
+            <!-- Designer Kitchen Card -->
+            <div class="col-md-6 col-lg-4">
+				<a href="kitchens/designer-kitchens/index.html">
+                <div class="kitchen-card">
+                    <img src="../../fileadmin/assets/produkte/02_designkuechen.jpg" class="kitchen-card-img" alt="Designer Kitchen">
+                    <div class="kitchen-card-body">
+                        <h5 class="kitchen-title">Designer Kitchens</h5>
+                        <p class="kitchen-text">Clean lines, exquisite materials, and structured architecture make our designer kitchens stand out.</p>
+                        <a href="kitchens/designer-kitchens/index.html" class="btn kitchen-btn">View More</a>
+                    </div>
+                </div>
+			</a>
+            </div>
+
+            <!-- Natural Living Kitchen Card -->
+            <div class="col-md-6 col-lg-4">
+				<a href="kitchens/natural-scandi/index.html">
+                <div class="kitchen-card">
+                    <img src="../../fileadmin/assets/produkte/03_natural_living_zeitlose_kuechen.jpg" class="kitchen-card-img" alt="Natural Living Kitchen">
+                    <div class="kitchen-card-body">
+                        <h5 class="kitchen-title">Natural Living</h5>
+                        <p class="kitchen-text">Modern wood décors with elegant textures create an inviting atmosphere in natural living kitchens.</p>
+                        <a href="kitchens/natural-scandi/index.html" class="btn kitchen-btn">View More</a>
+                    </div>
+                </div>
+			</a>
+            </div>
+
+            <!-- Cottage Style Kitchen Card -->
+            <div class="col-md-6 col-lg-4">
+				<a href="kitchens/modern-cottage-style/index.html">
+                <div class="kitchen-card">
+                    <img src="../../fileadmin/assets/produkte/05_landhaus_kuechen.jpg" class="kitchen-card-img" alt="Cottage Style Kitchen">
+                    <div class="kitchen-card-body">
+                        <h5 class="kitchen-title">Cottage Style Kitchens</h5>
+                        <p class="kitchen-text">Soft lines, natural décors, and charming details give cottage style kitchens an inviting feel.</p>
+                        <a href="kitchens/modern-cottage-style/index.html" class="btn kitchen-btn">View More</a>
+                    </div>
+                </div>
+			</a>
+            </div>
+
+            <!-- Handleless Kitchen Card -->
+            <div class="col-md-6 col-lg-4" >
+				<a href="kitchens/modern-cottage-style/index.html">
+                <div class="kitchen-card" >
+                    <img src="../../fileadmin/assets/produkte/30826_24_Senso_495_P_grifflose_kuechen.jpg" class="kitchen-card-img" alt="Handleless Kitchen">
+                    <div class="kitchen-card-body" >
+                        <h5 class="kitchen-title">Handleless Kitchens</h5>
+                        <p class="kitchen-text">Puristic design with integrated recessed handles creates a seamless kitchen experience.</p>
+                        <a href="kitchens/handleless-line-n/index.html" class="btn kitchen-btn">View More</a>
+                    </div>
+                </div>
+				</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+				
+	<div class="container" id="c67266" style="margin-top: 50px;">
+    <!-- First Item -->
+    <div class="row align-items-center" style="margin-top: 20;">
+        <div class="col-md-6">
+            <h3 class="h3 headline">Design elements</h3>
+            <p>What characterises your kitchen, bathroom and living room? Our extensive selection of
+                fronts, handles, carcase colours, worktops and niche panelling allows you to
+                customise your furniture.</p>
+            <p><a href="design-elements/index.html" class="textlink">Select your style</a></p>
+        </div>
+        <div class="col-md-6">
+            <img loading="lazy" class="i-opt-col4" id="i69664"
+                src="../../fileadmin/assets/produkte/_teaser/teaser_gestaltungselemente_438_301.jpg"
+                width="438" height="301" alt="Design elements image">
+        </div>
+    </div>
+    
+    <!-- Second Item -->
+    <div class="row align-items-center flex-row-reverse" style="margin-top: 20;">
+		<div class="col-md-6">
+            <img loading="lazy" class="i-opt-col4" id="i69663"
+                src="../../fileadmin/assets/produkte/_teaser/teaser_innenaustattungen_438_301.jpg"
+                width="438" height="301" alt="Interior fittings image">
+        </div>
+        <div class="col-md-6">
+            <h3 class="h3 headline">Interior fittings</h3>
+            <p>Discover clever storage space solutions that fulfil every space requirement, as well
+                as lighting systems for radiant accents and much more in our interior fittings
+                section.</p>
+            <p><a href="interior-fittings/index.html" class="textlink">Explore interior fittings</a></p>
+        </div>
+      
+    </div>
+    
+    <!-- Third Item -->
+    <div class="row align-items-center" style="margin-top: 20;">
+        <div class="col-md-6">
+            <h3 class="h3 headline">Electric appliances</h3>
+            <p>Whether you are looking for high-quality appliances from renowned manufacturers or
+                budget-friendly options - nobilia complements your dream kitchen with suitable
+                built-in appliances for every need and in various price ranges.</p>
+            <p><a href="electric-appliances/index.html" class="textlink">Discover electric appliances</a></p>
+        </div>
+        <div class="col-md-6">
+            <img loading="lazy" class="i-opt-col4" id="i69662"
+                src="../../fileadmin/assets/produkte/_teaser/teaser_egerate7_438_301.jpg"
+                width="438" height="301" alt="Electric appliances image">
+        </div>
+    </div>
+</div>
+
 
 			</div>
+
+
+
+
+
 				<div class="footer-wrapper clearfix hidden-print footer-new">
 		<!-- Elfsight All-in-One Chat | Untitled All-in-One Chat -->
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
@@ -1139,26 +1234,25 @@
 								</div>
 
 								<div class="col-md-20">
-									<h4 class="xsubline">Info</h4>
-									<ul style="list-style: none; padding: 0; margin: 0;">
-										<li style="display: inline-flex; align-items: center; margin-right: 20px;">
-											<i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
-											<a href="tel:+12018144128" title="Call Us"
-												style="text-decoration: none; color: inherit;">(201) 814-4128</a>
-										</li>
-										<li style="display: inline-flex; align-items: center; margin-right: 20px;">
-											<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-											<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave.
-												Suite#1,
-												Visalia, CA 93277</span>
-										</li>
-										<li style="display: inline-flex; align-items: center;">
-											<i class="fas fa-envelope" style="margin-right: 10px;"></i>
-											<a href="mailto:germankitchenstudio24@gmail.com" title="Email"
-												style="text-decoration: none; color: inherit;">germankitchenstudio24@gmail.com</a>
-										</li>
-									</ul>
-								</div>
+							<h4 class="xsubline">Info</h4>
+							<ul style="list-style: none; padding: 0; margin: 0;">
+								<li style="display: inline-flex; align-items: center; margin-right: 20px;">
+									<i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+									<a href="tel:+12018144128" title="Call Us"
+										style="text-decoration: none; color: inherit;">(559) 300-9988</a>
+								</li>
+								<li style="display: inline-flex; align-items: center; margin-right: 20px;">
+									<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+									<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave. Suite#1,
+										Visalia, CA 93277</span>
+								</li>
+								<li style="display: inline-flex; align-items: center;">
+									<i class="fas fa-envelope" style="margin-right: 10px;"></i>
+									<a href="mailto:info@gksus.com" title="Email"
+										style="text-decoration: none; color: inherit;">info@gksus.com</a>
+								</li>
+							</ul>
+						</div>
 
 
 

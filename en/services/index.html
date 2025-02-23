@@ -63,7 +63,66 @@
 		<link rel="alternate" hreflang="nl-NL" href="https://www.nobilia.de/nl/diensten/">
 		<link rel="alternate" hreflang="pl-PL" href="https://www.nobilia.de/pl/serwis/">
 		<link rel="alternate" hreflang="ru-RU" href="https://www.nobilia.de/ru/uslugi/">
-		<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/sluzby/"> </head>
+		<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/sluzby/"> 
+		
+		<style>
+			
+			.card-container {
+		   display: flex;
+		   flex-wrap: wrap;
+		   justify-content: center;
+		   gap: 20px;
+		   padding: 40px;
+	   }
+	   .card {
+		   position: relative;
+		   width: 300px;
+		   height:400px;
+		   border-radius: 10px;
+		   overflow: hidden;
+		   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		   transition: transform 0.3s ease-in-out;
+	   }
+	   .card:hover {
+		   transform: scale(1.05);
+	   }
+	   .card img {
+		   width: 100%;
+		   height: 400px;
+		   object-fit: cover;
+	   }
+	   .card-content {
+		   position: absolute;
+		   bottom: 0;
+		   background: rgba(0, 0, 0, 0.7);
+		   color: white;
+		   width: 100%;
+		   padding: 20px;
+		   text-align: center;
+		   transition: 0.3s;
+	   }
+	   .card:hover .card-content {
+		   background: rgba(0, 0, 0, 0.9);
+	   }
+	   .card h3 {
+		   margin: 0 0 10px;
+		   font-size: 18px;
+	   }
+	   .card p {
+		   margin: 0;
+		   font-size: 14px;
+	   }
+	   .card a {
+		   display: inline-block;
+		   margin-top: 10px;
+		   color: #febc5b;
+		   text-decoration: none;
+		   font-weight: bold;
+	   }
+			
+			</style>
+		
+		</head>
 	<body class="p-11 nobilia workspace- newcss">
 		<div id="top"></div>
 		<div class="navbar-wrapper" style="height:auto">
@@ -209,11 +268,11 @@
 
 
 
-									<li><a href="../inspiration/index.html" title="Career"><span>About</span></a></li>
+									<li><a href="../inspiration/index.html" ><span>About</span></a></li>
 
 
-									<li><a href="https://shop.nobilia.de/" target="_blank"
-											title="Shop"><span>Contact</span></a></li>
+									<li><a href="../services/contact/index.html" 
+											><span>Contact</span></a></li>
 								</ul>
 							</nav>
 
@@ -231,7 +290,7 @@
 		</nav>
 	</div>
 		<div class="totop"> <a href="#top" class="toplink hidden-print" title="To top"><span aria-hidden="true" class="icon-pfeil_links icon-up"></span></a> </div>
-	<!--	<script>
+		<script>
       var lastScrollTop = 0;
       var headerIsHidden = false;
       var $nw = $('.navbar-wrapper');
@@ -254,16 +313,15 @@
           requestAnimationFrame(updateHeaderVisibility);
       }
       updateHeaderVisibility();
-      </script>-->
+      </script>
 		<div class="site-overlay"></div>
 		<div class="site-content">
 			<!--TYPO3SEARCH_begin-->
-			<div id="c347" class=" text-teaser text-teaser--big"> <i id="c1632"></i>
+			<div id="c347" class=" text-teaser--big"> <i id="c1632"></i>
 				<div class="container">
 					<div class="row">
-						<div class="col contentshrink">
+						<div class="col ">
 							<div class="box">
-								<div class="theline"></div>
 								<h2 class="h1 headline">The way to your dream kitchen. Made easy.</h2>
 								<div class="h5 subline">We help you with everything from the planning stage all the way to installation.</div>
 								<p>From practical Kitchen planninglike our kitchen configurator or web planner to installation and operating instructions, catalogues and brochures as well as our media library with numerous videos. Here you will find everything you need for lasting enjoyment of your kitchen.</p>
@@ -272,74 +330,38 @@
 						 </div>
 					 </div>
 				 </div>
-			<div class="container no-marg">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="holder image-teaser str_teaser" id="c348">
-							<div class="caption-layer linked "> <a href="planning-tools/index.html" title="Planning a kitchen online." class="h2 linktext">
-									<div class="line"></div>
-									 Planning a kitchen online. <span class="i-plus"></span> </a>
-								<div class="overlay-inside">
-									<div class="box contentshrink">
-										<h3 class="h2">Nothing is more important than a good plan.</h3>
-										<p class="hidden-sm hidden-xs">nobilia provides you with helpful tools that make planning your kitchen easier than ever. Use our checklist, kitchen configurator, or our web planner.</p>
-										<p><a href="planning-tools/index.html" title="To planning tools" class="textlink">To planning tools</a></p>
-										 </div>
-									 </div>
-								 </div>
-							<picture>
-								<!--[if IE 9]><audio><![endif]-->
-								<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/5/9/csm_planung_83af8b6e5a.jpg 1x, /fileadmin/_processed_/5/9/csm_planung_0d66c3ad29.jpg 2x" >
-								<!--[if IE 9]></audio><![endif]-->
-								<img loading="lazy" id="i1410" src="../../fileadmin/assets/services/_teaser/planung.jpg" width="1364" height="500" alt="Planning a kitchen on an iPad"></picture>
-							 </div>
-						 </div>
-					 </div>
-				 </div>
-			<div class="container ge-columns marg-b0" id="c349">
-				<div class="row row-eh">
-					<div class="col-sm-6">
-						<div class="holder image-teaser str_teaser" id="c350">
-							<div class="caption-layer linked "> <a href="instruction-manuals/index.html" title="Instruction manuals" class="h2 linktext">
-									<div class="line"></div>
-									 Instruction manuals <span class="i-plus"></span> </a>
-								<div class="overlay-inside">
-									<div class="box">
-										<h3 class="h2">So that you enjoy your kitchen for a very long time.</h3>
-										<p class="hidden-sm hidden-xs">Installation instructions, care tips and operating instructions for your electric appliances: Here you will find everything you need for lasting enjoyment of your kitchen.</p>
-										<p><a href="instruction-manuals/index.html" title="To the instruction manuals" class="textlink">To the instruction manuals</a></p>
-										 </div>
-									 </div>
-								 </div>
-							<picture>
-								<!--[if IE 9]><audio><![endif]-->
-								<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/e/1/csm_anleitungen_7cf3707814.jpg 1x, /fileadmin/assets/services/_teaser/anleitungen.jpg 2x" >
-								<!--[if IE 9]></audio><![endif]-->
-								<img loading="lazy" class=" i-opt-col6 " id="i1412" src="../../fileadmin/assets/services/_teaser/anleitungen.jpg" width="669" height="428" alt="Caring for kitchens correctly"></picture>
-							 </div>
-						 </div>
-					<div class="col-sm-6">
-						<div class="holder image-teaser str_teaser" id="c351">
-							<div class="caption-layer linked "> <a href="catalogues-and-brochures/index.html" title="Catalogues and brochures" class="h2 linktext">
-									<div class="line"></div>
-									 Catalogues and brochures <span class="i-plus"></span> </a>
-								<div class="overlay-inside">
-									<div class="box">
-										<h3 class="h2">Let us inspire you.</h3>
-										<p class="hidden-sm hidden-xs">from German Kitchen Studio’s kitchen journal to recipes, baking books and cookbooks: here you will always find new ideas that turn everyday kitchen activities into something special.</p>
-										<p><a href="catalogues-and-brochures/index.html" title="To catalogues and brochures" class="textlink">To catalogues and brochures</a></p>
-										 </div>
-									 </div>
-								 </div>
-							<picture>
-								<!--[if IE 9]><audio><![endif]-->
-								<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/c/2/csm_kataloge_und_broschueren_2fb5c5662a.jpg 1x, /fileadmin/assets/services/_teaser/kataloge_und_broschueren.jpg 2x" >
-								<!--[if IE 9]></audio><![endif]-->
-								<img loading="lazy" class=" i-opt-col6 " id="i1411" src="../../fileadmin/assets/services/_teaser/kataloge_und_broschueren.jpg" width="669" height="428" alt="Catalogues and brochures for kitchen planning"></picture>
-							 </div>
-						 </div>
-					 </div>
-				 </div>
+
+
+
+
+				 <div class="card-container">
+    <div class="card">
+        <img src="../../fileadmin/assets/services/_teaser/planung.jpg" alt="Planning a kitchen on an iPad">
+        <div class="card-content">
+            <h3>Planning a kitchen online.</h3>
+            <p>Nothing is more important than a good plan.</p>
+            <a href="planning-tools/index.html">To planning tools</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../../fileadmin/assets/services/_teaser/anleitungen.jpg" alt="Caring for kitchens correctly">
+        <div class="card-content">
+            <h3>Instruction manuals</h3>
+            <p>So that you enjoy your kitchen for a very long time.</p>
+            <a href="instruction-manuals/index.html">To the instruction manuals</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../../fileadmin/assets/services/_teaser/kataloge_und_broschueren.jpg" alt="Catalogues and brochures for kitchen planning">
+        <div class="card-content">
+            <h3>Catalogues and brochures</h3>
+            <p>Let us inspire you.</p>
+            <a href="catalogues-and-brochures/index.html">To catalogues and brochures</a>
+        </div>
+    </div>
+</div>
 		
 			
 

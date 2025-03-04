@@ -84,6 +84,7 @@
 		#myVideo {
 			min-width: 100%;
 			min-height: 100%;
+			// height: 70vh;
 			object-fit: cover;
 			width: 100vw;
 			overflow: hidden;
@@ -166,7 +167,9 @@
 
 		/* Make the entire card clickable */
 		.card-link {
-	
+			// display: block;
+			// text-decoration: none;
+			// color: inherit;
 		}
 
 
@@ -1210,82 +1213,71 @@
 	</div>
 
 	<style>
-.form-home-container {
-    width: 90%;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-    // background: #ffffff;
-    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    // border-radius: 12px;
-}
+		.form-home-container {
+			width: 90%;
+			max-width: 800px;
+			margin: 40px auto;
+			padding-bottom: 100px;
+		}
 
-h2 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 20px;
-}
+		.form-group {
+			margin-bottom: 20px;
+		}
 
-.form-group {
-    margin-bottom: 15px;
-}
+		.form-group label {
+			display: block;
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
 
-.form-group label {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #666;
-}
+		.input-field {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid black;
+			outline: none;
+			font-size: 16px;
+			padding: 5px 0;
+			margin-bottom: 15px;
+			flex-grow: 1
+		}
 
-.input-field {
-    width: 100%;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    font-size: 16px;
-    padding: 10px;
-    background: #f9f9f9;
-    transition: 0.3s ease-in-out;
-}
+		.input-row {
+			display: flex;
+			gap: 15px;
+			align-items: baseline;
+		}
 
-.input-field:focus {
-    border-color: #febc5b;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
-}
+		.input-row .input-field {
+			flex: 1;
+		}
 
-.input-row {
-    display: flex;
-    gap: 15px;
-}
+		.select-field {
+			width: 33%;
+			border: none;
+			border-bottom: 1px solid black;
+			outline: none;
+			font-size: 16px;
+			padding: 5px 0;
+			background: transparent;
+		}
 
-.input-row .input-field {
-    flex: 1;
-}
+		.submit-button {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			border: 2px solid black;
+			border-radius: 30px;
+			background: transparent;
+			cursor: pointer;
+		}
 
-.submit-button {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(to right, #ded4cb, #ded4cb);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.submit-button:hover {
-    background: linear-gradient(to right, #febc5b, #febc5b);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+		.submit-button:hover {
+			background: black;
+			color: white;
+			transition: 0.3s;
+		}
 
 		.steps-section {
 			text-align: center;
@@ -1364,7 +1356,7 @@ h2 {
 
 
 	<div class="form-home-container">
-		<h2 class="h3 headline">Ask for Estimate</h2>
+		<h2 style="text-align: center;font-size: 40px;font-weight: 700;">Ask for Estimate</h2>
 
 		<form style="width: 100%;">
 			<div class="form-group">

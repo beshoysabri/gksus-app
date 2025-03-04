@@ -76,6 +76,36 @@
 	<link rel="alternate" hreflang="pl-PL" href="https://www.nobilia.de/pl/produkty/kuchnie/kuchnie-z-designem/">
 	<link rel="alternate" hreflang="ru-RU" href="https://www.nobilia.de/ru/produkty/kukhni/dizainerskie-kukhni/">
 	<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/vyrobky/kuchyne/designove-kuchyne/">
+
+	<style>
+		.filter-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	
+	.filter-holder .col-12 {
+		margin-bottom: 15px;
+	}
+	
+	.filter-holder label {
+		font-weight: bold;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+
+	/* Style for the filter head */
+.filter-head {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+</style>
 </head>
 
 <body class="p-79 nobilia workspace- newcss">
@@ -325,11 +355,12 @@
 				</div>
 			</div>
 		</div>
-		<div id="c566" class="marg-b0 text-teaser text-teaser--big full-type0"> <i id="c3551"></i>
-			<div class="container">
-				<div class="row">
-					<div class="col contentshrink">
-						<div class="box">
+
+
+		<div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box">
 							<div class="theline"></div>
 							<h2 class="h1 headline">Spectacular, unique, design-oriented.</h2>
 							<div class="h5 subline">Designer kitchens have an attitude.</div>
@@ -340,46 +371,20 @@
 							</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<style>
-			#filterForm .selectric {
-				background-color: #fff !important;
-			}
+				
+				
 
-			@media (min-width: 768px) {
-				#filterForm .col-md-2 {
-					width: 20% !important;
-				}
-			}
 
-			@media (max-width: 575px) {
-				.f-portrait.fix:after {
-					padding-bottom: 113.25%;
-				}
 
-				.f-portrait:not(.fix):after {
-					padding-bottom: unset;
-				}
-			}
-
-			.extbase-debugger {
-				display: none;
-			}
-		</style>
-		<div class="kfilter ">
-			<div class="container">
-				<div class="row nm">
-					<div class="col-sm-12 filter-row">
-						<div class="filter-holder">
-							<div class="col-md-2 filter-head"> <span class="filter-name">Filter</span> <span
-									class="filter-count"></span> <a href="#"
-									class="filter-reset icon-schliessen pull-right" title="Reset filter"></a> </div>
-							<div class="col-md-10">
-								<form id="filterForm">
-									<div class="row nm">
-										<div class="col-md-2 col-sm-4"> <select name="kitchenStyle">
+					<div class="col-md-6 filter-column">
+            <div class="filter-holder">
+                <div class="filter-head col-12"> <span class="filter-name">Filter</span> <span class="filter-count"></span> 
+                    <a href="#" class="filter-reset icon-schliessen pull-right" title="Reset filter"></a>
+                </div>
+                <form id="filterForm">
+                    <div class="row">
+								
+						<div class="col-12">  <select name="kitchenStyle">
 												<option value="">All styles</option>
 												<option value="4">Modern</option>
 												<option value="6" selected="selected">Design</option>
@@ -387,20 +392,20 @@
 												<option value="3">Cottage</option>
 												<option value="5">Handleless/LINE N</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenShape">
+											<div class="col-12">  <select name="kitchenShape">
 												<option value="">All shapes</option>
 												<option value="3">Island</option>
 												<option value="2">L-shaped kitchen</option>
 												<option value="36">U-shaped kitchen</option>
 												<option value="5">Kitchen runs</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenTexture">
+											<div class="col-12">  <select name="kitchenTexture">
 												<option value="">All finishes</option>
 												<option value="5">High gloss</option>
 												<option value="4">Matt</option>
 												<option value="23">Anti-fingerprint</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenColor">
+											<div class="col-12">  <select name="kitchenColor">
 												<option value="">All colours</option>
 												<option value="64">Colourful</option>
 												<option value="36">Grey</option>
@@ -409,7 +414,7 @@
 												<option value="57">Concrete look</option>
 												<option value="43">White</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenModel">
+											<div class="col-12">  <select name="kitchenModel">
 												<option value="">All models</option>
 												<option value="239">ARTIS</option>
 												<option value="169">CASCADA</option>
@@ -436,12 +441,10 @@
 											</select> </div>
 									</div>
 								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            </div>
+        </div>
+    </div>
+</div>
 		<script>
 			/*
 			* Shuffle jQuery array of elements - see Fisher-Yates algorithm

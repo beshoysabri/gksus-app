@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^$ /en/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/en/
+RewriteRule ^(.*)$ /en/$1 [R=301,L]

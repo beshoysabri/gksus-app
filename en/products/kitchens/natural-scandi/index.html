@@ -76,6 +76,39 @@
 	<link rel="alternate" hreflang="pl-PL" href="https://www.nobilia.de/pl/produkty/kuchnie/naturalny-skandynawski/">
 	<link rel="alternate" hreflang="ru-RU" href="https://www.nobilia.de/ru/produkty/kukhni/natural-living/">
 	<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/vyrobky/kuchyne/prirodni-skandinavske/">
+
+	<style>
+		.filter-column {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		
+		.filter-holder .col-12 {
+			margin-bottom: 15px;
+		}
+		
+		.filter-holder label {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 5px;
+		}
+	
+	
+		/* Style for the filter head */
+	.filter-head {
+		font-size: 1.5rem; /* Larger font size */
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: #f5f5f5; /* Light gray background */
+		padding: 10px 15px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+	
+	
+	
+		</style>
 </head>
 
 <body class="p-52 nobilia workspace- newcss">
@@ -102,7 +135,8 @@
 							<li><a href="../../../index.html" title="Home">Home</a></li>
 							<li class="active"><a href="../../../products/index.html" title="Products">Products</a></li>
 							<li><a href="../../../inspiration/index.html" title="About">About</a></li>
-							<li><a title="Contact">Contact</a></li>
+							<li><a  title="services">Services</a></li>
+							<li><a  title="Contact">Contact</a></li>
 						</ul>
 						<div id="menu-complete" style="display:none;">
 							<nav id="menu">
@@ -304,7 +338,7 @@
 							srcset="/fileadmin/_processed_/f/e/csm_03_stage_natural_living_zeitlose_kuechen_4017a36f10.jpg">
 						<!--[if IE 9]></audio><![endif]-->
 						<img loading="lazy" class="hidden-xs" id="i10685"
-							src="../../../../fileadmin/assets/produkte/_stages/03_stage_natural_living_zeitlose_kuechen.jpg"
+						src="../../../../../fileadmin/_processed_/c/0/csm_744_natura_gallery_a454a14469.jpg"
 							width="1601" height="428"
 							alt="Modern kitchen with wooden cabinets, island, high-end appliances, and chic urban decor in an open, airy space."
 							title="STRUCTURA 402 Havana oak reproduction">
@@ -325,12 +359,12 @@
 				</div>
 			</div>
 		</div>
-		<div id="c562" class="marg-b0 text-teaser text-teaser--big full-type3"> <i id="c3586"></i>
-			<div class="container">
+		<div id="c562" class="marg-b0 text-teaser--big full-type3"> <i id="c3586"></i>
+			<div class="container" style="margin-top: 30px;">
 				<div class="row">
-					<div class="col contentshrink">
-						<div class="box">
-							<div class="theline"></div>
+					<div class="col-md-6">
+            <div class="box">
+					
 							<h2 class="h1 headline">Naturally cosy.</h2>
 							<div class="h5 subline">Natural living kitchens are kitchens with a sense of well-being.
 							</div>
@@ -343,46 +377,24 @@
 								kitchen, or a conventional one with handles? The choice is up to you.</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<style>
-			#filterForm .selectric {
-				background-color: #fff !important;
-			}
 
-			@media (min-width: 768px) {
-				#filterForm .col-md-2 {
-					width: 20% !important;
-				}
-			}
 
-			@media (max-width: 575px) {
-				.f-portrait.fix:after {
-					padding-bottom: 113.25%;
-				}
 
-				.f-portrait:not(.fix):after {
-					padding-bottom: unset;
-				}
-			}
 
-			.extbase-debugger {
-				display: none;
-			}
-		</style>
-		<div class="kfilter ">
-			<div class="container">
-				<div class="row nm">
-					<div class="col-sm-12 filter-row">
-						<div class="filter-holder">
-							<div class="col-md-2 filter-head"> <span class="filter-name">Filter</span> <span
-									class="filter-count"></span> <a href="#"
-									class="filter-reset icon-schliessen pull-right" title="Reset filter"></a> </div>
-							<div class="col-md-10">
-								<form id="filterForm">
-									<div class="row nm">
-										<div class="col-md-2 col-sm-4"> <select name="kitchenStyle">
+					<div class="col-12 filter-column">
+            <div class="filter-holder">
+                <div class="filter-head col-12"> <span class="filter-name">Filter</span> <span class="filter-count"></span> 
+                    <a href="#" class="filter-reset icon-schliessen pull-right" title="Reset filter"></a>
+                </div>
+
+								
+				<form id="filterForm">
+                    <div class="row">
+
+
+
+
+										<div class="col-12"> <select name="kitchenStyle">
 												<option value="">All styles</option>
 												<option value="4">Modern</option>
 												<option value="6">Design</option>
@@ -390,20 +402,20 @@
 												<option value="3">Cottage</option>
 												<option value="5">Handleless/LINE N</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenShape">
+										<div class="col-12"> <select name="kitchenShape">
 												<option value="">All shapes</option>
 												<option value="3">Island</option>
 												<option value="2">L-shaped kitchen</option>
 												<option value="36">U-shaped kitchen</option>
 												<option value="5">Kitchen runs</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenTexture">
+										<div class="col-12"> <select name="kitchenTexture">
 												<option value="">All finishes</option>
 												<option value="5">High gloss</option>
 												<option value="4">Matt</option>
 												<option value="23">Anti-fingerprint</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenColor">
+										<div class="col-12"> <select name="kitchenColor">
 												<option value="">All colours</option>
 												<option value="64">Colourful</option>
 												<option value="36">Grey</option>
@@ -412,7 +424,7 @@
 												<option value="57">Concrete look</option>
 												<option value="43">White</option>
 											</select> </div>
-										<div class="col-md-2 col-sm-4"> <select name="kitchenModel">
+										<div class="col-12"> <select name="kitchenModel">
 												<option value="">All models</option>
 												<option value="239">ARTIS</option>
 												<option value="169">CASCADA</option>
@@ -441,10 +453,44 @@
 								</form>
 							</div>
 						</div>
-					</div>
+					
+
+
+
+
+
+
+
+
+
+
 				</div>
-			</div>
-		</div>
+		<style>
+			#filterForm .selectric {
+				background-color: #fff !important;
+			}
+
+			@media (min-width: 768px) {
+				#filterForm .col-md-2 {
+					width: 20% !important;
+				}
+			}
+
+			@media (max-width: 575px) {
+				.f-portrait.fix:after {
+					padding-bottom: 113.25%;
+				}
+
+				.f-portrait:not(.fix):after {
+					padding-bottom: unset;
+				}
+			}
+
+			.extbase-debugger {
+				display: none;
+			}
+		</style>
+		
 		<script>
 			/*
 			* Shuffle jQuery array of elements - see Fisher-Yates algorithm

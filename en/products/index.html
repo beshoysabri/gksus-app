@@ -176,19 +176,144 @@
 		cursor: pointer;
 	}
 
-	.modal {
-		display: none;
-		position: fixed;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 20px;
-		width: 600px;
-		background: white;
-		border: 2px solid black;
-		height: 500px;
-		z-index: 100;
-	}
+
+
+
+
+
+
+
+	/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 600px;
+    max-width: 90%; /* Makes it responsive */
+    background: white;
+    height: 450px;
+    max-height: 100vh; /* Prevents excessive height */
+    z-index: 100;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Modal image */
+#modalImg {
+	display: block;
+    margin: 0 auto; /* Centers horizontally */
+    width: 80%;
+    height: auto; /* Maintains aspect ratio */
+    max-height: 60vh; /* Prevents overflow */
+    border-radius: 8px;
+}
+
+/* Modal title */
+#modalTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Modal description */
+#modalDescription {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) { /* Tablets */
+    .modal {
+        width: 80%;
+        max-height: 80vh;
+        padding: 15px;
+    }
+
+    #modalImg {
+        width: 85%;
+    }
+
+    #modalTitle {
+        font-size: 18px;
+    }
+
+    #modalDescription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .modal {
+        width: 95%;
+        max-height: 85vh;
+        padding: 10px;
+    }
+
+    #modalImg {
+        width: 90%;
+        max-height: 40vh;
+    }
+
+    #modalTitle {
+        font-size: 16px;
+    }
+
+    #modalDescription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) { /* Small screens */
+    .modal {
+        width: 95%;
+        max-height: 80vh;
+        padding: 10px;
+    }
+
+    #modalImg {
+        width: 95%;
+        max-height: 35vh;
+    }
+
+    #modalTitle {
+        font-size: 14px;
+    }
+
+    #modalDescription {
+        font-size: 12px;
+    }
+}
+
 
 	.card-container {
 		width: 100%;
@@ -481,10 +606,25 @@
     .kitchen-text {
         font-size: 0.9rem;
     }
+
+}
+
+.kitchen-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 
 
+.center-content {
+    display: flex;
+    flex-direction: column;
+ 
+    height: 100%;
+	margin-top: 50px;
+	padding-top: 50px;
+}
 </style>
 
 <body class="p-9 nobilia workspace- newcss">
@@ -511,7 +651,10 @@
 							<li><a href="../index.html" title="Home">Home</a></li>
 							<li class="active"><a href="../products/index.html" title="Products">Products</a></li>
 							<li><a href="../inspiration/index.html" title="About">About</a></li>
+							<li><a  title="services">Services</a></li>
 							<li><a href="../services/contact/index.html" title="Contact">Contact</a></li>
+							
+
 						</ul>
 						<div id="menu-complete" style="display:none;">
 							<nav id="menu">
@@ -702,27 +845,34 @@
 							title="SENSO 495 - Premium honed olive">
 					</picture>
 					<div class="hotspot" style="top: 75%; left: 20%;"
-						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/senso_495_afp_400_283px.jpg")'>
+						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/senso_495_afp_400_283px.jpg","Anti-fingerprint coating","Our anti-fingerprint fronts are finished with an innovative anti-fingerprint coating. This coating makes the surface particularly durable and much more resistant to ugly fingerprints. Perfect for everyday use!")'>
 					</div>
 
 				</div>
+
+
 				<div class="slide">
 					<picture>
 						<!--[if IE 9]><audio><![endif]-->
 						<source media="(max-width: 767px)"
 							srcset=" /fileadmin/assets/produkte/01_moderne_kuechen.jpg 1x, /fileadmin/assets/produkte/01_moderne_kuechen.jpg 2x">
 						<!--[if IE 9]></audio><![endif]-->
-						<img loading="lazy" id="i25630" src="../../fileadmin/assets/produkte/01_moderne_kuechen.jpg"
+						<img loading="lazy" id="i25630" src="../../fileadmin/assets/produkte/Neuheiten_2025/31043_24_Softline_509_P.jpg"
 							width="1680" height="800"
 							alt="Spacious modern kitchen with sleek appliances, wooden countertops, and stylish shelving, accented by natural light and warm, inviting tones.">
 					</picture>
-					<div class="hotspot" style="top: 75%; left: 20%;"
-						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/softline_509_196_283px_.jpg")'>
-					</div>
+					<div class="hotspot" style="top: 60%; left: 20%;"
+						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/softline_509_196_283px_.jpg","SOFTLINE 509, Lacquer, white perfect matt", "Our new SOFTLINE programme in Perfect matt lacquer finish combines modern anti-fingerprint technology with outstanding durability and long-lasting quality. The special soft matt surface gives the fronts a velvety, elegant appearance.")'>
+				
+						
+				
+				
+						</div>
 				</div>
+
+
+
 				<div class="slide">
-
-
 					<picture
 						data-src-landscape="{ &quot;format&quot;: &quot;637x358&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;} ]}"
 						data-src-landscape-big="{ &quot;format&quot;: &quot;1280x720&quot;, &quot;src&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;, &quot;psrc&quot;:[ {&quot;min-width:1440px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;}, {&quot;min-width:1024px&quot;:&quot;/fileadmin/_processed_/b/8/csm_485_senso_gallery_8e17da4a93.jpg&quot;} ]}"
@@ -732,53 +882,93 @@
 							title="SENSO 485 - Premium honed sky">
 					</picture>
 					<div class="hotspot" style="top: 20%; left: 40%;"
-						onclick='showImage("../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/senso_485_afp_400_283px.jpg")'>
+						onclick='showImage(
+            "../../fileadmin/assets/home/Startseite_2024/AFP_Kampagne_Frabvielfalt/senso_485_afp_400_283px.jpg",
+            "Enthusiasm on all fronts",
+            "Colourful kitchens bring a breath of fresh air into your home by creating a lively and inviting atmosphere with bold colour accents and harmonious combinations."
+        )''>
 					</div>
 				</div>
+
+
+
 			</div>
 
+
+			
 			<div class="slider-nav">
 				<button onclick="prevSlide()">&#10094;</button>
 				<button onclick="nextSlide()">&#10095;</button>
 			</div>
 		</div>
-		<div class="modal" id="imageModal">
-			<img id="modalImg" src="" alt="Hotspot Image" style="width:100%; height: 90%;">
-			<button onclick="closeModal()">Close</button>
-		</div>
+		
+		<div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImg" src="" alt="Selected Image">
+        <p id="modalDescription"></p>
+
+</div>
 
 		<script>
 			let currentSlide = 0;
-			const slider = document.getElementById('slider');
+const slider = document.getElementById('slider');
+const modal = document.getElementById('imageModal');
 
-			function showSlide(index) {
-				slider.style.transform = `translateX(-${index * 100}%)`;
-			}
+// Function to show the modal with image, title, and description
+function showImage(src, title, description) {
+		    // console.log(src);
 
-			function prevSlide() {
-				currentSlide = (currentSlide > 0) ? currentSlide - 1 : 2;
-				showSlide(currentSlide);
-			}
+		const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
 
-			function nextSlide() {
-				currentSlide = (currentSlide < 2) ? currentSlide + 1 : 0;
-				showSlide(currentSlide);
-			}
+    if (!src) {
+        console.error("Error: Image source is missing!");
+        return;
+    }
 
-			function showImage(src) {
-				console.log(src);
+    modalImg.src = src;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
 
-				const modal = document.getElementById('imageModal');
-				const modalImg = document.getElementById('modalImg');
-				modalImg.src = src;
-				modal.style.display = 'block';
-			}
+    modal.style.display = 'block';
+}
 
-			function closeModal() {
-				document.getElementById('imageModal').style.display = 'none';
-			}
+// Function to close the modal
+function closeModal() {
+    modal.style.display = 'none';
+}
 
-			setInterval(nextSlide, 6000);
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+};
+
+// Function to show slides
+function showSlide(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Function to handle previous slide
+function prevSlide() {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : 2;
+    showSlide(currentSlide);
+    closeModal(); // Close modal when changing slide
+}
+
+// Function to handle next slide
+function nextSlide() {
+    currentSlide = (currentSlide < 2) ? currentSlide + 1 : 0;
+    showSlide(currentSlide);
+    closeModal(); // Close modal when changing slide
+}
+
+// Auto-change slides every 6 seconds
+setInterval(nextSlide, 6000);
 
 		</script>
 
@@ -936,9 +1126,7 @@
 					</div>
 
 					<!-- Title -->
-					<div class="card-title">
-						Designed for cooking, built for life.
-					</div>
+					
 				</a>
 			</div>
 
@@ -967,9 +1155,7 @@
 					</div>
 
 					<!-- Title -->
-					<div class="card-title">
-						Your sanctuary, your style.
-					</div>
+					
 				</a>
 			</div>
 
@@ -982,7 +1168,7 @@
 							srcset="/fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 1x, 
                         /fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 2x">
 						<img loading="lazy" class="card-image" id="i61333"
-							src="../../fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png"
+							src="../../fileadmin/_processed_/9/0/csm_405_structura_gallery_212662cc4b.jpg"
 							width="638" height="599"
 							alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones.">
 					</picture>
@@ -995,9 +1181,7 @@
 					</div>
 
 					<!-- Title -->
-					<div class="card-title">
-						Live beautifully, every day.
-					</div>
+				
 				</a>
 			</div>
 				</div>
@@ -1033,11 +1217,11 @@
 			
 			
 			
-			<div class="col-md-6 col-lg-4">
-				<a href="kitchens/modern-kitchens/index.html">
+			<div class="col-md-6 col-lg-6">
+				<a href="kitchens/modern-kitchens/index.html" class="kitchen-card-link">
 
-                <div class="kitchen-card">
-                    <img src="../../fileadmin/assets/produkte/01_moderne_kuechen.jpg" class="kitchen-card-img" alt="Modern Kitchen">
+                <div class="kitchen-card" onclick="window.location.href='kitchens/modern-kitchens/index.html';" style="cursor: pointer;">
+                    <img src="../../fileadmin/_processed_/5/d/csm_508_softline_gallery_3b89bb08e5.jpg" class="kitchen-card-img" alt="Modern Kitchen">
                     <div class="kitchen-card-body">
                         <h5 class="kitchen-title">Modern Kitchens</h5>
                         <p class="kitchen-text">Dramatic contrasts or subtle highlights? Our extensive range of colours and fronts invite custom combinations.</p>
@@ -1048,10 +1232,10 @@
             </div>
 
             <!-- Designer Kitchen Card -->
-            <div class="col-md-6 col-lg-4">
-				<a href="kitchens/designer-kitchens/index.html">
-                <div class="kitchen-card">
-                    <img src="../../fileadmin/assets/produkte/02_designkuechen.jpg" class="kitchen-card-img" alt="Designer Kitchen">
+            <div class="col-md-6 col-lg-6">
+				<a href="kitchens/designer-kitchens/index.html" class="kitchen-card-link">
+                <div class="kitchen-card" onclick="window.location.href='kitchens/designer-kitchens/index.html';" style="cursor: pointer;">
+                    <img src="../../fileadmin/_processed_/b/9/csm_968_easytouch_gallery_880ff58583.jpg" class="kitchen-card-img" alt="Designer Kitchen">
                     <div class="kitchen-card-body">
                         <h5 class="kitchen-title">Designer Kitchens</h5>
                         <p class="kitchen-text">Clean lines, exquisite materials, and structured architecture make our designer kitchens stand out.</p>
@@ -1062,10 +1246,10 @@
             </div>
 
             <!-- Natural Living Kitchen Card -->
-            <div class="col-md-6 col-lg-4">
-				<a href="kitchens/natural-scandi/index.html">
-                <div class="kitchen-card">
-                    <img src="../../fileadmin/assets/produkte/03_natural_living_zeitlose_kuechen.jpg" class="kitchen-card-img" alt="Natural Living Kitchen">
+            <div class="col-md-6 col-lg-6">
+				<a href="kitchens/natural-scandi/index.html" class="kitchen-card-link">
+                <div class="kitchen-card" onclick="window.location.href='kitchens/natural-scandi/index.html';" style="cursor: pointer;">
+                    <img src="../../fileadmin/_processed_/0/f/csm_843_riva_gallery_13ad4be52a.jpg" class="kitchen-card-img" alt="Natural Living Kitchen">
                     <div class="kitchen-card-body">
                         <h5 class="kitchen-title">Natural Living</h5>
                         <p class="kitchen-text">Modern wood décors with elegant textures create an inviting atmosphere in natural living kitchens.</p>
@@ -1076,10 +1260,10 @@
             </div>
 
             <!-- Cottage Style Kitchen Card -->
-            <div class="col-md-6 col-lg-4">
-				<a href="kitchens/modern-cottage-style/index.html">
-                <div class="kitchen-card">
-                    <img src="../../fileadmin/assets/produkte/05_landhaus_kuechen.jpg" class="kitchen-card-img" alt="Cottage Style Kitchen">
+            <div class="col-md-6 col-lg-6">
+				<a href="kitchens/modern-cottage-style/index.html" class="kitchen-card-link">
+                <div class="kitchen-card" onclick="window.location.href='kitchens/modern-cottage-style/index.html';" style="cursor: pointer;">
+                    <img src="../../fileadmin/_processed_/e/e/csm_786_nordic_gallery_49033ac95c.jpg" class="kitchen-card-img" alt="Cottage Style Kitchen">
                     <div class="kitchen-card-body">
                         <h5 class="kitchen-title">Cottage Style Kitchens</h5>
                         <p class="kitchen-text">Soft lines, natural décors, and charming details give cottage style kitchens an inviting feel.</p>
@@ -1090,10 +1274,10 @@
             </div>
 
             <!-- Handleless Kitchen Card -->
-            <div class="col-md-6 col-lg-4" >
-				<a href="kitchens/modern-cottage-style/index.html">
-                <div class="kitchen-card" >
-                    <img src="../../fileadmin/assets/produkte/30826_24_Senso_495_P_grifflose_kuechen.jpg" class="kitchen-card-img" alt="Handleless Kitchen">
+            <div class="col-md-6 col-lg-6" >
+				<a href="kitchens/handleless-line-n/index.html" class="kitchen-card-link">
+                <div class="kitchen-card" onclick="window.location.href='kitchens/handleless-line-n/index.html';" style="cursor: pointer;">
+                    <img src="../../fileadmin/_processed_/2/d/csm_496_senso_gallery_48be1c2603.jpg" class="kitchen-card-img" alt="Handleless Kitchen">
                     <div class="kitchen-card-body" >
                         <h5 class="kitchen-title">Handleless Kitchens</h5>
                         <p class="kitchen-text">Puristic design with integrated recessed handles creates a seamless kitchen experience.</p>
@@ -1115,8 +1299,8 @@
 	<div class="container" id="c67266" style="margin-top: 50px;">
     <!-- First Item -->
     <div class="row align-items-center" style="margin-top: 20;">
-        <div class="col-md-6">
-            <h3 class="h3 headline">Design elements</h3>
+        <div class="col-md-6 center-content" >
+            <h3 class="h3 headline" >Design elements</h3>
             <p>What characterises your kitchen, bathroom and living room? Our extensive selection of
                 fronts, handles, carcase colours, worktops and niche panelling allows you to
                 customise your furniture.</p>
@@ -1136,19 +1320,18 @@
                 src="../../fileadmin/assets/produkte/_teaser/teaser_innenaustattungen_438_301.jpg"
                 width="438" height="301" alt="Interior fittings image">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 center-content">
             <h3 class="h3 headline">Interior fittings</h3>
             <p>Discover clever storage space solutions that fulfil every space requirement, as well
                 as lighting systems for radiant accents and much more in our interior fittings
                 section.</p>
             <p><a href="interior-fittings/index.html" class="textlink">Explore interior fittings</a></p>
         </div>
-      
     </div>
     
     <!-- Third Item -->
     <div class="row align-items-center" style="margin-top: 20;">
-        <div class="col-md-6">
+        <div class="col-md-6 center-content">
             <h3 class="h3 headline">Electric appliances</h3>
             <p>Whether you are looking for high-quality appliances from renowned manufacturers or
                 budget-friendly options - nobilia complements your dream kitchen with suitable

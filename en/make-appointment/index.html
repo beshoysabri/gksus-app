@@ -220,6 +220,8 @@
                             <li><a href="../index.html" title="Home">Home</a></li>
                             <li><a href="../products/index.html" title="Products">Products</a></li>
                             <li class="active"><a href="../inspiration/index.html" title="About">About</a></li>
+                            <li ><a  title="services">Services</a></li>
+
                             <li><a href="../services/contact/index.html" title="Contact">Contact</a></li>
                         </ul>
                         <div id="menu-complete" style="display:none;">
@@ -434,77 +436,67 @@
         </div>
 
       
-        <h2 class="h2 headline" style="text-align: center; margin-top: 200px; font-size: 40px; font-weight: 700;">About
+        <h2 class="h2 headline" style="text-align: center; margin-top: 350px; font-size: 40px; font-weight: 700;">About
 			us</h2>
             
-        <section class="section-form">
+            <section class="section-form">
+    <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
+        style="justify-content: center; display: flex;">
 
-            <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
-                style="justify-content: center; display: flex;">
+        <div class="container-form">
+            <h2>Make An Appointment</h2>
+            <p>Please take a moment to fill out the form.</p>
 
-                <div class="container-form">
-                    <h2>Make An Appointment</h2>
-                    <p>Please take a moment to fill out the form.</p>
+            <!-- Keep all inputs INSIDE the form -->
+            <form action="mailto:info@gksus.com" method="post" enctype="text/plain">
+                
+                <label>First Name *</label>
+                <input type="text" name="First Name" required>
 
-                    <form>
-                        <label>First Name *</label>
-                        <input type="text" required>
+                <label>Last Name *</label>
+                <input type="text" name="Last Name" required>
 
-                        <label>Last Name *</label>
-                        <input type="text" required>
+                <label>Email *</label>
+                <input type="email" name="Email" required>
 
-                        <label>Email *</label>
-                        <input type="email" required>
+                <label>Phone *</label>
+                <input type="tel" name="Phone" required>
 
-                        <label>Phone *</label>
-                        <input type="tel" required>
+                <label>Address *</label>
+                <input type="text" name="Address" placeholder="Type your Address Here" required>
 
-                        <label>Address *</label>
-                        <input type="text" placeholder="Type your Address Here" required>
+                <label>Zip Code *</label>
+                <input type="text" name="Zip Code" required>
 
-                        <label>Best Days for the Appointment (Please Choose at least 2) *</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox"> Monday</label>
-                            <label><input type="checkbox"> Tuesday</label>
-                            <label><input type="checkbox"> Wednesday</label>
-                            <label><input type="checkbox"> Thursday</label>
-                            <label><input type="checkbox"> Friday</label>
-                        </div>
+                <label>Tell Us About Your Project *</label>
+                <input type="text" name="Zip Code" required>
 
-                        <label>Best Time *</label>
-                        <select required>
-                            <option>Choose a Time</option>
-                            <option>Morning</option>
-                            <option>Afternoon</option>
-                            <option>Evening</option>
-                        </select>
-
-                        <label><input type="checkbox"> I accept terms & conditions</label>
-
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </form>
+                <label>Best Days for the Appointment (Please Choose at least 2) *</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="Best Days" value="Monday"> Monday</label>
+                    <label><input type="checkbox" name="Best Days" value="Tuesday"> Tuesday</label>
+                    <label><input type="checkbox" name="Best Days" value="Wednesday"> Wednesday</label>
+                    <label><input type="checkbox" name="Best Days" value="Thursday"> Thursday</label>
+                    <label><input type="checkbox" name="Best Days" value="Friday"> Friday</label>
+                    <label><input type="checkbox" name="Best Days" value="Saturday"> Saturday</label>
                 </div>
 
-            </div>
+                <label>Best Time *</label>
+                <select name="Best Time" required>
+                    <option value="">Choose a Time</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
 
+                <label><input type="checkbox" name="Terms" value="Accepted" required> I accept terms & conditions</label>
 
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
 
         <section class="show-mobile-only">
             <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
@@ -514,7 +506,8 @@
                     <h2>Make An Appointment</h2>
                     <p>Please take a moment to fill out the form.</p>
 
-                    <form>
+                    <form action="mailto:info@gksus.com" method="post" enctype="text/plain"></form>
+
                         <label>First Name *</label>
                         <input type="text" required>
 
@@ -530,6 +523,9 @@
                         <label>Address *</label>
                         <input type="text" placeholder="Type your Address Here" required>
 
+                        <label>Zip Code *</label>
+                        <input type="text"  required>
+
                         <label>Best Days for the Appointment (Please Choose at least 2) *</label>
                         <div class="checkbox-group">
                             <label><input type="checkbox"> Monday</label>
@@ -537,6 +533,8 @@
                             <label><input type="checkbox"> Wednesday</label>
                             <label><input type="checkbox"> Thursday</label>
                             <label><input type="checkbox"> Friday</label>
+                            <label><input type="checkbox"> Saturday</label>
+
                         </div>
 
                         <label>Best Time *</label>

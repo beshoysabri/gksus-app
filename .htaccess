@@ -1,4 +1,13 @@
 RewriteEngine On
+
+# Skip redirection for URLs containing /typo3temp/
+RewriteCond %{REQUEST_URI} ^/typo3temp/ [OR]
+RewriteCond %{REQUEST_URI} /typo3temp/
+RewriteRule .* - [L]
+
+# Redirect root to /en/
 RewriteRule ^$ /en/ [R=301,L]
+
+# Redirect everything else not starting with /en/ to /en/
 RewriteCond %{REQUEST_URI} !^/en/
 RewriteRule ^(.*)$ /en/$1 [R=301,L]

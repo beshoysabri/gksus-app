@@ -347,7 +347,11 @@
 						<div class="str_image holder " id="c23384">
 							<picture>
 								<!--[if IE 9]><audio><![endif]-->
-								<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/7/b/csm_sally_app_bbd41ebcd4.jpg 1x, /fileadmin/assets/landingpage/Sally/sally_app.jpg 2x" >
+								<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/7/b/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+     1x, /fileadmin/assets/landingpage/Sally/sally_app.jpg 2x" >
 								<!--[if IE 9]></audio><![endif]-->
 								<img loading="lazy" class=" i-opt-col6 " id="i26473" src="../../fileadmin/assets/landingpage/Sally/sally_app.jpg" width="669" height="461" alt="Person using a digital tablet mounted on a kitchen counter to browse a website, with a cookbook and ingredients nearby, suggesting a cooking activity."></picture>
 							 </div>

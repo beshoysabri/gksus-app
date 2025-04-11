@@ -238,13 +238,21 @@
 					(max-width: 767px) and (min-resolution: 1.5dppx),
 					(max-width: 767px) and (min-resolution: 144dpi) {
 						#bgi-69564-67083 {
-							background-image: url('../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_c64a1d569c.jpg');
+							background-image: url('../../fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ');
 						}
 					}
 
 					@media (max-width: 575px) {
 						#bgi-69564-67083 {
-							background-image: url('../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_be63acc938.jpg');
+							background-image: url('../../fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ');
 						}
 					}
 				</style>
@@ -252,13 +260,33 @@
 					<picture>
 						<!--[if IE 9]><audio><![endif]-->
 						<source media="(max-width: 767px)"
-							srcset=" /fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_19427c1a23.jpg 1x, /fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_ad84468ff7.jpg 2x">
+							srcset=" /fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+     1x, /fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+     2x">
 						<source media="(max-width: 1023px)"
-							srcset="/fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_d8655f32bb.jpg">
+							srcset="/fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ">
 						<source media="(max-width: 1279px)"
-							srcset="/fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_b6f2bf594a.jpg">
+							srcset="/fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ">
 						<source media="(max-width: 1440px)"
-							srcset="/fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_8ab5d1605b.jpg">
+							srcset="/fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ">
 						<!--[if IE 9]></audio><![endif]-->
 						<img loading="lazy" class="hidden-xs" id="i69564"
 							src="../../fileadmin/assets/services/_stages/nobilia_Wohnwelten.jpg" width="1680"

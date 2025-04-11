@@ -305,7 +305,11 @@
     </div>
     
     <div class="card">
-        <img src="../../../fileadmin/_processed_/4/d/csm_onlineplaner_2021_009781e529.jpg" alt="A laptop on a kitchen counter displaying a webpage with a gallery of modern interior designs">
+        <img src="../../../fileadmin/_processed_/4/d/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    " alt="A laptop on a kitchen counter displaying a webpage with a gallery of modern interior designs">
         <div class="card-content">
             <h3>Online Planner</h3>
             <p>Design your kitchen from the floor plan and integrate all components. Save, print, or continue planning anytime.</p>

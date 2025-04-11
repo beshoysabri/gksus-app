@@ -622,100 +622,38 @@
 }
 </style>
 <body class="p-9 nobilia workspace- newcss">
-<div id="top"></div>
-<div class="navbar-wrapper" style="height:auto">
-<nav class="navbar navbar-static-top">
-<div class="navlogodeck">
-</div>
-<div class="navbar-header">
-<div class="container topnav">
-<div class="" style="height:40px; width: 100px; margin-left: 30px;"> <a class="" href="../index.html"><img alt="german" height="10" src="../../logo_de.png" style="width: 120%;" width="20"/></a>
-</div>
-<div class="navbar-meta hidden-xs hidden-sm">
-</div>
-</div>
-<div class="navbar-subheader" style="padding-top: 30px;">
-<div class="navbar-menu container">
-<div class="burger-menu v2" id="menu-click"> </div>
-<ul class="nav navbar-nav mainnav fullnav cl-effect hidden-sm hidden-xs">
-<li><a href="../index.html" title="Home">Home</a></li>
-<li class="active"><a href="../products/index.html" title="Products">Products</a></li>
-<li><a title="services">Services</a></li>
-<li><a href="../inspiration/index.html" title="About">About</a></li>
-<li><a href="../services/contact/index.html" title="Contact">Contact</a></li>
-</ul>
-<div id="menu-complete" style="display:none;">
-<nav id="menu">
-<ul class="">
-<li><a href="./index.html" title="Overview of all products"><span>Products</span></a>
-<ul>
-<li><a href="./kitchens/index.html" title="Current collection"><span>All kitchens</span></a>
-</li>
-<li><a href="./bathroom-designs/index.html" title="Bathroom designs"><span>Bathroom designs</span></a></li>
-<li><a href="./living/index.html" title="Living"><span>Living</span></a>
-</li>
-<li><a href="./design-elements/index.html" title="Our design elements."><span>Design elements</span></a>
-</li>
-<li><a href="./interior-fittings/index.html" title="Our interior fittings."><span>Interior fittings</span></a>
-</li>
-<li><a href="./electric-appliances/index.html" title="Electric appliances for your kitchen"><span>Electric
-														appliances</span></a>
-</li>
-</ul>
-</li>
-<li>
-<a title="Services">
-<span>Services</span>
-</a>
-<ul>
-<!-- <li><a title="FAQ"><span>FAQ</span></a></li> -->
-<li><a title="Catalogues and Brochures"><span>Catalogues and
-														Brochures</span></a></li>
-<li><a title="Instruction Manuals"><span>Instruction Manuals</span></a></li>
-<li><a title="Planning Tools"><span>Kitchen planning</span></a></li>
-<!-- <li><a title="Wish List"><span>Wish List</span></a></li> -->
-<!-- <li><a title="Media Centre"><span>Media Centre</span> </a></li>-->
-</ul>
-</li>
-<script src="../../js/pathHelper.js"></script>
-<li><a title="about"><span>About</span></a></li>
-<li><a href="../services/contact/index.html"><span>Contact</span></a></li>
-</ul>
-</nav>
-<div class="" id="menu-bottom">
-<div class="socialnav-menu">
-<ul></ul>
-</div>
-</div>
-</div>
-</div>
-</div></div></nav>
-</div>
-<div class="totop"> <a class="toplink hidden-print" href="#top" title="To top"><span aria-hidden="true" class="icon-pfeil_links icon-up"></span></a> </div>
+<!-- Header Container -->
+<div id="header-container"></div>
+
+<!-- Header Loading Script -->
 <script>
-		var lastScrollTop = 0;
-		var headerIsHidden = false;
-		var $nw = $('.navbar-wrapper');
-		function updateHeaderVisibility() {
-			var currentScroll = window.pageYOffset;
-			// console.log(currentScroll);
-			if (currentScroll - 10 > lastScrollTop && !headerIsHidden) {
-				headerIsHidden = true;
-				$nw.addClass('hide-it affix');
-			} else if (currentScroll < lastScrollTop && headerIsHidden) {
-				headerIsHidden = false;
-				$nw.removeClass('hide-it affix');
-			}
-			if (currentScroll < 10 && window.innerWidth > 1023) {
-				$nw.addClass('inwhite');
-			} else {
-				$nw.removeClass('inwhite')
-			}
-			lastScrollTop = currentScroll;
-			requestAnimationFrame(updateHeaderVisibility);
-		}
-		updateHeaderVisibility();
-	</script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    });
+</script>
+
+<div id="top"></div>
+<!-- Header Container -->
+<div id="header-container"></div>
+
+<!-- Header Loading Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    });
+</script>
+
+<div id="top"></div>
 <div class="site-overlay"></div>
 <div class="site-content">
 <!--TYPO3SEARCH_begin-->
@@ -939,7 +877,7 @@ setInterval(nextSlide, 6000);
 						 </div>-->
 <div class="card-container">
 <!-- Image -->
-<a class="card-link" href="kitchens/index.html">
+<a class="card-link" href="products/kitchens/index.html">
 <picture>
 <!--[if IE 9]><audio><![endif]-->
 <source media="(max-width: 767px)" srcset="/fileadmin/_processed_/0/3/csm_788_nordic_gallery.jpg 1x, /fileadmin/_processed_/0/3/csm_788_nordic_gallery.jpg 2x"/>
@@ -957,7 +895,7 @@ setInterval(nextSlide, 6000);
 </div>
 <div class="card-container">
 <!-- Image -->
-<a class="card-link" href="bathroom-designs/index.html">
+<a class="card-link" href="products/bathroom-designs/index.html">
 <picture>
 <!--[if IE 9]><audio><![endif]-->
 <source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/6/d/csm_788_nordic_gallery.jpg 1x, /fileadmin/_processed_/6/d/csm_788_nordic_gallery.jpg 2x"/>
@@ -974,12 +912,12 @@ setInterval(nextSlide, 6000);
 </a>
 </div>
 <div class="card-container">
-<a class="card-link" href="living/holistic-living-space-design/index.html">
+<a class="card-link" href="products/living/holistic-living-space-design/index.html">
 <!-- Image -->
 <picture>
 <source media="(max-width: 767px)" srcset="/fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 1x, 
                         /fileadmin/assets/produkte/more_than_kitchen/Ganzheitliches_Wohndesign/31252_23_Novalux_519_P_1015_640.png 2x"/>
-<img alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones." class="card-image" height="599" id="i61333" loading="lazy" src="/fileadmin/Artis (937) : Structura (405).jpg" width="638"/>
+<img alt="Elegant dining room showcasing a dark wood table, plush green chairs, and minimalist decor with a sleek white fireplace and soft, neutral tones." class="card-image" height="599" id="i61333" loading="lazy" src="/fileadmin/Artis (937)-Structura (405).jpg" width="638"/>
 </picture>
 <!-- Overlay -->
 <div class="overlay">
@@ -1006,65 +944,65 @@ setInterval(nextSlide, 6000);
 <div class="row g-4 justify-content-center">
 <!-- Modern Kitchen Card -->
 <div class="col-md-6 col-lg-6">
-<a class="kitchen-card-link" href="kitchens/modern-kitchens/index.html">
-<div class="kitchen-card" onclick="window.location.href='kitchens/modern-kitchens/index.html';" style="cursor: pointer;">
+<a class="kitchen-card-link" href="products/kitchens/modern-kitchens/index.html">
+<div class="kitchen-card" onclick="window.location.href='products/kitchens/modern-kitchens/index.html';" style="cursor: pointer;">
 <img alt="Modern Kitchen" class="kitchen-card-img" src="/fileadmin/_processed_/5/d/csm_508_softline_gallery.jpg"/>
 <div class="kitchen-card-body">
 <h5 class="kitchen-title">Modern Kitchens</h5>
 <p class="kitchen-text">Dramatic contrasts or subtle highlights? Our extensive range of colours and fronts invite custom combinations.</p>
-<a class="btn kitchen-btn" href="kitchens/modern-kitchens/index.html">View More</a>
+<a class="btn kitchen-btn" href="products/kitchens/modern-kitchens/index.html">View More</a>
 </div>
 </div>
 </a>
 </div>
 <!-- Designer Kitchen Card -->
 <div class="col-md-6 col-lg-6">
-<a class="kitchen-card-link" href="kitchens/designer-kitchens/index.html">
-<div class="kitchen-card" onclick="window.location.href='kitchens/designer-kitchens/index.html';" style="cursor: pointer;">
+<a class="kitchen-card-link" href="products/kitchens/designer-kitchens/index.html">
+<div class="kitchen-card" onclick="window.location.href='products/kitchens/designer-kitchens/index.html';" style="cursor: pointer;">
 <img alt="Designer Kitchen" class="kitchen-card-img" src="/fileadmin/_processed_/b/9/csm_968_easytouch_gallery_6.jpg"/>
 <div class="kitchen-card-body">
 <h5 class="kitchen-title">Designer Kitchens</h5>
 <p class="kitchen-text">Clean lines, exquisite materials, and structured architecture make our designer kitchens stand out.</p>
-<a class="btn kitchen-btn" href="kitchens/designer-kitchens/index.html">View More</a>
+<a class="btn kitchen-btn" href="products/kitchens/designer-kitchens/index.html">View More</a>
 </div>
 </div>
 </a>
 </div>
 <!-- Natural Living Kitchen Card -->
 <div class="col-md-6 col-lg-6">
-<a class="kitchen-card-link" href="kitchens/natural-scandi/index.html">
-<div class="kitchen-card" onclick="window.location.href='kitchens/natural-scandi/index.html';" style="cursor: pointer;">
+<a class="kitchen-card-link" href="products/kitchens/natural-scandi/index.html">
+<div class="kitchen-card" onclick="window.location.href='products/kitchens/natural-scandi/index.html';" style="cursor: pointer;">
 <img alt="Natural Living Kitchen" class="kitchen-card-img" src="/fileadmin/_processed_/0/f/csm_843_riva_gallery.jpg"/>
 <div class="kitchen-card-body">
 <h5 class="kitchen-title">Natural Living</h5>
 <p class="kitchen-text">Modern wood décors with elegant textures create an inviting atmosphere in natural living kitchens.</p>
-<a class="btn kitchen-btn" href="kitchens/natural-scandi/index.html">View More</a>
+<a class="btn kitchen-btn" href="products/kitchens/natural-scandi/index.html">View More</a>
 </div>
 </div>
 </a>
 </div>
 <!-- Cottage Style Kitchen Card -->
 <div class="col-md-6 col-lg-6">
-<a class="kitchen-card-link" href="kitchens/modern-cottage-style/index.html">
-<div class="kitchen-card" onclick="window.location.href='kitchens/modern-cottage-style/index.html';" style="cursor: pointer;">
+<a class="kitchen-card-link" href="products/kitchens/modern-cottage-style/index.html">
+<div class="kitchen-card" onclick="window.location.href='products/kitchens/modern-cottage-style/index.html';" style="cursor: pointer;">
 <img alt="Cottage Style Kitchen" class="kitchen-card-img" src="/fileadmin/_processed_/e/e/csm_786_nordic_gallery.jpg"/>
 <div class="kitchen-card-body">
 <h5 class="kitchen-title">Cottage Style Kitchens</h5>
 <p class="kitchen-text">Soft lines, natural décors, and charming details give cottage style kitchens an inviting feel.</p>
-<a class="btn kitchen-btn" href="kitchens/modern-cottage-style/index.html">View More</a>
+<a class="btn kitchen-btn" href="products/kitchens/modern-cottage-style/index.html">View More</a>
 </div>
 </div>
 </a>
 </div>
 <!-- Handleless Kitchen Card -->
 <div class="col-md-6 col-lg-6">
-<a class="kitchen-card-link" href="kitchens/handleless-line-n/index.html">
-<div class="kitchen-card" onclick="window.location.href='kitchens/handleless-line-n/index.html';" style="cursor: pointer;">
+<a class="kitchen-card-link" href="products/kitchens/handleless-line-n/index.html">
+<div class="kitchen-card" onclick="window.location.href='products/kitchens/handleless-line-n/index.html';" style="cursor: pointer;">
 <img alt="Handleless Kitchen" class="kitchen-card-img" src="/fileadmin/_processed_/2/d/csm_496_senso_gallery_6.jpg"/>
 <div class="kitchen-card-body">
 <h5 class="kitchen-title">Handleless Kitchens</h5>
 <p class="kitchen-text">Puristic design with integrated recessed handles creates a seamless kitchen experience.</p>
-<a class="btn kitchen-btn" href="kitchens/handleless-line-n/index.html">View More</a>
+<a class="btn kitchen-btn" href="products/kitchens/handleless-line-n/index.html">View More</a>
 </div>
 </div>
 </a>
@@ -1079,7 +1017,7 @@ setInterval(nextSlide, 6000);
 <p>What characterises your kitchen, bathroom and living room? Our extensive selection of
                 fronts, handles, carcase colours, worktops and niche panelling allows you to
                 customise your furniture.</p>
-<p><a class="textlink" href="design-elements/index.html">Select your style</a></p>
+<p><a class="textlink" href="products/design-elements/index.html">Select your style</a></p>
 </div>
 <div class="col-md-6">
 <img alt="Design elements image" class="i-opt-col4" height="301" id="i69664" loading="lazy" src="/fileadmin/assets/produkte/_teaser/teaser_gestaltungselemente_438_301.jpg" width="438"/>
@@ -1095,7 +1033,7 @@ setInterval(nextSlide, 6000);
 <p>Discover clever storage space solutions that fulfil every space requirement, as well
                 as lighting systems for radiant accents and much more in our interior fittings
                 section.</p>
-<p><a class="textlink" href="interior-fittings/index.html">Explore interior fittings</a></p>
+<p><a class="textlink" href="products/interior-fittings/index.html">Explore interior fittings</a></p>
 </div>
 </div>
 <!-- Third Item -->
@@ -1105,7 +1043,7 @@ setInterval(nextSlide, 6000);
 <p>Whether you are looking for high-quality appliances from renowned manufacturers or
                 budget-friendly options - nobilia complements your dream kitchen with suitable
                 built-in appliances for every need and in various price ranges.</p>
-<p><a class="textlink" href="electric-appliances/index.html">Discover electric appliances</a></p>
+<p><a class="textlink" href="products/electric-appliances/index.html">Discover electric appliances</a></p>
 </div>
 <div class="col-md-6">
 <img alt="Electric appliances image" class="i-opt-col4" height="301" id="i69662" loading="lazy" src="/fileadmin/assets/produkte/_teaser/teaser_egerate7_438_301.jpg" width="438"/>
@@ -1113,104 +1051,20 @@ setInterval(nextSlide, 6000);
 </div>
 </div>
 </div>
-<div class="footer-wrapper clearfix hidden-print footer-new">
-<!-- Elfsight All-in-One Chat | Untitled All-in-One Chat -->
-<script async="" src="https://static.elfsight.com/platform/platform.js"></script>
-<div class="elfsight-app-14533a5f-c231-4111-9cde-34ac395314da" data-elfsight-app-lazy=""></div>
-<footer>
-<div class="container">
-<div class="inside">
-<div class="row footer-links">
-<div class="col-md-20">
-<h4 class="xsubline"><a href="../products/index.html" title="Products">Products</a>
-</h4>
-<ul>
-<li> <a class="" href="../products/kitchens/index.html">
-												All
-												kitchens </a> </li>
-<li> <a class="" href="../products/bathroom-designs/index.html" title="Bathroom designs"> Bathroom designs </a> </li>
-<li> <a class="" href="../products/living/index.html"> Living
-											</a>
-</li>
-<li> <a class="" href="../products/design-elements/index.html">
-												Design elements </a> </li>
-<li> <a class="" href="../products/interior-fittings/index.html"> Interior fittings </a> </li>
-<li> <a class="" href="../products/electric-appliances/index.html"> Electric appliances </a> </li>
-</ul>
-</div>
-<div class="col-md-20">
-<h4 class="xsubline"><a title="services">Services</a></h4>
-<ul>
-<li> <a title="catalogues and brochures">
-												catalogues and brochures </a> </li>
-<li> <a title="Instruction manuals"> Instruction manuals </a>
-</li>
-<li> <a title="planning tools">
-												Kitchen planning</a> </li>
-</ul>
-</div>
-<div class="col-md-20">
-<h4 class="xsubline">Quick Links</h4>
-<ul>
-<li>
-<a class="" href="../services/contact/index.html" title="Contact"> Contact
-											</a>
-</li>
-<li>
-<a title="about">
-												About</a>
-</li>
-</ul>
-</div>
-<div class="col-md-20">
-<h4 class="xsubline">Info</h4>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="display: inline-flex; align-items: center; margin-right: 20px;">
-<i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
-<a href="tel:+12018144128" style="text-decoration: none; color: inherit;" title="Call Us">(559) 300-9988</a>
-</li>
-<li style="display: inline-flex; align-items: center; margin-right: 20px;">
-<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-<span style="text-decoration: none; color: inherit;">2222 W Sunnyside Ave. Suite#1,
-										Visalia, CA 93277</span>
-</li>
-<li style="display: inline-flex; align-items: center;">
-<i class="fas fa-envelope" style="margin-right: 10px;"></i>
-<a href="mailto:info@gksus.com" style="text-decoration: none; color: inherit;" title="Email">info@gksus.com</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="footer-metanav footer-links visible-sm-block visible-xs-block">
-</div>
-</div>
-</div>
-<div class="footer-end">
-<div class="container hidden-sm hidden-xs">
-<div class="row">
-<div class="col-sm-12">
-<hr/>
-</div>
-</div>
-</div>
-<div class="legalline">
-<div class="container">
-<div class="row marg-b1">
-<div class="col-md-6 col-xs-8 d-flex">
-<div class="copyright"> © Designed &amp; Developed by Kemet Technologies </div>
-<div class="socialnav">
-<ul></ul>
-</div>
-</div>
-<div class="col-md-6 col-xs-2 legallinks d-flex flex-justify-end">
-<div class="footer-metanav hidden-sm hidden-xs">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></footer>
-</div>
+<!-- Footer Container -->
+<div id="footer-container"></div>
+
+<!-- Footer Loading Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    });
+</script>
 <script src="../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js"></script>
 <script defer="defer" src="../../typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a94497dba.js"></script>
 <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.nobilia.de\/en\/","name":"Homepage"}}]}</script>

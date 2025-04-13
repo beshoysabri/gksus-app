@@ -27,196 +27,399 @@
 	<meta name="compatible" content="IE=edge">
 	<meta name="facebook-domain-verification" content="dibyeki5n4j3h6oyf6dbks05h73q2t">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css" rel="stylesheet">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="/js/hamburger-menu.js"></script>
 
-	<link rel="stylesheet"
-		href="../../../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css?1736247112" media="all">
-	<script
-		src="../../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js?1730218652"></script>
+    <link rel="stylesheet" href="../../../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css">
+    <script src="../../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js"></script>
+    
 
-<script>
-$(document).ready(function() {
-    // Initialize mmenu
-    var menu = new Mmenu("#menu-complete", {
-        offCanvas: {
-            position: "right"
-        },
-        navbar: {
-            title: "Menu"
-        }
-    });
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      margin-top: 80px;
+    }
 
-    // Handle burger menu click
-    $("#menu-click").click(function() {
-        $(this).toggleClass('open');
-        menu.API.open();
-    });
-});
-</script>
+    /* Navbar - Desktop Navigation */
+    .navbar-wrapper2 {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 80px;
+    }
 
-<style>
-    .navbar-wrapper {
-        background-color: transparent!important;
+    .navbar-header2 {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
     }
-    .navbar-menu.container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        min-height: 80px;
-    }
-    .mainnav {
-        display: flex;
-        align-items: center;
-    }
-    .mainnav li {
-        margin: 0 20px;
-    }
-    .burger-menu.v2 {
-        position: absolute;
-        left: 20px;
-        cursor: pointer;
-        width: 30px;
-        height: 25px;
-    }
-    .burger-menu.v2:before,
-    .burger-menu.v2:after,
-    .burger-menu.v2 span {
-        background: #333;
-        content: '';
-        display: block;
-        height: 3px;
-        position: absolute;
-        transition: all .2s ease-in-out;
-    }
-    .burger-menu.v2:before {
-        top: 0;
-        width: 30px;
-    }
-    .burger-menu.v2 span {
-        top: 11px;
-        width: 30px;
-    }
-    .burger-menu.v2:after {
-        top: 22px;
-        width: 30px;
-    }
-    .burger-menu.v2.open:before {
-        transform: rotate(45deg);
-        top: 11px;
-    }
-    .burger-menu.v2.open span {
-        opacity: 0;
-    }
-    .burger-menu.v2.open:after {
-        transform: rotate(-45deg);
-        top: 11px;
-    }
-    .navbar-subheader {
-        padding-top: 0 !important;
-    }
-</style>
-	<meta http-equiv="cleartype" content="on">
 
-	<script>var lll = { 'basketadd': 'Add to wish list', 'basketremove': 'Remove from wish list', }</script>
-	<link rel="canonical" href="index.html">
-	<link rel="alternate" hreflang="x-default" href="https://www.nobilia.de/de/">
-	<link rel="alternate" hreflang="de-DE" href="https://www.nobilia.de/de/">
-	<link rel="alternate" hreflang="en-US" href="index.html">
-	<link rel="alternate" hreflang="fr-FR" href="https://www.nobilia.de/fr/">
-	<link rel="alternate" hreflang="it-IT" href="https://www.nobilia.de/it/">
-	<link rel="alternate" hreflang="es-ES" href="https://www.nobilia.de/es/">
-	<link rel="alternate" hreflang="nl-NL" href="https://www.nobilia.de/nl/">
-	<link rel="alternate" hreflang="pl-PL" href="https://www.nobilia.de/pl/">
-	<link rel="alternate" hreflang="ru-RU" href="https://www.nobilia.de/ru/">
-	<link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/">
+    .navbar-logo2 {
+      height: 90px;
+      width: auto;
+      display: block;
+    }
 
-    <script>	
-        var lastScrollTop = 0;
-		var headerIsHidden = false;
-		var $nw = $('.navbar-wrapper');
-		function updateHeaderVisibility() {
-			var currentScroll = window.pageYOffset;
-			// console.log(currentScroll);
-			if (currentScroll - 10 > lastScrollTop && !headerIsHidden) {
-				headerIsHidden = true;
-				$nw.addClass('hide-it affix');
-			} else if (currentScroll < lastScrollTop && headerIsHidden) {
-				headerIsHidden = false;
-				$nw.removeClass('hide-it affix');
-			}
-			if (currentScroll < 10 && window.innerWidth > 1023) {
-				$nw.addClass('inwhite');
-			} else {
-				$nw.removeClass('inwhite')
-			}
-			lastScrollTop = currentScroll;
-			requestAnimationFrame(updateHeaderVisibility);
-		}
-		updateHeaderVisibility();
-	</script>
+    .navbar-menu2 {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
 
-<div class="navbar-wrapper" style="height:auto">
-    <nav class="navbar navbar-static-top">
-    <div class="navlogodeck">
+    .navbar-menu2 ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar-menu2 ul li {
+      margin: 0 25px;
+      position: relative;
+    }
+
+    .navbar-menu2 ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      padding: 15px 0;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 16px;
+    }
+
+    .navbar-menu2 ul li a:hover {
+      color: #f5f5f5;
+    }
+
+    /* Active menu item with red underline */
+    .navbar-menu2 ul li.active a,
+    .navbar-menu2 ul li a.active {
+      position: relative;
+    }
+
+    .navbar-menu2 ul li.active a:after,
+    .navbar-menu2 ul li a.active:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #e30613;
+    }
+
+    /* Active item in mobile menu */
+    .gks-menu-list li.active a {
+      color: #e30613;
+      font-weight: bold;
+    }
+
+    /* Mobile Menu Toggle Button */
+    #gks-menu-toggle {
+      display: none;
+      width: 30px;
+      height: 25px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    #gks-menu-toggle span,
+    #gks-menu-toggle::before,
+    #gks-menu-toggle::after {
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #fff;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    #gks-menu-toggle::before {
+      content: '';
+      top: 0;
+    }
+
+    #gks-menu-toggle span {
+      top: 11px;
+    }
+
+    #gks-menu-toggle::after {
+      content: '';
+      bottom: 0;
+    }
+
+    /* Responsive Control */
+    @media (max-width: 768px) {
+      .navbar-wrapper2 {
+        height: 70px;
+      }
+      
+      .navbar-logo2 {
+        height: 95px;
+      }
+      
+      .navbar-menu2 {
+        display: none; /* Hide desktop menu on mobile */
+      }
+
+      #gks-menu-toggle {
+        display: block; /* Show hamburger on mobile */
+        margin-left: auto; /* Push to the right */
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        margin-top: 70px;
+      }
+    }
+
+    /* Mobile Menu Panel */
+    #gks-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+    }
+
+    #gks-menu-overlay.active {
+      display: block;
+    }
+
+    #gks-menu-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background: #fff;
+      z-index: 9999;
+      padding: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+      display: none; /* Hidden by default */
+    }
+
+    #gks-menu-panel.active {
+      display: block; /* Show when active */
+    }
+
+    .gks-menu-close {
+      font-size: 24px;
+      cursor: pointer;
+      text-align: right;
+      margin-bottom: 15px;
+    }
+
+    .gks-menu-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .gks-menu-list li {
+      margin: 15px 0;
+    }
+
+    .gks-menu-list li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      display: block;
+    }
+
+    /* Make mobile menu full width on very small screens */
+    @media (max-width: 767px) {
+      #gks-menu-panel {
+        width: 100vw;
+      }
+    }
+
+    #gks-menu-panel .gks-menu-list {
+      padding-left: 20px;
+    }
+
+    /* Submenu Styling */
+    .navbar-menu2 ul li .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #222;
+      min-width: 200px;
+      display: none;
+      padding: 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      z-index: 1001;
+    }
+
+    /* Arrow for items with submenu - remove the pseudo-element approach */
+    .navbar-menu2 ul li.has-submenu > a:after {
+      content: '';
+    }
+
+    .dropdown-icon {
+      margin-left: 5px;
+      transition: transform 0.2s ease;
+      font-size: 12px;
+    }
+
+    .navbar-menu2 ul li.has-submenu:hover .dropdown-icon {
+      transform: rotate(180deg);
+    }
+
+    .navbar-menu2 ul li:hover .submenu {
+      display: block;
+    }
+
+    .navbar-menu2 ul li .submenu li {
+      margin: 0;
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid #333;
+      background-color: #222;
+    }
+
+    .navbar-menu2 ul li .submenu li:last-child {
+      border-bottom: none;
+    }
+
+    .navbar-menu2 ul li .submenu li a {
+      padding: 12px 20px;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: block;
+      color: #fff;
+      border-left: none;
+    }
+
+    .navbar-menu2 ul li .submenu li a:hover,
+    .navbar-menu2 ul li .submenu li.active a {
+      background-color: #333;
+      color: #fff;
+      border-left: 4px solid #e30613;
+      padding-left: 16px;
+    }
+
+    /* Mobile Menu Submenu */
+    .gks-menu-list .has-submenu > a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .gks-menu-list .has-submenu > a::after {
+      content: '';
+    }
+    
+    .gks-menu-list .has-submenu.open .dropdown-icon {
+      transform: rotate(180deg);
+    }
+
+    .gks-menu-list .submenu {
+      display: none;
+      padding-left: 20px;
+      margin-top: 5px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+
+    .gks-menu-list .has-submenu.open .submenu {
+      display: block;
+    }
+
+    .gks-menu-list .submenu li {
+      margin: 10px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar-wrapper2">
+    <div class="navbar-header2">
+      <a href="/en/index.html"><img src="/en/logo_de.png" alt="Logo" class="navbar-logo2"></a>
     </div>
-    <div class="navbar-header">
-    <div class="container topnav">
-    <div class="" style="height:40px; width: 100px; margin-left: 30px;"> <a class="" href="/en/index.html"><img alt="german" height="10" src="/en/logo_de.png" style="width: 120%;" width="20"/></a>
+    <div class="navbar-menu2">
+      <ul>
+        <li><a href="/en/index.html">Home</a></li>
+        <li class="has-submenu">
+          <a href="/en/products/index.html">Products <i class="fas fa-chevron-down dropdown-icon"></i></a>
+          <ul class="submenu">
+            <li><a href="/en/products/kitchens/index.html">All Kitchens</a></li>
+            <li><a href="/en/products/bathroom-designs/index.html">Bathroom Designs</a></li>
+            <li><a href="/en/products/living/index.html">Living</a></li>
+            <li><a href="/en/products/design-elements/index.html">Design Elements</a></li>
+            <li><a href="/en/products/interior-fittings/index.html">Interior Fittings</a></li>
+            <li><a href="/en/products/electric-appliances/index.html">Electric Appliances</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="/en/services/index.html">Services <i class="fas fa-chevron-down dropdown-icon"></i></a>
+          <ul class="submenu">
+            <li><a href="/en/services/catalogues-and-brochures/index.html">Catalogues and Brochures</a></li>
+            <li><a href="/en/services/instruction-manuals/index.html">Instruction Manuals</a></li>
+            <li><a href="/en/services/planning-tools/index.html">Kitchen Planning</a></li>
+          </ul>
+        </li>
+        <li><a href="/en/inspiration/index.html">About Us</a></li>
+        <li><a href="/en/services/contact/index.html">Contact Us</a></li>
+      </ul>
     </div>
-    <div class="navbar-meta hidden-xs hidden-sm">
-    </div>
-    </div>
-    <div class="navbar-subheader" style="padding-top: 30px;">
-    <div class="navbar-menu container">
-    <div class="burger-menu v2" id="menu-click"> </div>
-    <ul class="nav navbar-nav mainnav fullnav cl-effect hidden-sm hidden-xs">
-    <li><a href="/en/index.html" title="Home">Home</a></li>
-    <li><a href="/en/products/index.html" title="Products">Products</a></li>
-    <li><a href="/en/services/index.html" title="services">Services</a></li>
-    <li><a href="/en/inspiration/index.html" title="About">About</a></li>
-    <li><a href="/en/services/contact/index.html" title="Contact">Contact</a></li>
+    <div id="gks-menu-toggle"><span></span></div>
+  </div>
+
+  <div id="gks-menu-overlay"></div>
+  <div id="gks-menu-panel">
+    <div class="gks-menu-close">&times;</div>
+    <ul class="gks-menu-list">
+      <li><a href="/en/index.html">Home</a></li>
+      <li class="has-submenu">
+        <a href="/en/products/index.html">Products <i class="fas fa-chevron-down dropdown-icon"></i></a>
+        <ul class="submenu">
+          <li><a href="/en/products/kitchens/index.html">All Kitchens</a></li>
+          <li><a href="/en/products/bathroom-designs/index.html">Bathroom Designs</a></li>
+          <li><a href="/en/products/living/index.html">Living</a></li>
+          <li><a href="/en/products/design-elements/index.html">Design Elements</a></li>
+          <li><a href="/en/products/interior-fittings/index.html">Interior Fittings</a></li>
+          <li><a href="/en/products/electric-appliances/index.html">Electric Appliances</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="/en/services/index.html">Services <i class="fas fa-chevron-down dropdown-icon"></i></a>
+        <ul class="submenu">
+          <li><a href="/en/services/catalogues-and-brochures/index.html">Catalogues and Brochures</a></li>
+          <li><a href="/en/services/instruction-manuals/index.html">Instruction Manuals</a></li>
+          <li><a href="/en/services/planning-tools/index.html">Kitchen Planning</a></li>
+        </ul>
+      </li>
+              <li><a href="/en/inspiration/index.html">About Us</a></li>
+        <li><a href="/en/services/contact/index.html">Contact Us</a></li>
     </ul>
-    <div id="menu-complete" style="display:none;">
-    <nav id="menu">
-    <ul class="">
-    <li><a href="/en/products/index.html" title="Overview of all products"><span>Products</span></a>
-    <ul>
-    <li><a href="/en/products/kitchens/index.html" title="Current collection"><span>All kitchens</span></a>
-    </li>
-    <li><a href="/en/products/bathroom-designs/index.html" title="Bathroom designs"><span>Bathroom designs</span></a></li>
-    <li><a href="/en/products/living/index.html" title="Living"><span>Living</span></a>
-    </li>
-    <li><a href="/en/products/design-elements/index.html" title="Our design elements."><span>Design elements</span></a>
-    </li>
-    <li><a href="/en/products/interior-fittings/index.html" title="Our interior fittings."><span>Interior fittings</span></a>
-    </li>
-    <li><a href="/en/products/electric-appliances/index.html" title="Electric appliances for your kitchen"><span>Electric appliances</span></a>
-    </li>
-    </ul>
-    </li>
-    <li>
-    <a title="Services">
-    <span>Services</span>
-    </a>
-    <ul>
-    <li><a href="/en/services/catalogues/index.html" title="Catalogues and Brochures"><span>Catalogues and Brochures</span></a></li>
-    <li><a href="/en/services/manuals/index.html" title="Instruction Manuals"><span>Instruction Manuals</span></a></li>
-    <li><a href="/en/services/planning/index.html" title="Planning Tools"><span>Kitchen planning</span></a></li>
-    </ul>
-    </li>
-    <script src="/en/js/pathHelper.js"></script>
-    <li><a href="/en/about/index.html" title="about"><span>About</span></a></li>
-    <li><a href="/en/services/contact/index.html"><span>Contact</span></a></li>
-    </ul>
-    </nav>
-    <div class="" id="menu-bottom">
-    <div class="socialnav-menu">
-    <ul></ul>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div></div></nav>
-    </div>
+  </div>
+
+
+</body>
+
+</html>

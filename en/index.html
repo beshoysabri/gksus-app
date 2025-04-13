@@ -11,17 +11,17 @@
 
 	<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
 	<meta name="description"
-		content="Experience the wonderful world of kitchens from Germany’s leading kitchen manufacturer – nobilia. You are just a few steps away from your dream kitchen. Let’s get started.">
+		content="Experience the wonderful world of kitchens from Germany's leading kitchen manufacturer – nobilia. You are just a few steps away from your dream kitchen. Let's get started.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="../fileadmin/_processed_/8/2/csm_socialshare-default_af56ad8fcc.jpg">
 	<meta property="og:title" content="Kitchens as unique as your taste">
 	<meta property="og:description"
-		content="Experience the wonderful world of kitchens from Germany’s leading kitchen manufacturer – nobilia. You are just a few steps away from your dream kitchen. Let’s get started.">
+		content="Experience the wonderful world of kitchens from Germany's leading kitchen manufacturer – nobilia. You are just a few steps away from your dream kitchen. Let's get started.">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Kitchens as unique as your taste">
 	<meta name="twitter:description"
-		content="Experience the wonderful world of kitchens from Germany’s leading kitchen manufacturer – nobilia. You are just a few steps away from your dream kitchen. Let’s get started.">
+		content="Experience the wonderful world of kitchens from Germany's leading kitchen manufacturer – nobilia. You are just a few steps away from your dream kitchen. Let's get started.">
 	<meta name="apple-mobile-web-app-capable" content="no">
 	<meta name="google" content="notranslate">
 	<meta name="compatible" content="IE=edge">
@@ -33,39 +33,14 @@
 		href="../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css?1736247112" media="all">
 	<script
 		src="../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js?1730218652"></script>
-	<script id="usercentrics-cmp" src="../../app.usercentrics.eu/browser-ui/latest/loader.js" data-language="en"
-		data-settings-id="tqyNl7mAl" async></script>
-	<script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-secure-code="083FEb"
-		src="../../code.etracker.com/code/e.js" async></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag("consent", "default", { ad_user_data: "denied", ad_personalization: "denied", ad_storage: "denied", analytics_storage: "denied", wait_for_update: 1000 });
-		gtag("set", "ads_data_redaction", true);
-	</script>
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true; j.src = '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-NC3FGVQ');</script>
+	
+	
 	<link rel="dns-prefetch" href="https://www.nobilia.de/">
 	<meta http-equiv="cleartype" content="on">
 	<meta property="human_updated_time" content="06.11.2024 14:03:14">
 	<meta property="og:updated_time" content="1730898194">
 	<meta property="og:site_name" content="nobilia Küchen">
 	<meta property="og:type" content="website">
-	<script>
-		var gaProperty = 'UA-97994516-1';
-		var disableStr = 'ga-disable-' + gaProperty;
-		if (document.cookie.indexOf(disableStr + '=true') > -1) {
-			window[disableStr] = true;
-		}
-		function gaOptout() {
-			document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-			window[disableStr] = true;
-			alert('Google Analytics Tracking deactivated!');
-		}
-	</script>
-	<script>var lll = { 'basketadd': 'Add to wish list', 'basketremove': 'Remove from wish list', }</script>
 	<link rel="canonical" href="index.html">
 	<link rel="alternate" hreflang="x-default" href="https://www.nobilia.de/de/">
 	<link rel="alternate" hreflang="de-DE" href="https://www.nobilia.de/de/">
@@ -319,6 +294,7 @@
 	</style>
 
 
+	<script src="/js/hamburger-menu.js"></script>
 </head>
 
 
@@ -330,10 +306,30 @@
 <!-- Header Loading Script -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // Load hamburger menu script before fetching header
+        if (!document.querySelector('script[src="/js/hamburger-menu.js"]')) {
+            const scriptTag = document.createElement('script');
+            scriptTag.src = '/js/hamburger-menu.js';
+            document.head.appendChild(scriptTag);
+        }
+        
         fetch('./header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;
+                
+                // Force menu reinit after a short delay
+                setTimeout(function() {
+                    if (window.gksMenuInitialized && !document.querySelector('#gks-menu-toggle:hover')) {
+                        // Reset the flag to allow reinitialization
+                        window.gksMenuInitialized = false;
+                        
+                        // Re-execute the script
+                        const scriptTag = document.createElement('script');
+                        scriptTag.src = '/js/hamburger-menu.js';
+                        document.body.appendChild(scriptTag);
+                    }
+                }, 500);
             })
             .catch(error => console.error('Error loading header:', error));
     });
@@ -354,7 +350,7 @@
 								<button type="button" class="close" aria-label="Close"><span
 										aria-hidden="true">&times;</span></button>
 								<div class="holder box">
-									<div class="overline">Features you’ll love.</div>
+									<div class="overline">Features you'll love.</div>
 									<h3 class="h3 headline">Anti-fingerprint coating</h3>
 									<div class="media">
 										<picture>

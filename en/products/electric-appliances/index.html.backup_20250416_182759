@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en-GB">
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+<head>
+<base href="/en/products\electric-appliances/"/>
+<meta charset="utf-8"/>
+<title>Electric appliances for your kitchen | German Kitchen Studio</title>
+<meta content="IE=edge,chrome=1" http-equiv="x-ua-compatible"/>
+<meta content="German Kitchen Studio come complete with electric appliances from all the major brands." name="description"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="website" property="og:type"/>
+<meta content="/fileadmin/_processed_/8/2/csm_socialshare-default.jpg" property="og:image"/>
+<meta content="Electric appliances for your kitchen" property="og:title"/>
+<meta content="German Kitchen Studio come complete with electric appliances from all the major brands." property="og:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Electric appliances for your kitchen" name="twitter:title"/>
+<meta content="German Kitchen Studio come complete with electric appliances from all the major brands." name="twitter:description"/>
+<meta content="no" name="apple-mobile-web-app-capable"/>
+<meta content="notranslate" name="google"/>
+<meta content="IE=edge" name="compatible"/>
+<meta content="dibyeki5n4j3h6oyf6dbks05h73q2t" name="facebook-domain-verification"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+<link href="../../../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css" media="all" rel="stylesheet"/>
+<script src="../../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js"></script>
+<script async="" data-language="en" data-settings-id="tqyNl7mAl" id="usercentrics-cmp" src="../../../../app.usercentrics.eu/browser-ui/latest/loader.js"></script>
+<script async="" charset="UTF-8" data-block-cookies="true" data-secure-code="083FEb" id="_etLoader" src="../../../../code.etracker.com/code/e.js" type="text/javascript"></script>
+<script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag() {dataLayer.push(arguments);}
+                  gtag("consent", "default", {ad_user_data: "denied",ad_personalization: "denied",ad_storage: "denied",analytics_storage: "denied",wait_for_update: 1000});
+                  gtag("set", "ads_data_redaction", true);
+              </script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NC3FGVQ');</script>
+<link href="./../..../../../../" rel="dns-prefetch"/>
+<meta content="on" http-equiv="cleartype"/>
+<meta content="17.10.2024 09:43:31" property="human_updated_time"/>
+<meta content="1729151011" property="og:updated_time"/>
+<meta content="nobilia Küchen" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<script>
+    var gaProperty = 'UA-97994516-1';
+    var disableStr = 'ga-disable-' + gaProperty;
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+    }
+    function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+        alert('Google Analytics Tracking deactivated!');
+    }
+    </script>
+<script>var lll = {'basketadd': 'Add to wish list','basketremove': 'Remove from wish list',}</script>
+<link href="index.html" rel="canonical"/>
+<link href="./../..../../../../de/produkte/elektrogeraete/" hreflang="x-default" rel="alternate"/>
+<link href="./../..../../../../de/produkte/elektrogeraete/" hreflang="de-DE" rel="alternate"/>
+<link href="index.html" hreflang="en-US" rel="alternate"/>
+<link href="./../..../../../../fr/produits/electromenager/" hreflang="fr-FR" rel="alternate"/>
+<link href="./../..../../../../it/prodotti/elettrodomestici/" hreflang="it-IT" rel="alternate"/>
+<link href="./../..../../../../es/productos/electrodomesticos/" hreflang="es-ES" rel="alternate"/>
+<link href="./../..../../../../nl/producten/elektro-apparaten/" hreflang="nl-NL" rel="alternate"/>
+<link href="./../..../../../../pl/produkty/urzadzenia-elektryczne/" hreflang="pl-PL" rel="alternate"/>
+<link href="./../..../../../../ru/produkty/ehlektropribory/" hreflang="ru-RU" rel="alternate"/>
+<link href="./../..../../../../cs/vyrobky/elektricke-spotrebice/" hreflang="cs-CZ" rel="alternate"/>
+<style>
+			
+			
+		.row-eh {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.card-style {
+			background: linear-gradient(135deg, #ffffff, #f7f7f7);
+			border-radius: 12px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			padding: 25px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			position: relative;
+			overflow: hidden;
+			max-width: 400px;
+		}
+
+		.card-style:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+		}
+
+		.theicon {
+			font-size: 50px;
+			margin-bottom: 15px;
+			color: #febc5b;
+		}
+
+
+
+		.card-style p {
+			font-size: 16px;
+			color: #555;
+			margin-bottom: 15px;
+		}
+
+		.btn-custom {
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 50px;
+			text-transform: uppercase;
+			font-weight: bold;
+			transition: background 0.3s ease, transform 0.2s ease;
+		}
+
+		.btn-custom:hover {
+			background: #febc5b;
+			color: #fff;
+			transform: scale(1.05);
+		}
+			
+			
+			
+			</style>
+<script src="/js/hamburger-menu.js"></script>
+</head>
+<body class="p-64 nobilia workspace- newcss">
+<!-- Header Container -->
+<div id="header-container"></div>
+<!-- Header Loading Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    });
+</script>
+<div id="top"></div>
+<div id="top"></div>
+<div class="site-overlay"></div>
+<div class="site-content">
+<!--TYPO3SEARCH_begin-->
+<div class="fullstage marg-b0" id="c855">
+<div class="singlestage">
+<style>
+    @media
+        (max-width: 767px),
+        (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
+        (max-width: 767px) and (min-resolution: 1.5dppx),
+        (max-width: 767px) and (min-resolution: 144dpi) {
+        #bgi-3025-855 { background-image: url('../../../fileadmin/_processed_/2/4/csm_elektrogeraete.jpg'); }
+    }
+    @media (max-width: 575px) {
+        #bgi-3025-855 { background-image: url('../../../fileadmin/_processed_/2/4/csm_elektrogeraete.jpg'); }
+    }
+    </style>
+<div class="singlestage_image bg-image--cover" id="bgi-3025-855">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/2/4/csm_elektrogeraete.jpg 1x, /fileadmin/_processed_/2/4/csm_elektrogeraete.jpg 2x"/><source media="(max-width: 1023px)" srcset="/fileadmin/_processed_/2/4/csm_elektrogeraete.jpg"/><source media="(max-width: 1279px)" srcset="/fileadmin/_processed_/2/4/csm_elektrogeraete.jpg"/><source media="(max-width: 1440px)" srcset="/fileadmin/_processed_/2/4/csm_elektrogeraete.jpg"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Electric appliances to complete your nobilia kitchen." class="hidden-xs" height="800" id="i3025" loading="lazy" src="/fileadmin/assets/produkte/_stages/elektrogeraete.jpg" width="1680"/></picture>
+</div>
+<div class="singlestage_text">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-push-3 col-sm-9 col-sm-push-2 col-lg-6 col-lg-push-5">
+<div class="box">
+<h1 class="h1 headline">Electric appliances complete the kitchen.</h1>
+<p>Your dream kitchen wouldn’t be complete without the right built-in appliances. nobilia offers you household appliances from renowned manufacturers and in all price ranges.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-teaser text-teaser--big full-type4 a-left" id="c856"> <i id="c3882"></i>
+<div class="container">
+<div class="row">
+<div class="col contentshrink">
+<div class="box">
+<h2 class="h1 headline">Our electric appliances range.</h2>
+<p>Hot plate, oven, fridge, dishwasher and cooker hood – these are the most important household appliances in a kitchen. Microwaves, steam cookers or fully automatic coffee machines could be added as well. They all provide you with different innovative functions that make your daily life easier and support a healthy lifestyle. Discover our electric appliances and let your competent retailer give you a consultation.</p>
+<p> <a class="ghost-button" href="exclusive-appliances/index.html" title="Exclusive range of electric appliances of well-known brands">Exclusive range of electric appliances of well-known brands</a> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container ge-columns" id="c865">
+<div class="row row-eh">
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/6/c/csm_beko.jpg 1x, /fileadmin/assets/services/markengeraete/beko.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Beko electric appliances speciality retailers" class="i-opt-col3" height="253" id="i27388" loading="lazy" src="/fileadmin/_processed_/6/c/csm_beko.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c27096">
+<div class="box">
+<h3 class="h2 headline">Beko</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.beko.co.uk/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/assets/produkte/elektrogeraete/logo_bora_transparent_neu1.png 1x, /fileadmin/assets/produkte/elektrogeraete/logo_bora_transparent_neu1.png 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="" class="i-opt-col3" height="253" id="i71200" loading="lazy" src="/fileadmin/assets/produkte/elektrogeraete/logo_bora_transparent_neu1.png" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c12369">
+<div class="box">
+<h3 class="h2 headline">Bora</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.bora.com/int/en/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/0/7/csm_bosch.jpg 1x, /fileadmin/assets/services/markengeraete/bosch.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Bosch electric appliances speciality retailers" class="i-opt-col3" height="253" id="i3030" loading="lazy" src="/fileadmin/_processed_/0/7/csm_bosch.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c863">
+<div class="box">
+<h3 class="h2 headline">Bosch</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.bosch-home.co.uk/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/9/c/csm_elica.png 1x, /fileadmin/assets/services/markengeraete/elica.png 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Logo von Elica mit einer modernen Schriftart und einer stilisierten blauen Wellengrafik, die Innovation, Fließfähigkeit und modernes Designästhetik symbolisiert." class="i-opt-col3" height="242" id="i74707" loading="lazy" src="/fileadmin/_processed_/9/c/csm_elica.png" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c862">
+<div class="box">
+<h3 class="h2 headline">elica</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.elica.com/GB-en" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container ge-columns" id="c869">
+<div class="row row-eh">
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/8/1/csm_faber.jpg 1x, /fileadmin/assets/services/markengeraete/faber.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Faber electric appliances speciality retailers" class="i-opt-col3" height="253" id="i3034" loading="lazy" src="/fileadmin/_processed_/8/1/csm_faber.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c868">
+<div class="box">
+<h3 class="h2 headline">Faber</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.faberspa.com/en-en" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source 1x,="" 2x"="" assets="" csm_$($parts[1])_$($parts[2]).jpg"="" fileadmin="" grundig_logo.jpg="" markengeraete="" media="(max-width: 767px)" services="" srcset=" /fileadmin/_processed_/6/d/
+        param($match)
+        $parts = $match -split '_'
+        "/>
+<!--[if IE 9]></audio><![endif]-->
+<img "="" alt='The image displays the word "GRUNDIG" in bold uppercase letters, centered on a plain white background, suggesting a corporate logo.' class="i-opt-col3" csm_$($parts[1])_$($parts[2]).jpg"="" height="253" id="i32044" loading="lazy" src="/fileadmin/_processed_/6/d/
+        param($match)
+        $parts = $match -split '_'
+        " width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c35086">
+<div class="box">
+<h3 class="h2 headline">Grundig</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.grundig.co.uk/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/e/7/csm_junker.jpg 1x, /fileadmin/assets/services/markengeraete/junker.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Junker electric appliances speciality retailers" class="i-opt-col3" height="253" id="i3033" loading="lazy" src="/fileadmin/_processed_/e/7/csm_junker.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c867">
+<div class="box">
+<h3 class="h2 headline">Junker</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.junker-home.com/uk/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source 1x,="" 2x"="" assets="" csm_$($parts[1])_$($parts[2]).jpg"="" fileadmin="" laurus_logo.jpg="" markengeraete="" media="(max-width: 767px)" services="" srcset=" /fileadmin/_processed_/1/8/
+        param($match)
+        $parts = $match -split '_'
+        "/>
+<!--[if IE 9]></audio><![endif]-->
+<img "="" alt='Bold, capitalized text "LAURUS" in a modern sans-serif font, centered on a plain light gray background, evoking a sleek and professional brand identity.' class="i-opt-col3" csm_$($parts[1])_$($parts[2]).jpg"="" height="253" id="i32052" loading="lazy" src="/fileadmin/_processed_/1/8/
+        param($match)
+        $parts = $match -split '_'
+        " width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c35087">
+<div class="box">
+<h3 class="h2 headline">Laurus</h3>
+<p class="link-bottom"><a class="textlink" href="https://laurus-einbaugeraete.de/eu-en" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container ge-columns" id="c873">
+<div class="row row-eh">
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source 1x,="" 2x"="" assets="" csm_$($parts[1])_$($parts[2]).jpg"="" fileadmin="" liebherr_logo.jpg="" markengeraete="" media="(max-width: 767px)" services="" srcset=" /fileadmin/_processed_/d/0/
+        param($match)
+        $parts = $match -split '_'
+        "/>
+<!--[if IE 9]></audio><![endif]-->
+<img "="" alt="" class="i-opt-col3" csm_$($parts[1])_$($parts[2]).jpg"="" height="253" id="i63739" loading="lazy" src="/fileadmin/_processed_/d/0/
+        param($match)
+        $parts = $match -split '_'
+        " width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c58826">
+<div class="box">
+<h3 class="h2 headline">Liebherr</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.liebherr.com/en/deu/start/start-page.html" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/3/3/csm_miele.jpg 1x, /fileadmin/assets/services/markengeraete/miele.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Red logo featuring the word “Miele” in white capital letters centered on a rectangular maroon background, symbolizing the brand's identity." class="i-opt-col3" height="253" id="i5601" loading="lazy" src="/fileadmin/_processed_/3/3/csm_miele.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c870">
+<div class="box">
+<h3 class="h2 headline">Miele</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.miele.co.uk/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source 1x,="" 2x"="" assets="" csm_$($parts[1])_$($parts[2]).jpg"="" fileadmin="" markengeraete="" media="(max-width: 767px)" neff_logo.jpg="" services="" srcset=" /fileadmin/_processed_/2/a/
+        param($match)
+        $parts = $match -split '_'
+        "/>
+<!--[if IE 9]></audio><![endif]-->
+<img "="" alt="" class="i-opt-col3" csm_$($parts[1])_$($parts[2]).jpg"="" height="253" id="i63747" loading="lazy" src="/fileadmin/_processed_/2/a/
+        param($match)
+        $parts = $match -split '_'
+        " width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c58835">
+<div class="box">
+<h3 class="h2 headline"> Neff</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.neff-home.com/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/3/b/csm_progress.jpg 1x, /fileadmin/assets/services/markengeraete/progress.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Progress electric appliances speciality retailers" class="i-opt-col3" height="253" id="i3036" loading="lazy" src="/fileadmin/_processed_/3/b/csm_progress.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c871">
+<div class="box">
+<h3 class="h2 headline">Progress</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.progress-hausgeraete.de/en-de/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container ge-columns" id="c12358">
+<div class="row row-eh">
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/f/0/csm_samsung.jpg 1x, /fileadmin/assets/services/markengeraete/samsung.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="The image displays the bold, black text &quot;SAMSUNG&quot; centered against a plain, light background, representing the prominent electronics brand's logo." class="i-opt-col3" height="253" id="i19843" loading="lazy" src="/fileadmin/_processed_/f/0/csm_samsung.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c19278">
+<div class="box">
+<h3 class="h2 headline">Samsung</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.samsung.com/uk/home-appliances/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/_processed_/b/2/csm_siemens.jpg 1x, /fileadmin/assets/services/markengeraete/siemens.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="Siemens electric appliances speciality retailers" class="i-opt-col3" height="253" id="i11296" loading="lazy" src="/fileadmin/_processed_/b/2/csm_siemens.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c7166">
+<div class="box">
+<h3 class="h2 headline">Siemens</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.siemens-home.bsh-group.com/uk/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source 1x,="" 2x"="" assets="" csm_$($parts[1])_$($parts[2]).jpg"="" fileadmin="" markengeraete="" media="(max-width: 767px)" services="" srcset=" /fileadmin/_processed_/4/f/
+        param($match)
+        $parts = $match -split '_'
+        " whirlpool_logo.jpg=""/>
+<!--[if IE 9]></audio><![endif]-->
+<img "="" alt='Logo of Whirlpool Corporation featuring stylized black text with a dynamic yellow swirl above the letter "i," symbolizing motion and innovation.' class="i-opt-col3" csm_$($parts[1])_$($parts[2]).jpg"="" height="253" id="i32059" loading="lazy" src="/fileadmin/_processed_/4/f/
+        param($match)
+        $parts = $match -split '_'
+        " width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c35088">
+<div class="box">
+<h3 class="h2 headline">Whirlpool</h3>
+<p class="link-bottom"><a class="textlink" href="https://www.whirlpoolcorp.com/" rel="noreferrer" target="_blank" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="text-image-teaser-image image-hoverscale">
+<picture>
+<!--[if IE 9]><audio><![endif]-->
+<source media="(max-width: 767px)" srcset=" /fileadmin/assets/services/markengeraete/xtra_hob_logo.jpg 1x, /fileadmin/assets/services/markengeraete/xtra_hob_logo.jpg 2x"/>
+<!--[if IE 9]></audio><![endif]-->
+<img alt="" class="i-opt-col3" height="253" id="i79513" loading="lazy" src="/fileadmin/assets/services/markengeraete/xtra_hob_logo.jpg" width="322"/></picture>
+</div>
+<div class="text-image-teaser str_textimageteaser type-vertical" id="c83397">
+<div class="box">
+<h3 class="h2 headline">Xtra Hob</h3>
+<p class="link-bottom"><a class="textlink" href="../../xtra-hob-the-invisible-hot-plate/index.html" title="To the homepage">To the homepage</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-teaser text-teaser--big full-type3" id="c874"> <i id="c3899"></i>
+<div class="container">
+<div class="row">
+<div class="col contentshrink">
+<div class="box">
+<h2 class="h1 headline">You will find more inspiration for outfitting your kitchen here.</h2>
+<p> <a class="textlink" href="../kitchens/index.html" title="Right this way">Right this way</a> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container ge-columns" id="c296">
+<div class="row row-eh">
+<div class="card-style">
+<div class="theicon"><span class="icon-t_produkte"></span></div>
+<h3 class="h2 headline">Design elements</h3>
+<p>The selection of fronts, handles, colours and worktops make German Kitchen Studio your dream
+						kitchen. Let us inspire you here.</p>
+<a class="btn btn-primary btn-custom" href="../design-elements/index.html">To the design
+						elements.</a>
+</div>
+<div class="card-style">
+<div class="theicon"><span class="icon-t_services"></span></div>
+<h3 class="h2 headline">Interior fittings</h3>
+<p>Make the most of your kitchen: maximise your space. Not a problem thanks to our interior fittings.</p>
+<a class="btn btn-primary btn-custom" href="../interior-fittings/index.html">
+						To the interior fittings</a>
+</div>
+</div>
+</div>
+<!-- Footer Container -->
+<div id="footer-container"></div>
+<!-- Footer Loading Script -->
+<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('../../footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer-container').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            });
+        </script>
+</div><script src="../../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js"></script>
+<script defer="defer" src="../../../typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a94497dba.js"></script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.nobilia.de\/en\/","name":"Homepage"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.nobilia.de\/en\/products\/","name":"Products"}}]}</script>
+</body>
+<!-- Mirrored from www.nobilia.de/en/products/electric-appliances/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jan 2025 01:36:58 GMT -->
+</html>

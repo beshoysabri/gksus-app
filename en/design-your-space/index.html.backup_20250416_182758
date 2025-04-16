@@ -1,0 +1,383 @@
+<html lang="en-GB" dir="ltr">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+<base href="/en/design-your-space/">
+    <meta charset="utf-8">
+
+
+    <title>Design Your Space | German Kitchen Studio</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../fileadmin/_processed_/8/2/csm_socialshare-default_af56ad8fcc.jpg">
+    <meta property="og:title" content="Inspiration">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Inspiration">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="google" content="notranslate">
+    <meta name="compatible" content="IE=edge">
+    <meta name="facebook-domain-verification" content="dibyeki5n4j3h6oyf6dbks05h73q2t">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+    <link rel="stylesheet"
+        href="../../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css?1736247112" media="all">
+    <script
+        src="../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js?1730218652"></script>
+    <script id="usercentrics-cmp" src="../../../app.usercentrics.eu/browser-ui/latest/loader.js" data-language="en"
+        data-settings-id="tqyNl7mAl" async></script>
+    <script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-secure-code="083FEb"
+        src="../../../code.etracker.com/code/e.js" async></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("consent", "default", { ad_user_data: "denied", ad_personalization: "denied", ad_storage: "denied", analytics_storage: "denied", wait_for_update: 1000 });
+        gtag("set", "ads_data_redaction", true);
+    </script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NC3FGVQ');</script>
+    <link rel="dns-prefetch" href="https://www.nobilia.de/">
+    <meta http-equiv="cleartype" content="on">
+    <meta property="human_updated_time" content="10.12.2024 14:10:26">
+    <meta property="og:updated_time" content="1733836226">
+    <meta property="og:site_name" content="nobilia Küchen">
+    <meta property="og:type" content="website">
+    <script>
+        var gaProperty = 'UA-97994516-1';
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+            alert('Google Analytics Tracking deactivated!');
+        }
+    </script>
+    <script>var lll = { 'basketadd': 'Add to wish list', 'basketremove': 'Remove from wish list', }</script>
+    <link rel="canonical" href="index.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.nobilia.de/de/inspiration/">
+    <link rel="alternate" hreflang="de-DE" href="https://www.nobilia.de/de/inspiration/">
+    <link rel="alternate" hreflang="en-US" href="index.html">
+    <link rel="alternate" hreflang="fr-FR" href="https://www.nobilia.de/fr/inspiration/">
+    <link rel="alternate" hreflang="it-IT" href="https://www.nobilia.de/it/ispirazione/">
+    <link rel="alternate" hreflang="es-ES" href="https://www.nobilia.de/es/inspiracion/">
+    <link rel="alternate" hreflang="nl-NL" href="https://www.nobilia.de/nl/inspiratie/">
+    <link rel="alternate" hreflang="pl-PL" href="https://www.nobilia.de/pl/inspiracja/">
+    <link rel="alternate" hreflang="cs-CZ" href="https://www.nobilia.de/cs/inspirace/">
+    <style>
+        .show-conte {
+            display: block;
+            background-color: ##ded4cb;
+            width: 100%;
+            margin-top: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .container-form {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            border-radius: 10px;
+            height: auto;
+            overflow-y: scroll;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .section-form {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .show-mobile-only {
+            display: none;
+        }
+
+
+        .steps-section {
+            text-align: center;
+            padding: 50px 20px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .steps-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .step-box {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .step-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-box i {
+            font-size: 40px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .step-box h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .steps-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .steps-section {
+                height: auto;
+            }
+
+            .steps-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: #333;
+            }
+        }
+    </style>
+
+	<script src="/js/hamburger-menu.js"></script>
+</head>
+
+<body class="p-4265 nobilia workspace- newcss">
+<!-- Header Container -->
+<div id="header-container"></div>
+
+<!-- Header Loading Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    });
+</script>
+
+<div id="top"></div>
+    <div id="top"></div>
+    -->
+    <div class="site-overlay"></div>
+    <div class="site-content" style="position: relative;">
+
+        <div class="fullstage marg-b0" id="c67083">
+         
+            <div class="singlestage">
+                <style>
+                    @media (max-width: 767px),
+                    (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
+                    (max-width: 767px) and (min-resolution: 1.5dppx),
+                    (max-width: 767px) and (min-resolution: 144dpi) {
+                        #bgi-69564-67083 {
+                            background-image: url('../../fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ');
+                        }
+                    }
+
+                    @media (max-width: 575px) {
+                        #bgi-69564-67083 {
+                            background-image: url('../../fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ');
+                        }
+                    }
+                </style>
+                <div class="singlestage_image bg-image--cover" id="bgi-69564-67083">
+                    <picture>
+                        <!--[if IE 9]><audio><![endif]-->
+                        <source media="(max-width: 767px)"
+                            srcset=" /fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+     1x, /fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+     2x">
+                        <source media="(max-width: 1023px)"
+                            srcset="/fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ">
+                        <source media="(max-width: 1279px)"
+                            srcset="/fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ">
+                        <source media="(max-width: 1440px)"
+                            srcset="/fileadmin/_processed_/2/1/
+        param($match)
+        $parts = $match -split '_'
+        "csm_$($parts[1])_$($parts[2]).jpg"
+    ">
+                        <!--[if IE 9]></audio><![endif]-->
+                        <img loading="lazy" class="hidden-xs" id="i69564"
+                            src="../../fileadmin/assets/services/_stages/nobilia_Wohnwelten.jpg" width="1680"
+                            height="800" alt="">
+                    </picture>
+
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class="h2 headline" style="text-align: center; margin-top: 50px; font-size: 40px; font-weight: 700;">
+            Start Design your Space for Free </h2>
+
+        <div class="container-full ge-columns gutter-0 marg-b0" id="c67085"
+            style="justify-content: center; display: flex;">
+
+            <section class="steps-section">
+                <div class="steps-container">
+                    <div class="step-box">
+                        <i class="fas fa-phone"></i>
+                                                <h3>-1-</h3>
+
+                        <p>Chat with us, give us a call, or send email with your kitchen dimensions, our designers will help you know how and what to measure.</p>
+                    </div>
+                    <div class="step-box">
+                        <i class="fas fa-pencil-ruler"></i>
+                                                <h3>-2-</h3>
+
+                        <p>Our designers will start to design your space with your selected models and styles</p>
+                    </div>
+                    <div class="step-box">
+                        <i class="fas fa-box"></i>
+                        <h3>-3-</h3>
+                        <p>We can set a free appointment to show you the design of your space and the cost of your cabinets</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+    <!-- Footer Container -->
+        <div id="footer-container"></div>
+
+        <!-- Footer Loading Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('../footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer-container').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            });
+        </script>
+    </div><script
+        src="../../typo3temp/assets/compressed/merged-1ee0e54e16201143389e6522e44cc794-83a709f5bf7ee973d6f3e968eb77bed27dba.js?1709748970"></script>
+    <script src="../../typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a94497dba.js?1709748970"
+        defer="defer"></script>
+    <script
+        type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.nobilia.de\/en\/","name":"Homepage"}}]}</script>
+</body>
+
+</html>

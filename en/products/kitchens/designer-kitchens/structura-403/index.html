@@ -1,35 +1,275 @@
+<!DOCTYPE html>
 
-				<style>
-					.extbase-debugger-tree{position:relative}
-					.extbase-debugger-tree input{position:absolute !important;float: none !important;top:0;left:0;height:14px;width:14px;margin:0 !important;cursor:pointer;opacity:0;z-index:2}
-					.extbase-debugger-tree input~.extbase-debug-content{display:none}
-					.extbase-debugger-tree .extbase-debug-header:before{position:relative;top:3px;content:"";padding:0;line-height:10px;height:12px;width:12px;text-align:center;margin:0 3px 0 0;background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyIDEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6Izg4ODg4ODt9PC9zdHlsZT48cGF0aCBpZD0iQm9yZGVyIiBjbGFzcz0ic3QwIiBkPSJNMTEsMTFIMFYwaDExVjExeiBNMTAsMUgxdjloOVYxeiIvPjxnIGlkPSJJbm5lciI+PHJlY3QgeD0iMiIgeT0iNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUiIHk9IjIiIGNsYXNzPSJzdDAiIHdpZHRoPSIxIiBoZWlnaHQ9IjciLz48L2c+PC9zdmc+);display:inline-block}
-					.extbase-debugger-tree input:checked~.extbase-debug-content{display:inline}
-					.extbase-debugger-tree input:checked~.extbase-debug-header:before{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyIDEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6Izg4ODg4ODt9PC9zdHlsZT48cGF0aCBpZD0iQm9yZGVyIiBjbGFzcz0ic3QwIiBkPSJNMTEsMTFIMFYwaDExVjExeiBNMTAsMUgxdjloOVYxeiIvPjxnIGlkPSJJbm5lciI+PHJlY3QgeD0iMiIgeT0iNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iMSIvPjwvZz48L3N2Zz4=)}
-					.extbase-debugger{display:block;text-align:left;background:#2a2a2a;border:1px solid #2a2a2a;box-shadow:0 3px 0 rgba(0,0,0,.5);color:#000;margin:20px;overflow:hidden;border-radius:4px}
-					.extbase-debugger-floating{position:relative;z-index:99990}
-					.extbase-debugger-top{background:#444;font-size:12px;font-family:monospace;color:#f1f1f1;padding:6px 15px}
-					.extbase-debugger-center{padding:0 15px;margin:15px 0;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 20px,#252525 20px,#252525 40px)}
-					.extbase-debugger-center,.extbase-debugger-center .extbase-debug-string,.extbase-debugger-center a,.extbase-debugger-center p,.extbase-debugger-center pre,.extbase-debugger-center strong{font-size:12px;font-weight:400;font-family:monospace;line-height:20px;color:#f1f1f1}
-					.extbase-debugger-center pre{background-color:transparent;margin:0;padding:0;border:0;word-wrap:break-word;color:#999}
-					.extbase-debugger-center .extbase-debug-string{color:#ce9178;white-space:normal}
-					.extbase-debugger-center .extbase-debug-type{color:#569CD6;padding-right:4px}
-					.extbase-debugger-center .extbase-debug-unregistered{background-color:#dce1e8}
-					.extbase-debugger-center .extbase-debug-filtered,.extbase-debugger-center .extbase-debug-proxy,.extbase-debugger-center .extbase-debug-ptype,.extbase-debugger-center .extbase-debug-visibility,.extbase-debugger-center .extbase-debug-uninitialized,.extbase-debugger-center .extbase-debug-scope{color:#fff;font-size:10px;line-height:12px;padding:2px 4px;margin-right:2px;position:relative;top:-1px}
-					.extbase-debugger-center .extbase-debug-scope{background-color:#497AA2}
-					.extbase-debugger-center .extbase-debug-ptype{background-color:#698747}
-					.extbase-debugger-center .extbase-debug-visibility{background-color:#6c0787}
-					.extbase-debugger-center .extbase-debug-uninitialized{background-color:#698747}
-					.extbase-debugger-center .extbase-debug-dirty{background-color:#FFFFB6}
-					.extbase-debugger-center .extbase-debug-filtered{background-color:#4F4F4F}
-					.extbase-debugger-center .extbase-debug-seeabove{text-decoration:none;font-style:italic}
-					.extbase-debugger-center .extbase-debug-property{color:#f1f1f1}
-					.extbase-debugger-center .extbase-debug-closure{color:#9BA223;}
-				</style>
-				<div class="extbase-debugger extbase-debugger-floating">
-				<div class="extbase-debugger-top">Extbase Variable Dump</div>
-				<div class="extbase-debugger-center">
-					<pre dir="ltr">'<span class="extbase-debug-string">no kitchen</span>' (10 chars)</pre>
-				</div>
-			</div>
-			
+<html dir="ltr" lang="en-GB">
+<!-- Mirrored from www.nobilia.de/en/products/kitchens/designer-kitchens/structura-403/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Apr 2025 14:31:51 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<head>
+<base href="/en/products\kitchens\designer-kitchens\structura-403/"/>
+<meta charset="utf-8"/>
+<!--
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2025 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+<link href="/fileadmin/html/img/favicon_nobilia.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+<title>STRUCTURA 403, Nero oak reproduction, LINE N XL (handleless) (modern kitchens) | nobilia Kitchens</title>
+<meta content="IE=edge,chrome=1" http-equiv="x-ua-compatible"/>
+<meta content="STRUCTURA 403 in 'Nero oak reproduction' is a modern kitchen with impressive, timeless elegance." name="description"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="website" property="og:type"/>
+<meta content="/fileadmin/_processed_/8/2/csm_socialshare-default.jpg" property="og:image"/>
+<meta content="STRUCTURA 403, Nero oak reproduction, LINE N XL (handleless) (modern kitchens)" property="og:title"/>
+<meta content="STRUCTURA 403 in 'Nero oak reproduction' is a modern kitchen with impressive, timeless elegance." property="og:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="STRUCTURA 403, Nero oak reproduction, LINE N XL (handleless) (modern kitchens)" name="twitter:title"/>
+<meta content="STRUCTURA 403 in 'Nero oak reproduction' is a modern kitchen with impressive, timeless elegance." name="twitter:description"/>
+<meta content="no" name="apple-mobile-web-app-capable"/>
+<meta content="notranslate" name="google"/>
+<meta content="IE=edge" name="compatible"/>
+<meta content="dibyeki5n4j3h6oyf6dbks05h73q2t" name="facebook-domain-verification"/>
+<link href="../../../../../typo3temp/assets/compressed/merged-af15b977994a9082ffb55b97d19f9f17.css" media="all" rel="stylesheet"/>
+<script src="https://www.nobilia.de/typo3temp/assets/compressed/merged-d0e255a78042666fb423cb9b0e086d74-2d186da9cf172364f3d9a42e81623f14.js"></script>
+
+
+
+
+
+<link href="index.html" rel="canonical"/>
+
+
+
+
+
+
+
+
+
+ <script src="/js/hamburger-menu.js"></script>
+</head>
+<body class="p-374 nobilia workspace- newcss">
+<!-- Header Container -->
+<div id="header-container"></div>
+<!-- Header Loading Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../../../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    });
+</script>
+<div id="top"></div>
+<div id="top"></div>
+<div class="site-overlay"></div>
+<div class="site-content">
+<!--TYPO3SEARCH_begin-->
+<div class="product-detail-intro stage fullstage marg-b0">
+<picture><source media="(max-width: 767px)" srcset="/fileadmin/_processed_/a/0/csm_403_structura_gallery.jpg"/><source media="(max-width: 1023px)" srcset="/fileadmin/_processed_/a/0/csm_403_structura_gallery.jpg"/><source media="(max-width: 1279px)" srcset="/fileadmin/_processed_/a/0/csm_403_structura_gallery.jpg"/><source media="(max-width: 1440px)" srcset="/fileadmin/_processed_/a/0/csm_403_structura_gallery.jpg"/><img alt="Front 403, Nero oak reproduction" height="914" loading="lazy" src="/fileadmin/_processed_/a/0/csm_403_structura_gallery_4.jpg" width="1920"/></picture>
+<div class="opener box"><a class="opener-js" href="#"><span>...</span></a></div>
+
+<div class="product-overlay transition-all box-lr xopened">
+<div class="closer box"><a class="closer-js" href="#"><span>×</span></a></div>
+<div class="box product-header">
+<h3 class="h4 headline marg-b0" itemprop="name"> STRUCTURA 403 <span class="description" itemprop="description" title="Nero oak reproduction">- Nero oak reproduction</span></h3>
+<span class="line hidden-sm hidden-xs"></span></div>
+<div class="container kitchen-specs marg-b1 hidden-sm hidden-xs">
+<div class="row">
+<div class="col-md-3 col-sm-6 c-detail">
+<div class="box c-text">
+<h3 class="headline">Front 403</h3>
+<p>Nero oak reproduction</p>
+</div>
+<div class="c-img"><img alt="Front 403, Nero oak reproduction" src="/fileadmin/assets/produkte/_kuechen/ausstattungen/fronten/front_structura_403.jpg"/></div>
+</div>
+<div class="col-md-3 col-sm-6 c-detail">
+<div class="box c-text">
+<h3 class="headline">Carcase colour 127</h3>
+<p>Black</p>
+</div>
+<div class="c-img"><img alt="Carcase colour 127, Black" src="/fileadmin/assets/produkte/_kuechen/ausstattungen/korpusfarben/127.jpg"/></div>
+</div>
+<div class="col-md-3 col-sm-6 c-detail">
+<div class="box c-text">
+<h3 class="headline">Worktop 366</h3>
+<p>Black textured</p>
+</div>
+<div class="c-img"><img alt="Worktop 366, Black textured" src="/fileadmin/assets/produkte/_kuechen/ausstattungen/arbeitsplatten/366.jpg"/></div>
+</div>
+</div>
+</div>
+<script>
+					// $('.product-detail-intro .opener').addClass('hidden');
+				$(function() {
+					setTimeout(function(){
+						$('.product-detail-intro .opener').addClass('ani');
+					},500);
+					/*
+					*/
+					$('.product-overlay').on( "mouseout", function() {
+						$('.product-detail-intro').removeClass('opened');
+						})
+						.on( "mouseover", function() {
+							$('.product-detail-intro').addClass('opened');
+						});
+					$('.product-overlay .kitchen-specs .c-text').matchHeight();
+					$('.product-detail-intro .opener-js').on('click', function(e) {
+    					e.preventDefault();
+						$('.product-detail-intro').addClass('opened');
+					});
+					$('.product-detail-intro .closer-js').on('click', function(e) {
+    					e.preventDefault();
+						$('.product-detail-intro').removeClass('opened');
+					});
+				});
+			</script>
+</div>
+</div>
+<style>
+		@media (min-width: 576px)
+		@media (max-width: 575px) {
+			/* :not(.fix) */
+			.f-portrait:not(.fix):after {
+				padding-bottom: 56.25%;
+			}
+		}
+		.product-detail-intro .opener {
+			opacity: 0;
+			transform: translateX(-50vw);
+			-webkit-transition: all 0.95s ease .5s;
+    		transition: all 0.95s ease .5s;
+		}
+		.product-detail-intro .opener.ani {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		/* fake hiding############################################################## */
+		#c72556 {
+			display: none;
+		}
+		.fullstage:not(.product-detail-intro),.fullstage + .text-teaser {
+			display: none;
+		}
+	</style>
+<div class="container kitchen-specs marg-b1 visible-sm visible-xs">
+<div class="row">
+<div class="c-img col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-0 c-detail"><img alt="Front 403, Nero oak reproduction" src="/fileadmin/assets/produkte/_kuechen/ausstattungen/fronten/front_structura_403.jpg"/></div>
+<div class="c-text col-xs-7 col-sm-8 c-detail">
+<h3 class="headline">Front 403</h3>
+<p>Nero oak reproduction</p>
+</div>
+</div>
+<div class="row">
+<div class="c-img col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-0 c-detail"><img alt="Carcase colour 127, Black" src="/fileadmin/assets/produkte/_kuechen/ausstattungen/korpusfarben/127.jpg"/></div>
+<div class="c-text col-xs-7 col-sm-8 c-detail">
+<h3 class="headline">Carcase colour 127</h3>
+<p>Black</p>
+</div>
+</div>
+<div class="row">
+<div class="c-img col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-0 c-detail"><img alt="Worktop 366, Black textured" src="/fileadmin/assets/produkte/_kuechen/ausstattungen/arbeitsplatten/366.jpg"/></div>
+<div class="c-text col-xs-7 col-sm-8 c-detail">
+<h3 class="headline">Worktop 366</h3>
+<p>Black textured</p>
+</div>
+</div>
+</div>
+<div class="container-fluid full-grid grid-gallery marg-b3">
+<div class="special-grid">
+<div class="special-grid-cell card f-landscape t-big">
+<picture><source media="(min-width: 1440px)" srcset="/fileadmin/_processed_/7/6/csm_403_structura_g1.jpg"/><source media="(min-width: 1024px)" srcset="/fileadmin/_processed_/7/6/csm_403_structura_g1.jpg"/><img alt="STRUCTURA 403, Nero oak reproduction (1)" height="720" loading="lazy" src="/fileadmin/_processed_/7/6/csm_403_structura_g1_1.jpg" width="1280"/></picture>
+</div>
+<div class="special-grid-cell card f-landscape">
+<picture><source media="(min-width: 1440px)" srcset="/fileadmin/_processed_/8/a/csm_403_structura_g2.jpg"/><img alt="STRUCTURA 403, Nero oak reproduction (2)" height="358" loading="lazy" src="/fileadmin/_processed_/8/a/csm_403_structura_g2.jpg" width="637"/></picture>
+</div>
+<div class="special-grid-cell card f-portrait">
+<picture><source media="(max-width: 575px)" srcset="/fileadmin/_processed_/5/0/csm_403_structura_g3.jpg"/><source media="(min-width: 1440px)" srcset="/fileadmin/_processed_/5/0/csm_403_structura_g3.jpg"/><img alt="STRUCTURA 403, Nero oak reproduction (3)" height="540" loading="lazy" src="/fileadmin/_processed_/5/0/csm_403_structura_g3.jpg" width="477"/></picture>
+</div>
+<div class="special-grid-cell card f-landscape">
+<picture><source media="(min-width: 1440px)" srcset="/fileadmin/_processed_/4/0/csm_403_structura_g4.jpg"/><img alt="STRUCTURA 403, Nero oak reproduction (4)" height="358" loading="lazy" src="/fileadmin/_processed_/4/0/csm_403_structura_g4.jpg" width="637"/></picture>
+</div>
+<div class="special-grid-cell card f-landscape">
+<picture><source media="(min-width: 1440px)" srcset="/fileadmin/_processed_/4/b/csm_403_structura_g5.jpg"/><img alt="STRUCTURA 403, Nero oak reproduction (5)" height="358" loading="lazy" src="/fileadmin/_processed_/4/b/csm_403_structura_g5.jpg" width="637"/></picture>
+</div>
+</div>
+</div>
+<div class="str_carousel">
+<div class="slick-slider-holder str-slick-horizontal version2">
+<div class="slick-slider">
+<div>
+<a class="js-img-viewbox v2" data-viewboxtitle="&lt;h3&gt;STRUCTURA 402&lt;/h3&gt;" href="/fileadmin/assets/_media/kitchen/402_structura_gallery.jpg">
+<div class="box icon-zoom hidden-xs"></div>
+</a><img alt="STRUCTURA 402 - Havana oak reproduction" height="540" src="/fileadmin/_processed_/b/a/csm_402_structura_gallery_6.jpg" title="STRUCTURA 402 - Havana oak reproduction" width="960"/>
+<div class="col-sm-8 text-box">
+<div class="holder box bg">
+<h3 class="h2">STRUCTURA 402</h3>
+<p>Havana oak reproduction</p>
+<p><a class="textlink" href="../../natural-scandi/structura-402/index.html" title="Details">Details</a></p>
+</div>
+</div>
+</div>
+<div>
+<a class="js-img-viewbox v2" data-viewboxtitle="&lt;h3&gt;STRUCTURA 405&lt;/h3&gt;" href="/fileadmin/assets/_media/kitchen/405_structura_gallery.jpg">
+<div class="box icon-zoom hidden-xs"></div>
+</a><img alt="STRUCTURA 405 - Sierra oak reproduction" height="540" src="/fileadmin/_processed_/9/0/csm_405_structura_gallery.jpg" title="STRUCTURA 405 - Sierra oak reproduction" width="960"/>
+<div class="col-sm-8 text-box">
+<div class="holder box bg">
+<h3 class="h2">STRUCTURA 405</h3>
+<p>Sierra oak reproduction</p>
+<p><a class="textlink" href="../../natural-scandi/structura-405/index.html" title="Details">Details</a></p>
+</div>
+</div>
+</div>
+<div>
+<a class="js-img-viewbox v2" data-viewboxtitle="&lt;h3&gt;STRUCTURA 406&lt;/h3&gt;" href="/fileadmin/assets/_media/kitchen/406_structura_gallery.jpg">
+<div class="box icon-zoom hidden-xs"></div>
+</a><img alt="STRUCTURA 406 - Como oak reproduction" height="540" src="/fileadmin/_processed_/2/6/csm_406_structura_gallery.jpg" title="STRUCTURA 406 - Como oak reproduction" width="960"/>
+<div class="col-sm-8 text-box">
+<div class="holder box bg">
+<h3 class="h2">STRUCTURA 406</h3>
+<p>Como oak reproduction</p>
+<p><a class="textlink" href="../../natural-scandi/structura-406/index.html" title="Details">Details</a></p>
+</div>
+</div>
+</div>
+<div>
+<a class="js-img-viewbox v2" data-viewboxtitle="&lt;h3&gt;STRUCTURA 407&lt;/h3&gt;" href="/fileadmin/assets/_media/kitchen/407_structura_gallery.jpg">
+<div class="box icon-zoom hidden-xs"></div>
+</a><img alt="STRUCTURA 407 - Milano walnut reproduction" height="540" src="/fileadmin/_processed_/8/7/csm_407_structura_gallery_4.jpg" title="STRUCTURA 407 - Milano walnut reproduction" width="960"/>
+<div class="col-sm-8 text-box">
+<div class="holder box bg">
+<h3 class="h2">STRUCTURA 407</h3>
+<p>Milano walnut reproduction</p>
+<p><a class="textlink" href="../structura-407/index.html" title="Details">Details</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="slick-shrink contentshrink container actionholder"></div>
+</div>
+</div>
+</div>
+<!--TYPO3SEARCH_end-->
+</div>
+<!-- Footer Container -->
+<div id="footer-container"></div>
+<!-- Footer Loading Script -->
+<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('../../../../footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer-container').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            });
+        </script>
+<script src="https://www.nobilia.de/typo3temp/assets/compressed/merged-1ee0e54e16201143389e6522e44cc794-83a709f5bf7ee973d6f3e968eb77bed2.js"></script>
+<script defer="defer" src="https://www.nobilia.de/typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a9449.js"></script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.nobilia.de\/en\/","name":"Homepage"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.nobilia.de\/en\/products\/","name":"Products"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/www.nobilia.de\/en\/products\/kitchens\/","name":"All kitchens"}},{"@type":"ListItem","position":4,"item":{"@id":"https:\/\/www.nobilia.de\/en\/products\/kitchens\/designer-kitchens\/","name":"Designer kitchens"}}]}</script>
+</body>
+<!-- Mirrored from www.nobilia.de/en/products/kitchens/designer-kitchens/structura-403/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Apr 2025 14:31:51 GMT -->
+</html>

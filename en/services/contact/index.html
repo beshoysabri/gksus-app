@@ -486,7 +486,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	</style>
 <div class="form-home-container">
 <h2 style="text-align: center;font-size: 40px;font-weight: 700;">Message Us</h2>
-<form action="mailto:info@gksus.com" enctype="text/plain" method="post" style="width: 100%;">
+<form action="process_form.php" method="post" style="width: 100%;">
+<div id="statusMessage" style="margin-bottom: 20px; padding: 10px; border-radius: 5px; display: none;"></div>
 <div class="form-group">
 <label for="full-name">Full Name *</label>
 <input class="input-field" id="full-name" name="full_name" required="" type="text"/>
@@ -517,6 +518,35 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 </div>
 <button class="submit-button" type="submit">Submit</button>
 </form>
+<script>
+// Display status message if present in URL parameters
+document.addEventListener('DOMContentLoaded', function() {
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    const message = urlParams.get('message');
+    
+    if (status && message) {
+        const statusDiv = document.getElementById('statusMessage');
+        statusDiv.style.display = 'block';
+        
+        if (status === 'success') {
+            statusDiv.style.backgroundColor = '#d4edda';
+            statusDiv.style.color = '#155724';
+            statusDiv.style.border = '1px solid #c3e6cb';
+        } else {
+            statusDiv.style.backgroundColor = '#f8d7da';
+            statusDiv.style.color = '#721c24';
+            statusDiv.style.border = '1px solid #f5c6cb';
+        }
+        
+        statusDiv.textContent = message;
+        
+        // Remove parameters from URL without page refresh
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+});
+</script>
 </div>
 </div>
 <!-- Footer Container -->

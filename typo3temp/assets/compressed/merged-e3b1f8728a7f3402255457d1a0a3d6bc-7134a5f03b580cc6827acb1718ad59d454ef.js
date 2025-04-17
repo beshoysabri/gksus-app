@@ -1718,7 +1718,6 @@ $(document).ready(function () {
 
 
 });
-console.log('mmenu custom');
 /*
  * jQuery mmenu v5.7.4
  * @requires jQuery 1.7.0 or later
@@ -1976,124 +1975,7 @@ function(n){var a="mmenu",e="navbars",t="title";n[a].addons[e][t]=function(t,r){
 
 
 
-$(document).ready(function( $ ) {
 
-    var $menu = $("#menu").mmenu({
-        // options
-        "slidingSubmenus": false,
-        "extensions": [
-            "pagedim-black"/*,"iconbar"*/
-        ],
-        "navbars": [
-            {"position": "top","height": 1,
-                "content"    : ['x']
-            },
-
-            {"position": "bottom","height": 1,
-                "content": [$('#menu-bottom')]
-            },
-        ],
-        "setSelected": {
-            "current": "detect",
-            // "hover": true
-        },
-        "offCanvas": {
-            "zposition": "front"
-        },
-             
-
-    }, {
-        // clone: true,
-        // configuration
-
-        classNames: {
-          selected: "active",
-
-        }
-    }
-
-    ).data( 'mmenu' );
-    $('#menu-complete').remove();
-    
-    // $("#menu").on( "closed", function() {
-    //     $("#menu .mm-panel").first().trigger( "open.mm" );
-    // });
-
-    // sliding vertical submenu
-    // removed "block" in mmenu\css\_imp\_vertical.scss
-    $menu.bind( "openPanel", function( $panel ) {
-        $panel.slideDown(200);
-    });
-    $menu.bind( "openPanel", function( $panel ) {
-        var id = $panel.attr('id');
-        // $panel.parent().parent().find("li.mm-vertical.mm-opened").click();
-        // $above = $panel.closest('.mm-listview').find("li.mm-opened > a.mm-next");
-        $above = $panel.closest('.mm-listview').find('li.mm-opened > a.mm-next:not([data-target*="#'+id+'"])');
-        // console.log($above );
-        // $above.each(function (i,obj) {
-        //     console.log($(obj).data('target'), '#'+id);
-        //     if ($(obj).data('target') != '#' + id && $('#' + id).is(":visible")) {
-        //         $(obj).click();
-        //         console.log('click: ' + obj);
-                    
-        //     }
-        // });
-
-        $above.click();
-
-        // if($panel.parent().parent().parent().parent('.mm-panels').length > 0) {
-        //     $(".mm-panels.mm-vertical > .mm-panel.mm-opened > ul > li.mm-vertical.mm-opened > a.mm-next").each(function (i,obj) {
-        //         console.log(obj);
-        //         if ($(obj).data('target') != '#' + id) {
-        //             $(obj).click();
-        //         console.log('click: ' + obj);
-                    
-        //         }
-        //     })
-
-        // }
-        // console.log(66);
-    });
-
-
-    $menu.bind( "closePanel", function( $panel ) {$panel.slideUp(200);});
-    $('.mm-vertical li.mm-opened, li.mm-vertical.mm-opened > .mm-panel').css('display', 'block');
-
-    $menu.bind( "close", function( $panel ) {
-        // console.log(this);
-        $("#menu-click").removeClass('open');
-    });
-
-  // $('.mm-close').addClass('icon-schliessen');
-
-    $("#menu-click, #menu-click2").click(function(e) {
-        e.preventDefault();
-        if ($(this).hasClass('open')) {
-            // $(this).removeClass('open');
-            $menu.close();
-        } else {
-            $(this).addClass('open');
-            $menu.open();
-        }
-
-        $menu.open();
-        return false;
-    });
-
-
-    $(document).keyup(function(e){
-
-        if ($(document.activeElement).is('input, textarea')) {return;}
-        if (!$('#menu').hasClass('mm-opened')) {
-            switch(e.which){
-                case 77:    //m
-                $("#menu-click").click();
-                break;
-            }
-            return;
-        };
-    });
-});
 
 
 /* lang */

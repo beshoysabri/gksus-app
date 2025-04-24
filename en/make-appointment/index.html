@@ -41,7 +41,7 @@
     <style>
         .show-conte {
             display: block;
-            background-color: #ded4cb
+            background-color: #ded4cb;
             width: 100%;
             margin-top: 50px;
             padding-top: 50px;
@@ -184,7 +184,6 @@
 
 <div id="top"></div>
     <div id="top"></div>
-    -->
     <div class="site-overlay"></div>
     <div class="site-content" style="position: relative;">
 
@@ -196,21 +195,13 @@
                     (max-width: 767px) and (min-resolution: 1.5dppx),
                     (max-width: 767px) and (min-resolution: 144dpi) {
                         #bgi-69564-67083 {
-                            background-image: url('../../fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-    ');
+                            background-image: url('../../fileadmin/_processed_/2/1/')
                         }
                     }
 
                     @media (max-width: 575px) {
                         #bgi-69564-67083 {
-                            background-image: url('../../fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-    ');
+                            background-image: url('../../fileadmin/_processed_/2/1/')
                         }
                     }
                 </style>
@@ -218,33 +209,14 @@
                     <picture>
                         <!--[if IE 9]><audio><![endif]-->
                         <source media="(max-width: 767px)"
-                            srcset=" /fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-     1x, /fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-     2x">
+                            srcset="../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_1x.jpg 1x, 
+                                   ../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten_2x.jpg 2x">
                         <source media="(max-width: 1023px)"
-                            srcset="/fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-    ">
+                            srcset="../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten.jpg">
                         <source media="(max-width: 1279px)"
-                            srcset="/fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-    ">
+                            srcset="../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten.jpg">
                         <source media="(max-width: 1440px)"
-                            srcset="/fileadmin/_processed_/2/1/
-        param($match)
-        $parts = $match -split '_'
-        "csm_$($parts[1])_$($parts[2]).jpg"
-    ">
+                            srcset="../../fileadmin/_processed_/2/1/csm_nobilia_Wohnwelten.jpg">
                         <!--[if IE 9]></audio><![endif]-->
                         <img loading="lazy" class="hidden-xs" id="i69564"
                             src="../../fileadmin/assets/services/_stages/nobilia_Wohnwelten.jpg" width="1680"
@@ -269,41 +241,49 @@
             <p>Please take a moment to fill out the form.</p>
 
             <!-- Keep all inputs INSIDE the form -->
-            <form action="mailto:info@gksus.com" method="post" enctype="text/plain">
+            <form action="https://formsubmit.co/andrewamir41@gmail.com" method="POST">
+                <!-- FormSubmit configuration -->
+                <!-- Note: For first use, replace info@gksus.com with your email to activate the service -->
+                <!-- After activation, you can change it back to info@gksus.com -->
+                <input type="hidden" name="_subject" value="New Appointment Request">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://gksus.com/en/make-appointment/thank-you.html">
+                <input type="hidden" name="_honey" value="">
+                <input type="hidden" name="_format" value="plain">
                 
                 <label>First Name *</label>
-                <input type="text" name="First Name" required>
+                <input type="text" name="firstName" required>
 
                 <label>Last Name *</label>
-                <input type="text" name="Last Name" required>
+                <input type="text" name="lastName" required>
 
                 <label>Email *</label>
-                <input type="email" name="Email" required>
+                <input type="email" name="email" required>
 
                 <label>Phone *</label>
-                <input type="tel" name="Phone" required>
+                <input type="tel" name="phone" required>
 
                 <label>Address *</label>
-                <input type="text" name="Address" placeholder="Type your Address Here" required>
+                <input type="text" name="address" placeholder="Type your Address Here" required>
 
                 <label>Zip Code *</label>
-                <input type="text" name="Zip Code" required>
+                <input type="text" name="zipCode" required>
 
                 <label>Tell Us About Your Project *</label>
-                <input type="text" name="Zip Code" required>
+                <input type="text" name="projectDetails" required>
 
                 <label>Best Days for the Appointment (Please Choose at least 2) *</label>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="Best Days" value="Monday"> Monday</label>
-                    <label><input type="checkbox" name="Best Days" value="Tuesday"> Tuesday</label>
-                    <label><input type="checkbox" name="Best Days" value="Wednesday"> Wednesday</label>
-                    <label><input type="checkbox" name="Best Days" value="Thursday"> Thursday</label>
-                    <label><input type="checkbox" name="Best Days" value="Friday"> Friday</label>
-                    <label><input type="checkbox" name="Best Days" value="Saturday"> Saturday</label>
+                    <label><input type="checkbox" name="bestDays" value="Monday"> Monday</label>
+                    <label><input type="checkbox" name="bestDays" value="Tuesday"> Tuesday</label>
+                    <label><input type="checkbox" name="bestDays" value="Wednesday"> Wednesday</label>
+                    <label><input type="checkbox" name="bestDays" value="Thursday"> Thursday</label>
+                    <label><input type="checkbox" name="bestDays" value="Friday"> Friday</label>
+                    <label><input type="checkbox" name="bestDays" value="Saturday"> Saturday</label>
                 </div>
 
                 <label>Best Time *</label>
-                <select name="Best Time" required>
+                <select name="bestTime" required>
                     <option value="">Choose a Time</option>
                     <option value="Morning">Morning</option>
                     <option value="Afternoon">Afternoon</option>
@@ -326,45 +306,52 @@
                     <h2>Make An Appointment</h2>
                     <p>Please take a moment to fill out the form.</p>
 
-                    <form action="mailto:info@gksus.com" method="post" enctype="text/plain"></form>
+                    <form action="https://formsubmit.co/andrewamir41@gmail.com" method="POST">
 
+                        <input type="hidden" name="_subject" value="New Appointment Request">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://gksus.com/en/make-appointment/thank-you.html">
+                        <input type="hidden" name="_honey" value="">
+                        <input type="hidden" name="_format" value="plain">
+                        
                         <label>First Name *</label>
-                        <input type="text" required>
+                        <input type="text" name="firstName" required>
 
                         <label>Last Name *</label>
-                        <input type="text" required>
+                        <input type="text" name="lastName" required>
 
                         <label>Email *</label>
-                        <input type="email" required>
+                        <input type="email" name="email" required>
 
                         <label>Phone *</label>
-                        <input type="tel" required>
+                        <input type="tel" name="phone" required>
 
                         <label>Address *</label>
-                        <input type="text" placeholder="Type your Address Here" required>
+                        <input type="text" name="address" placeholder="Type your Address Here" required>
 
                         <label>Zip Code *</label>
-                        <input type="text"  required>
+                        <input type="text" name="zipCode" required>
+
+                        <label>Tell Us About Your Project *</label>
+                        <input type="text" name="projectDetails" required>
 
                         <label>Best Days for the Appointment (Please Choose at least 2) *</label>
                         <div class="checkbox-group">
-                            <label><input type="checkbox"> Monday</label>
-                            <label><input type="checkbox"> Tuesday</label>
-                            <label><input type="checkbox"> Wednesday</label>
-                            <label><input type="checkbox"> Thursday</label>
-                            <label><input type="checkbox"> Friday</label>
-                            <label><input type="checkbox"> Saturday</label>
-
+                            <label><input type="checkbox" name="bestDays" value="Monday"> Monday</label>
+                            <label><input type="checkbox" name="bestDays" value="Tuesday"> Tuesday</label>
+                            <label><input type="checkbox" name="bestDays" value="Wednesday"> Wednesday</label>
+                            <label><input type="checkbox" name="bestDays" value="Thursday"> Thursday</label>
+                            <label><input type="checkbox" name="bestDays" value="Friday"> Friday</label>
+                            <label><input type="checkbox" name="bestDays" value="Saturday"> Saturday</label>
                         </div>
 
                         <label>Best Time *</label>
-                        <select required>
-                            <option>Choose a Time</option>
-                            <option>Morning</option>
-                            <option>Afternoon</option>
-                            <option>Evening</option>
+                        <select name="bestTime" required>
+                            <option value="">Choose a Time</option>
+                            <option value="Morning">Morning</option>
+                            <option value="Afternoon">Afternoon</option>
+                            <option value="Evening">Evening</option>
                         </select>
-
 
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
@@ -398,8 +385,6 @@
         src="../../typo3temp/assets/compressed/merged-1ee0e54e16201143389e6522e44cc794-83a709f5bf7ee973d6f3e968eb77bed27dba.js?1709748970"></script>
     <script src="../../typo3temp/assets/compressed/Form.min-35c27d04f2b42052c10e2d44f96a94497dba.js?1709748970"
         defer="defer"></script>
-    <script
-        type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.nobilia.de\/en\/","name":"Homepage"}}]}</script>
 
 
         </body>

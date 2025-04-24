@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <base href="/en/make-appointment/">
+    <title>Thank You | German Kitchen Studio</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../typo3temp/assets/compressed/merged-deefbd6a4d3badad633aab3207b9a0af6373.css?1736247112" media="all">
+    <script src="../../typo3temp/assets/compressed/merged-e3b1f8728a7f3402255457d1a0a3d6bc-7134a5f03b580cc6827acb1718ad59d454ef.js?1730218652"></script>
+    <script src="/js/hamburger-menu.js"></script>
+    
+    <style>
+        .thank-you-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .thank-you-box {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .thank-you-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        
+        .thank-you-message {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .return-home {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .return-home:hover {
+            background-color: #333;
+        }
+        
+        .check-icon {
+            font-size: 60px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="p-4265 nobilia workspace- newcss">
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Header Loading Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('../header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+
+    <div class="site-content">
+        <div class="thank-you-container">
+            <div class="thank-you-box">
+                <i class="fas fa-check-circle check-icon"></i>
+                <h1 class="thank-you-title">Thank You!</h1>
+                <p class="thank-you-message">
+                    Your appointment request has been successfully submitted. 
+                    One of our kitchen design specialists will contact you shortly 
+                    to confirm your appointment details.
+                </p>
+                <a href="/en/" class="return-home">Return to Homepage</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Footer Loading Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('../footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
+</body>
+</html> 
